@@ -50,6 +50,7 @@ public class Home extends JFrame {
         name.setColumns(30);
         name.setForeground(Color.gray.brighter());
         name.setBorder(new InputBorder(15));
+        name.setColumns(40);
         JTextField desc= new JTextField("Description");
         JButton save = new JButton("Save");
         save.setPreferredSize(new Dimension(100,40));
@@ -93,7 +94,7 @@ public class Home extends JFrame {
         rightPanel.add(descLabelPanel);
         rightPanel.add(desc);
         rightPanel.add(savePanel);
-        rightPanel.setLayout(new GridLayout(9,1,0,10));
+        rightPanel.setLayout(new GridLayout(7,1,0,10));
         rightPanel.setBackground(Color.WHITE);
         rightPanel.setBorder(BorderFactory.createEmptyBorder(30, 120, 30, 120));
 
