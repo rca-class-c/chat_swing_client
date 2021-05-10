@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="edit message component">
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/Layout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/NewPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/SideBarListItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/SidebarDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/chat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/classC.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/logout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/user-group.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/CustomBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/Home$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/Home.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/RoundedBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/gui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Teams/TeamsCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/TeamsCreated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,17 +110,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.gui" />
@@ -145,6 +135,7 @@
       <workItem from="1620379708250" duration="659000" />
       <workItem from="1620714203212" duration="42000" />
       <workItem from="1620714273117" duration="415000" />
+      <workItem from="1620672305351" duration="88000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
