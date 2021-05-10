@@ -14,6 +14,7 @@ public class PlaceholderTextField extends JTextField {
         JOptionPane.showMessageDialog(null, tf);
     }
     private String placeholder;
+    
     public PlaceholderTextField() {
     }
     public PlaceholderTextField(final String pText) {
