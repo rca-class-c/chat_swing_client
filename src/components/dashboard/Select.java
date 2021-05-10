@@ -6,38 +6,30 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class Select {
+    String[] options;
 
-    public JPanel createSelect(){
+    Select(String[] options){
+        this.options = options;
+    }
 
-        // The labels for the bar chart
-        String[] options = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+    public JComboBox createSelect(){
 
-        JComboBox select = new JComboBox(options);
 
-        // create labels
-        JLabel l = new JLabel("select your city ");
-        JLabel l1 = new JLabel("Jalpaiguri selected");
 
-        // set color of text
-        l.setForeground(Color.red);
-        l1.setForeground(Color.blue);
+        JComboBox select = new JComboBox(this.options);
 
-        // create a new panel
-        JPanel p = new JPanel();
 
-        p.add(l);
 
-        // add combobox to panel
-        p.add(select);
-
-        p.add(l1);
-
-        return p;
+        return select;
     }
 
     public static void main(String[] args) {
+        // The labels for the bar chart
+        String[] options = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+
         //Instantiate an instance of this demo module
-        Select demo = new Select();
+        Select demo = new Select(options);
+
 
         //Create and set up the main window
         JFrame frame = new JFrame(demo.toString());
