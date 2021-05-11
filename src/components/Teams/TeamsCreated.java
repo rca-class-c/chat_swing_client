@@ -25,9 +25,9 @@ public class TeamsCreated extends JFrame
 
         // the table
 
-        table = new JTable();
+        JTable table = new JTable();
         Object[] columns ={"Teams","Members", "Creator", "Description", ""};
-        DefaultTableModel model = new DefaultTableMOdel();
+        DefaultTableModel model = new DefaultTableModel();
 
         model.setColumnIdentifiers(columns);
         table.setModel(model);
