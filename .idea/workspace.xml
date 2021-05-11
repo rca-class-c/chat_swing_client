@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="edit message component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/CustomBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/Home$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/Home.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/RoundedBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/gui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Teams/TeamsCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/TeamsCreated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +35,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ChartDirector.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.gui">
+  <component name="RunManager" selected="Application.TeamsCreated">
     <configuration name="EditMessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="components.EditMessage" />
       <module name="chat_swing_client" />
@@ -89,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwingControlDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.SwingControlDemo" />
+    <configuration name="TeamsCreated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.TeamsCreated" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.*" />
+          <option name="PATTERN" value="components.Teams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,24 +101,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TeamsCreated" />
         <item itemvalue="Application.gui" />
         <item itemvalue="Application.Settings" />
         <item itemvalue="Application.Home" />
         <item itemvalue="Application.EditMessage" />
-        <item itemvalue="Application.SwingControlDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +139,7 @@
       <workItem from="1620379708250" duration="659000" />
       <workItem from="1620714203212" duration="42000" />
       <workItem from="1620714273117" duration="415000" />
+      <workItem from="1620720221335" duration="934000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
