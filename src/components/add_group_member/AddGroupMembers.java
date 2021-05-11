@@ -1,4 +1,4 @@
-package gui;
+package components.add_group_member;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
