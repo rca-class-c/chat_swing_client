@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="edit message component">
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/Layout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/NewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/SideBarListItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/SidebarDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/classC.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/logout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/user-group.png" afterDir="false" />
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: edit message component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,13 +40,13 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.TeamsCreated">
-    <configuration name="EditMessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.EditMessage" />
+  <component name="RunManager" selected="Application.BarchartComponent">
+    <configuration name="BarchartComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.dashboard.BarchartComponent" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.*" />
+          <option name="PATTERN" value="components.dashboard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,13 +100,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BarchartComponent" />
         <item itemvalue="Application.TeamsCreated" />
         <item itemvalue="Application.gui" />
         <item itemvalue="Application.Settings" />
         <item itemvalue="Application.Home" />
-        <item itemvalue="Application.EditMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -136,6 +137,7 @@
       <workItem from="1620714203212" duration="42000" />
       <workItem from="1620714273117" duration="415000" />
       <workItem from="1620672305351" duration="88000" />
+      <workItem from="1620723689881" duration="506000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>

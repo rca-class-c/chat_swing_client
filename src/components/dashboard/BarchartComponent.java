@@ -3,11 +3,11 @@ package components.dashboard;
 import java.awt.*;
         import java.awt.event.*;
         import javax.swing.*;
-        import ChartDirector.*;
+    import ChartDirector.*;
 
 public class BarchartComponent
 {
-    //Name of demo program
+//    //Name of demo program
     public String toString() { return "Multi-Color Bar Chart (1)"; }
 
     //Number of charts produced in this demo
