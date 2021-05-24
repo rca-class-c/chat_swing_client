@@ -19,6 +19,24 @@ public class DirectChatScreen extends JFrame {
     }
 
     public void UI() {
+        JPanel leftPanel = new JPanel();
+        JPanel centerPanel = new JPanel();
+        JPanel rightPanel = new JPanel();
 
+        leftPanel.setLayout(null);
+        leftPanel.setBounds(0,0, 150,2000);
+        leftPanel.setBackground(Color.black);
+
+        centerPanel.setLayout(null);
+        centerPanel.setBounds(0,0, 50,50);
+        centerPanel.setBackground(Color.RED);
+
+        rightPanel.setLayout(null);
+        rightPanel.setBounds(0,0, 50,50);
+        rightPanel.setBackground(Color.GREEN);
+
+        this.add(leftPanel);
+        this.add(centerPanel);
+        this.add(rightPanel);
     }
 }
