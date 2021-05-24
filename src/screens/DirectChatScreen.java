@@ -22,7 +22,6 @@ public class DirectChatScreen extends JFrame {
     public void UI() {
         JPanel leftPanel = new JPanel();
         JPanel centerPanel = new JPanel();
-        Border centerBorder = BorderFactory.createLineBorder(Color.black);
         JPanel rightPanel = new JPanel();
 
         leftPanel.setLayout(null);
@@ -32,7 +31,7 @@ public class DirectChatScreen extends JFrame {
         centerPanel.setLayout(null);
         centerPanel.setBounds(200,0, 850,2000);
         centerPanel.setBackground(new Color(245, 249, 255 ));
-        centerPanel.setBorder(centerBorder);
+        centerPanel.setBorder(BorderFactory.createLineBorder(Color.black););
 
         rightPanel.setLayout(null);
         rightPanel.setBounds(0,0, 200,2000);

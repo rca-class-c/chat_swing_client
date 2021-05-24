@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8672137-041f-4dcb-842d-15b066636109" name="Default Changelist" comment="new: sidebar-region ui initiation">
+    <list default="true" id="c8672137-041f-4dcb-842d-15b066636109" name="Default Changelist" comment="new: set border of centerPanel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" afterDir="false" />
     </list>
@@ -122,7 +122,7 @@
       <workItem from="1621250633902" duration="1326000" />
       <workItem from="1621370015073" duration="61000" />
       <workItem from="1621787379159" duration="595000" />
-      <workItem from="1621833506635" duration="3670000" />
+      <workItem from="1621833506635" duration="3742000" />
     </task>
     <task id="LOCAL-00001" summary=".idea configurations">
       <created>1621251753027</created>
@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621855952981</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new: set border of centerPanel">
+      <created>1621856759234</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621856759234</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +190,7 @@
     <MESSAGE value="Chat Screen initiation" />
     <MESSAGE value="new: sidebar-region" />
     <MESSAGE value="new: sidebar-region ui initiation" />
-    <option name="LAST_COMMIT_MESSAGE" value="new: sidebar-region ui initiation" />
+    <MESSAGE value="new: set border of centerPanel" />
+    <option name="LAST_COMMIT_MESSAGE" value="new: set border of centerPanel" />
   </component>
 </project>
