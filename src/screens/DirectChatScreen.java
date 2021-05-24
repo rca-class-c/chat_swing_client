@@ -24,15 +24,15 @@ public class DirectChatScreen extends JFrame {
         JPanel rightPanel = new JPanel();
 
         leftPanel.setLayout(null);
-        leftPanel.setBounds(0,0, 150,2000);
-        leftPanel.setBackground(Color.black);
+        leftPanel.setBounds(0,0, 200,2000);
+        leftPanel.setBackground(Color.WHITE);
 
         centerPanel.setLayout(null);
-        centerPanel.setBounds(0,0, 50,50);
+        centerPanel.setBounds(200,0, 50,50);
         centerPanel.setBackground(Color.RED);
 
         rightPanel.setLayout(null);
-        rightPanel.setBounds(0,0, 50,50);
+        rightPanel.setBounds(0,0, 200,2000);
         rightPanel.setBackground(Color.GREEN);
 
         this.add(leftPanel);
