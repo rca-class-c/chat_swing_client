@@ -1,6 +1,7 @@
 package screens;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 public class DirectChatScreen extends JFrame {
@@ -21,6 +22,7 @@ public class DirectChatScreen extends JFrame {
     public void UI() {
         JPanel leftPanel = new JPanel();
         JPanel centerPanel = new JPanel();
+        Border centerBorder = BorderFactory.createLineBorder(Color.black);
         JPanel rightPanel = new JPanel();
 
         leftPanel.setLayout(null);
@@ -28,12 +30,13 @@ public class DirectChatScreen extends JFrame {
         leftPanel.setBackground(Color.WHITE);
 
         centerPanel.setLayout(null);
-        centerPanel.setBounds(200,0, 50,50);
-        centerPanel.setBackground(Color.RED);
+        centerPanel.setBounds(200,0, 850,2000);
+        centerPanel.setBackground(new Color(245, 249, 255 ));
+        centerPanel.setBorder(centerBorder);
 
         rightPanel.setLayout(null);
         rightPanel.setBounds(0,0, 200,2000);
-        rightPanel.setBackground(Color.GREEN);
+        rightPanel.setBackground(new Color(245, 249, 255 ));
 
         this.add(leftPanel);
         this.add(centerPanel);
