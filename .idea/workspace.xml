@@ -100,17 +100,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BarchartComponent" />
@@ -160,7 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619978379541</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="user settings component added">
+      <created>1620571278252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620571278252</updated>
+    </task>
+    <task id="LOCAL-00005" summary="text border radius added">
+      <created>1621936867050</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621936867050</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +186,9 @@
     <MESSAGE value="start with intell" />
     <MESSAGE value="calma mi alma" />
     <MESSAGE value="edit message component" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit message component" />
+    <MESSAGE value="user settings component added" />
+    <MESSAGE value="text border radius added" />
+    <option name="LAST_COMMIT_MESSAGE" value="text border radius added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
