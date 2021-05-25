@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +125,8 @@
       <workItem from="1620671466025" duration="2122000" />
       <workItem from="1620713203309" duration="120000" />
       <workItem from="1621872822924" duration="3373000" />
-      <workItem from="1621931843930" duration="1842000" />
+      <workItem from="1621931843930" duration="1967000" />
+      <workItem from="1621940900872" duration="683000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -156,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620571278252</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="text border radius added">
+      <created>1621936867050</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621936867050</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +187,8 @@
     <MESSAGE value="calma mi alma" />
     <MESSAGE value="edit message component" />
     <MESSAGE value="user settings component added" />
-    <option name="LAST_COMMIT_MESSAGE" value="user settings component added" />
+    <MESSAGE value="text border radius added" />
+    <option name="LAST_COMMIT_MESSAGE" value="text border radius added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
