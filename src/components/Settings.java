@@ -25,8 +25,8 @@ public class Settings extends JFrame {
         JPanel profile = new JPanel(new FlowLayout(FlowLayout.CENTER));
         profile.setBackground(Color.decode("#F5F9FF"));
 
-        BufferedImage profileImg = ImageIO.read(new File("assets/profile.png"));
-        BufferedImage masked = this.resizeImage(profileImg, 170, 200, BufferedImage.TYPE_INT_ARGB);
+        BufferedImage profileImg = ImageIO.read(new File("src/assets/profile.png"));
+        BufferedImage masked = this.resizeImage(profileImg, 190, 200, BufferedImage.TYPE_INT_ARGB);
         JLabel profileLabel= new JLabel(new ImageIcon(masked));
         profile.add(profileLabel);
 
@@ -35,7 +35,7 @@ public class Settings extends JFrame {
         JButton uploadBtn = new JButton();
         uploadBtn.setText("Upload Picture");
         uploadBtn.setFont(new Font("Inter", Font.BOLD, 12));
-        uploadBtn.setPreferredSize(new Dimension(150, 35));
+        uploadBtn.setPreferredSize(new Dimension(120, 30));
         uploadBtn.setBackground(Color.decode("#011638"));
         uploadBtn.setForeground(Color.decode("#FFFFFF"));
         uploadBtn.setBorderPainted(false);
