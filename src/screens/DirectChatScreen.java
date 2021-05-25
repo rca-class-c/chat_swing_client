@@ -37,9 +37,28 @@ public class DirectChatScreen extends JFrame {
         rightPanel.setBounds(0,0, 200,2000);
         rightPanel.setBackground(new Color(245, 249, 255 ));
 
+        ChatAreaUI(centerPanel);
+
         this.add(leftPanel);
         this.add(centerPanel);
         this.add(rightPanel);
+    }
+
+    public void ChatAreaUI(JPanel panel) {
+        JPanel chatterPanel = new JPanel();
+        JPanel selfPanel = new JPanel();
+        JLabel timeLabel = new JLabel();
+        JLabel messageLabel = new JLabel();
+
+        timeLabel.setText("18:00am");
+        timeLabel.setForeground(Color.white);
+        timeLabel.setBackground(Color.BLACK);
+
+        panel.setLayout(new BorderLayout(10, 30));
+
+        chatterPanel.add(timeLabel, BorderLayout.WEST);
+        panel.add(chatterPanel);
+
     }
 
 
