@@ -112,7 +112,7 @@
       <workItem from="1621370015073" duration="61000" />
       <workItem from="1621787379159" duration="595000" />
       <workItem from="1621833506635" duration="6431000" />
-      <workItem from="1621914009024" duration="2981000" />
+      <workItem from="1621914009024" duration="4440000" />
     </task>
     <task id="LOCAL-00001" summary=".idea configurations">
       <created>1621251753027</created>
@@ -212,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621916740726</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="wip: ChatAreaUI - ChatFooter area Improvements">
+      <created>1621917134941</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1621917134941</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

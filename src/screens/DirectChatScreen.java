@@ -103,7 +103,8 @@ public class DirectChatScreen extends JFrame {
 
         JLabel timeLabel = new JLabel();
         JLabel messageLabel = new JLabel();
-
+        timeLabel.setLayout(null);
+        timeLabel.setBounds(-20,10,200,200);
         timeLabel.setText("18:00am");
         timeLabel.setForeground(Color.white);
         timeLabel.setBackground(Color.BLACK);
@@ -114,8 +115,11 @@ public class DirectChatScreen extends JFrame {
         messageLabel.setBackground(Color.BLACK);
 
 //        panel.setLayout(new BorderLayout());
-        panel.add(timeLabel, BorderLayout.WEST);
 
-        //        panel.add(messageLabel);
+        timeLabel.setBounds(2,4,200,200);
+        panel.add(timeLabel);
+
+//        panel.add(messageLabel);
+
     }
 }
