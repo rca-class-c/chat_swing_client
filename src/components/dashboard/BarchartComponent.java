@@ -3,7 +3,7 @@ package components.dashboard;
 import java.awt.*;
         import java.awt.event.*;
         import javax.swing.*;
-    import ChartDirector.*;
+        import ChartDirector.*;
 
 public class BarchartComponent
 {
