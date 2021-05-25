@@ -41,4 +41,6 @@ public class DirectChatScreen extends JFrame {
         this.add(centerPanel);
         this.add(rightPanel);
     }
+
+
 }
