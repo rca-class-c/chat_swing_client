@@ -74,19 +74,22 @@ public class DirectChatScreen extends JFrame {
 
         JPanel westPanel = new JPanel();
         JPanel eastPanel = new JPanel();
-        JLabel timeLabel = new JLabel();
-        JLabel messageLabel = new JLabel();
 
-        timeLabel.setText("18:00am");
-        timeLabel.setForeground(Color.white);
-        timeLabel.setBackground(Color.BLACK);
+        JPanel messagePanel = new JPanel();
+
+
+        westPanel.setBackground(Color.blue);
+        eastPanel.setBackground(Color.black);
+
+
+        westPanel.add(timeLabel);
+        westPanel.add(messageLabel);
 //
 ////        panel.setLayout(new BorderLayout(10, 30));
 //
 //        ChatHeaderUI(chatHeaderPanel);
 //        chatterPanel.setLayout(null);
-        westPanel.setBackground(Color.blue);
-        eastPanel.setBackground(Color.black);
+
 //        chatterPanel.add(timeLabel);
 //
 //        panel.add(chatHeaderPanel);
@@ -99,9 +102,21 @@ public class DirectChatScreen extends JFrame {
 
     public void ChatFooterUI(JPanel panel) {
         panel.setLayout(null);
-        panel.setBounds(0,0, 850,60);
-        panel.setBackground(Color.green);
+        panel.setBounds(0,0, 850,10);
+        panel.setBackground(Color.MAGENTA);
 
     }
 
+    public void MessageUI(JPanel panel, String type) {
+        JLabel timeLabel = new JLabel();
+        JLabel messageLabel = new JLabel();
+
+        timeLabel.setText("18:00am");
+        timeLabel.setForeground(Color.white);
+        timeLabel.setBackground(Color.BLACK);
+
+        messageLabel.setText("Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat");
+        messageLabel.setForeground(Color.white);
+        messageLabel.setBackground(Color.BLACK);
+    }
 }
