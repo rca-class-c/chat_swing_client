@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="edit message component">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -99,17 +100,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Settings" />
@@ -133,6 +123,10 @@
       <workItem from="1620107700938" duration="834000" />
       <workItem from="1620365209025" duration="705000" />
       <workItem from="1620379708250" duration="659000" />
+      <workItem from="1620671466025" duration="2122000" />
+      <workItem from="1620713203309" duration="120000" />
+      <workItem from="1621872822924" duration="3373000" />
+      <workItem from="1621931843930" duration="1842000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -155,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619978379541</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="user settings component added">
+      <created>1620571278252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620571278252</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +179,8 @@
     <MESSAGE value="start with intell" />
     <MESSAGE value="calma mi alma" />
     <MESSAGE value="edit message component" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit message component" />
+    <MESSAGE value="user settings component added" />
+    <option name="LAST_COMMIT_MESSAGE" value="user settings component added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
