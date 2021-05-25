@@ -44,27 +44,17 @@ public class DirectChatScreen extends JFrame {
     }
 
     public void ChatAreaUI(JPanel panel) {
-        JPanel chatterPanel = new JPanel();
         JPanel chatHeaderPanel = new JPanel();
-        JPanel selfPanel = new JPanel();
-        JLabel timeLabel = new JLabel();
-        JLabel messageLabel = new JLabel();
-
-        timeLabel.setText("18:00am");
-        timeLabel.setForeground(Color.white);
-        timeLabel.setBackground(Color.BLACK);
-
-//        panel.setLayout(new BorderLayout(10, 30));
+        JPanel chatBodyPanel = new JPanel();
+        JPanel chatFooterPanel = new JPanel();
 
         ChatHeaderUI(chatHeaderPanel);
-        chatterPanel.setLayout(null);
-        chatterPanel.setBounds(0,0, 20,30);
-        chatterPanel.setBackground(Color.red);
-        chatterPanel.add(timeLabel);
-
+        ChatBodyUI(chatBodyPanel);
+        ChatFooterUI(chatFooterPanel);
 
         panel.add(chatHeaderPanel);
-        panel.add(chatterPanel);
+        panel.add(chatBodyPanel);
+        panel.add(chatFooterPanel);
 
     }
 
@@ -77,5 +67,41 @@ public class DirectChatScreen extends JFrame {
     }
 
 
+    public void ChatBodyUI(JPanel panel) {
+        panel.setLayout(null);
+        panel.setBounds(0,60, 850,2000);
+        panel.setBackground(Color.red);
+
+        JPanel westPanel = new JPanel();
+        JPanel eastPanel = new JPanel();
+        JLabel timeLabel = new JLabel();
+        JLabel messageLabel = new JLabel();
+
+        timeLabel.setText("18:00am");
+        timeLabel.setForeground(Color.white);
+        timeLabel.setBackground(Color.BLACK);
+//
+////        panel.setLayout(new BorderLayout(10, 30));
+//
+//        ChatHeaderUI(chatHeaderPanel);
+//        chatterPanel.setLayout(null);
+        westPanel.setBackground(Color.blue);
+        eastPanel.setBackground(Color.black);
+//        chatterPanel.add(timeLabel);
+//
+//        panel.add(chatHeaderPanel);
+        panel.add(westPanel);
+        panel.add(eastPanel);
+        panel.setLayout(new GridLayout(1, 1));
+
+    }
+
+
+    public void ChatFooterUI(JPanel panel) {
+        panel.setLayout(null);
+        panel.setBounds(0,0, 850,60);
+        panel.setBackground(Color.green);
+
+    }
 
 }

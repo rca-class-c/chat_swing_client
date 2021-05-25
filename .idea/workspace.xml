@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8672137-041f-4dcb-842d-15b066636109" name="Default Changelist" comment="wip: ChatAreaUI Improvements">
+    <list default="true" id="c8672137-041f-4dcb-842d-15b066636109" name="Default Changelist" comment="wip: ChatAreaUI - chatHeader area Improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" afterDir="false" />
     </list>
@@ -112,7 +112,7 @@
       <workItem from="1621370015073" duration="61000" />
       <workItem from="1621787379159" duration="595000" />
       <workItem from="1621833506635" duration="6431000" />
-      <workItem from="1621914009024" duration="956000" />
+      <workItem from="1621914009024" duration="1386000" />
     </task>
     <task id="LOCAL-00001" summary=".idea configurations">
       <created>1621251753027</created>
@@ -184,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621914593449</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="wip: ChatAreaUI - chatHeader area Improvements">
+      <created>1621915044458</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1621915044458</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +218,7 @@
     <MESSAGE value="new: set border of centerPanel" />
     <MESSAGE value="new: chat-area startup" />
     <MESSAGE value="wip: ChatAreaUI Improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: ChatAreaUI Improvements" />
+    <MESSAGE value="wip: ChatAreaUI - chatHeader area Improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip: ChatAreaUI - chatHeader area Improvements" />
   </component>
 </project>
