@@ -14,11 +14,12 @@ public class Select {
 
     public JComboBox createSelect(){
 
-
+        //TODO set ui for this select box
 
         JComboBox select = new JComboBox(this.options);
 
-
+        select.setBackground(Color.decode("#FFFFFF"));
+        select.setForeground(Color.decode("#011638"));
 
         return select;
     }
