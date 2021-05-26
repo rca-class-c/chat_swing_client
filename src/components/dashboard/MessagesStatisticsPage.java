@@ -5,6 +5,7 @@ import components.Forms.form.LoginForm;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.Color;
 import java.awt.event.*;
@@ -44,6 +45,7 @@ public class MessagesStatisticsPage extends JFrame{
         this.addChart(chartPanel);
 
 
+        mainPanel.add(this.header(), BorderLayout.NORTH);
         mainPanel.add(tablePanel, BorderLayout.WEST);
         mainPanel.add(chartPanel, BorderLayout.EAST);
         this.add(mainPanel);
@@ -73,6 +75,26 @@ public class MessagesStatisticsPage extends JFrame{
         demo.createChart(viewer, 0);
 
         panel.add(viewer);
+    }
+
+    public JPanel header(){
+        JPanel header = new JPanel(new BorderLayout());
+        JLabel headerText = new JLabel("Messages");
+        headerText.setBorder(new EmptyBorder(10,10,10,10));
+
+        String[] options = {"2021", "2020", "2019"};
+
+        JPanel selectPanel = new JPanel();
+        Select select = new Select(options);
+        selectPanel.setSize(300,50);
+        selectPanel.add(select.createSelect());
+
+
+
+        header.add(headerText, BorderLayout.WEST);
+        header.add(selectPanel, BorderLayout.CENTER);
+
+        return header;
     }
 
     public static void main(String[] args) throws IOException {
