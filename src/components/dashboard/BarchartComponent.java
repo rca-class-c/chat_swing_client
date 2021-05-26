@@ -7,7 +7,7 @@ import java.awt.*;
 
 public class BarchartComponent
 {
-    //Name of demo program
+//    //Name of demo program
     public String toString() { return "Multi-Color Bar Chart (1)"; }
 
     //Number of charts produced in this demo

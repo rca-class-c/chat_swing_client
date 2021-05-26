@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="edit message component">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: edit message component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Layout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/EditMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$buttonActionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$textKeyListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/TeamsCreated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/PlaceholderTextField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/CustomBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/Home$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/Home.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/RoundedBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/gui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Friends$1MyAdjustmentListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Friends.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Groups.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +62,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Class Codes/StudentRecordingApp" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Settings">
-    <configuration name="EditMessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.EditMessage" />
+  <component name="RunManager" selected="Application.BarchartComponent">
+    <configuration name="BarchartComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.dashboard.BarchartComponent" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.*" />
+          <option name="PATTERN" value="components.dashboard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SwingControlDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.SwingControlDemo" />
+    <configuration name="TeamsCreated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.TeamsCreated" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.*" />
+          <option name="PATTERN" value="components.Teams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,24 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BarchartComponent" />
+        <item itemvalue="Application.TeamsCreated" />
+        <item itemvalue="Application.gui" />
         <item itemvalue="Application.Settings" />
         <item itemvalue="Application.Home" />
-        <item itemvalue="Application.EditMessage" />
-        <item itemvalue="Application.SwingControlDemo" />
-        <item itemvalue="Application.gui" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +152,14 @@
       <workItem from="1620107700938" duration="834000" />
       <workItem from="1620365209025" duration="705000" />
       <workItem from="1620379708250" duration="659000" />
+      <workItem from="1620714203212" duration="42000" />
+      <workItem from="1620714273117" duration="415000" />
+      <workItem from="1620672305351" duration="88000" />
+      <workItem from="1620723689881" duration="714000" />
+      <workItem from="1620724454927" duration="429000" />
+      <workItem from="1620763994291" duration="12000" />
+      <workItem from="1621942357030" duration="514000" />
+      <workItem from="1621943641317" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -155,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619978379541</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="user settings component added">
+      <created>1620571278252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620571278252</updated>
+    </task>
+    <task id="LOCAL-00005" summary="text border radius added">
+      <created>1621936867050</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621936867050</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +219,9 @@
     <MESSAGE value="start with intell" />
     <MESSAGE value="calma mi alma" />
     <MESSAGE value="edit message component" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit message component" />
+    <MESSAGE value="user settings component added" />
+    <MESSAGE value="text border radius added" />
+    <option name="LAST_COMMIT_MESSAGE" value="text border radius added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
