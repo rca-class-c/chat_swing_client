@@ -38,6 +38,7 @@ public class TableComponent extends JTable{
         this.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 12));
 
 
+//        this.setBackground(new Color(245,249,255));
         this.setShowGrid(false);
         this.setShowHorizontalLines(true);
 

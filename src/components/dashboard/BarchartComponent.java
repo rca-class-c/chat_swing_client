@@ -65,7 +65,7 @@ public class BarchartComponent
         String[] labels = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
 
         // The colors for the bars
-        int[] colors = {0x5588bb, 0x66bbbb, 0xaa6644, 0x99bb55, 0xee9944, 0x444466, 0xbb5555};
+        int[] colors = {0x3E4965,0x3E4965,0x3E4965,0x3E4965,0x3E4965,0x3E4965,0x3E4965,};
 
         // Create a XYChart object of size 600 x 400 pixels
         XYChart c = new XYChart(600, 400);

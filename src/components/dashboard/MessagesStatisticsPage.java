@@ -32,8 +32,11 @@ public class MessagesStatisticsPage extends JFrame{
 
     public void initUI(){
         JPanel mainPanel = new JPanel(new BorderLayout());
+        mainPanel.setBackground(new Color(245,249,255));
         JPanel tablePanel = new JPanel();
+        tablePanel.setBackground(new Color(245,249,255));
         JPanel chartPanel = new JPanel();
+        chartPanel.setBackground(new Color(245,249,255));
 
         BoxLayout tableLayout = new BoxLayout(tablePanel, BoxLayout.Y_AXIS);
         tablePanel.setLayout(tableLayout);
@@ -59,13 +62,15 @@ public class MessagesStatisticsPage extends JFrame{
                 { "2021-01-26", "6014" }
         };
 
-        String[] columnNames = { "date", "messages" };
+        String[] columnNames = { "Date", "Messages" };
 
         JScrollPane sp = new JScrollPane(new TableComponent(data,columnNames));
 
         JPanel tablePanel = new JPanel(new BorderLayout());
         tablePanel.add(sp);
 
+        sp.setBackground(new Color(245,249,255));
+        tablePanel.setBackground(new Color(245,249,255));
         panel.add(tablePanel);
     }
 
@@ -88,12 +93,13 @@ public class MessagesStatisticsPage extends JFrame{
         Select select = new Select(options);
         selectPanel.setSize(300,50);
         selectPanel.add(select.createSelect());
+        selectPanel.setBackground(new Color(245,249,255));
         selectPanel.setBorder(new EmptyBorder(10,10,10,10));
 
 
         header.add(headerText, BorderLayout.WEST);
         header.add(selectPanel, BorderLayout.CENTER);
-
+        header.setBackground(new Color(245,249,255));
         return header;
     }
 
