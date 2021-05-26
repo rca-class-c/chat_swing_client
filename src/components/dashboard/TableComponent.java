@@ -21,6 +21,7 @@ public class TableComponent extends JTable{
         this.setIntercellSpacing(new Dimension(0,0));
         this.setRowMargin(0);
         this.setShowVerticalLines(false);
+        this.setAutoResizeMode(AUTO_RESIZE_LAST_COLUMN);
 
 
 
