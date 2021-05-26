@@ -1,5 +1,6 @@
 package components.dashboard;
 
+import ChartDirector.ChartViewer;
 import components.Forms.form.LoginForm;
 
 import javax.imageio.ImageIO;
@@ -29,7 +30,7 @@ public class MessagesStatisticsPage extends JFrame{
     }
 
     public void initUI(){
-        JPanel mainPanel = new JPanel(new GridBagLayout());
+        JPanel mainPanel = new JPanel(new BorderLayout());
         JPanel tablePanel = new JPanel();
         JPanel chartPanel = new JPanel();
 
@@ -40,11 +41,11 @@ public class MessagesStatisticsPage extends JFrame{
         chartPanel.setLayout(chartLayout);
 
         this.addTable(tablePanel);
+        this.addChart(chartPanel);
 
 
-
-        mainPanel.add(tablePanel);
-        mainPanel.add(chartPanel);
+        mainPanel.add(tablePanel, BorderLayout.WEST);
+        mainPanel.add(chartPanel, BorderLayout.EAST);
         this.add(mainPanel);
     }
 
@@ -64,6 +65,14 @@ public class MessagesStatisticsPage extends JFrame{
         tablePanel.add(sp);
 
         panel.add(tablePanel);
+    }
+
+    public void addChart(JPanel panel){
+        BarchartComponent demo = new BarchartComponent();
+        ChartViewer viewer = new ChartViewer();
+        demo.createChart(viewer, 0);
+
+        panel.add(viewer);
     }
 
     public static void main(String[] args) throws IOException {
