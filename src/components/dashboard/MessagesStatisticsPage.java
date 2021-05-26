@@ -21,7 +21,7 @@ public class MessagesStatisticsPage extends JFrame{
 
     public MessagesStatisticsPage() throws IOException {
         setTitle("Message Statistics");
-        setSize(900, 700);
+        setSize(1200, 700);
         setMinimumSize(new Dimension(800,600));
         initUI();
         setLocationRelativeTo(null);
@@ -70,9 +70,9 @@ public class MessagesStatisticsPage extends JFrame{
     }
 
     public void addChart(JPanel panel){
-        BarchartComponent demo = new BarchartComponent();
+        BarchartComponent chart = new BarchartComponent("Message Sent across the system",null,"Number of messages");
         ChartViewer viewer = new ChartViewer();
-        demo.createChart(viewer, 0);
+        chart.createChart(viewer, 0);
 
         panel.add(viewer);
     }
@@ -88,7 +88,7 @@ public class MessagesStatisticsPage extends JFrame{
         Select select = new Select(options);
         selectPanel.setSize(300,50);
         selectPanel.add(select.createSelect());
-
+        selectPanel.setBorder(new EmptyBorder(10,10,10,10));
 
 
         header.add(headerText, BorderLayout.WEST);
