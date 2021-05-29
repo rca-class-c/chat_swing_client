@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c8672137-041f-4dcb-842d-15b066636109" name="Default Changelist" comment="wip: ChatAreaUI - ChatFooter area Improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ChartDirector.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Codes/jsp-servlet-hibernate-mysql-tutorial" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -111,7 +112,8 @@
       <workItem from="1621370015073" duration="61000" />
       <workItem from="1621787379159" duration="595000" />
       <workItem from="1621833506635" duration="6431000" />
-      <workItem from="1621914009024" duration="6584000" />
+      <workItem from="1621914009024" duration="7011000" />
+      <workItem from="1622009987041" duration="1148000" />
     </task>
     <task id="LOCAL-00001" summary=".idea configurations">
       <created>1621251753027</created>
@@ -225,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621919364552</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="wip: ChatAreaUI - ChatFooter area Improvements">
+      <created>1621921616688</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1621921616688</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
