@@ -42,7 +42,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.BarchartComponent">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="AddGroupMembers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="components.add_group_member.AddGroupMembers" />
       <module name="chat_swing_client" />
@@ -69,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Settings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Settings" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.*" />
+          <option name="PATTERN" value="components.Teams.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.BarchartComponent" />
         <item itemvalue="Application.AddGroupMembers" />
         <item itemvalue="Application.TeamsCreated" />
         <item itemvalue="Application.gui" />
-        <item itemvalue="Application.Settings" />
       </list>
     </recent_temporary>
   </component>
