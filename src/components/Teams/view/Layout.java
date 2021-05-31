@@ -1,3 +1,4 @@
+package components.Teams.view;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
