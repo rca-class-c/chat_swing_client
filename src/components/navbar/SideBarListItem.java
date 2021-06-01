@@ -1,4 +1,4 @@
-package Components.navbar;
+package components.navbar;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -16,7 +16,8 @@ public class SideBarListItem extends JPanel{
         label.setForeground(Color.decode("#011638"));
         label.setSize(15, 35);
 
-        BufferedImage myPicture = ImageIO.read(new File(System.getProperty("user.dir") + "/src/Components/navbar/" + imagePath));
+        System.out.println(System.getProperty("user.dir") + "/src/components/navbar/" + imagePath);
+        BufferedImage myPicture = ImageIO.read(new File(System.getProperty("user.dir") + "/chat_swing_client/src/components/navbar/" + imagePath));
         JLabel picLabel = new JLabel(new ImageIcon(myPicture));
 
         picLabel.setBorder(new EmptyBorder(0, 0, 0, 23));

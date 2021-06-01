@@ -1,4 +1,4 @@
-package Components.navbar;
+package components.navbar;
 
 import javax.swing.*;
 import java.io.IOException;
