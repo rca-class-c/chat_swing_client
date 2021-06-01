@@ -1,9 +1,9 @@
 package components.dashboard;
 
 import java.awt.*;
-        import java.awt.event.*;
-        import javax.swing.*;
-        import ChartDirector.*;
+import java.awt.event.*;
+import javax.swing.*;
+import ChartDirector.*;
 
 public class BarchartComponent
 {
@@ -56,7 +56,6 @@ public class BarchartComponent
     public int getNoOfCharts() { return 1; }
 
     //Main code for creating charts
-    public void createChart(ChartViewer viewer, int chartIndex)
     {
         // The data for the bar chart
         double[] data = {850, 1560, 1709, 2011, 1230, 1890, 1066};
