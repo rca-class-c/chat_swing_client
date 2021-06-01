@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Layout {
     public Layout(JPanel body) throws IOException {
         JFrame frame = new JFrame("Navbar");
-        JPanel sidebar = new Sidebar();
+        JPanel sidebar = new Components.navbar.Sidebar();
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
