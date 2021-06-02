@@ -46,9 +46,11 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="BarchartComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -114,7 +116,12 @@
       <workItem from="1621833506635" duration="6431000" />
       <workItem from="1621914009024" duration="7011000" />
       <workItem from="1622009987041" duration="1148000" />
-      <workItem from="1622265460196" duration="1048000" />
+      <workItem from="1622265460196" duration="4048000" />
+      <workItem from="1622489171637" duration="1435000" />
+      <workItem from="1622526960825" duration="40000" />
+      <workItem from="1622574074979" duration="3510000" />
+      <workItem from="1622580264916" duration="1398000" />
+      <workItem from="1622611613066" duration="4648000" />
     </task>
     <task id="LOCAL-00001" summary=".idea configurations">
       <created>1621251753027</created>
@@ -242,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622265536443</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="wip: ChatAreaUI - ChatFooter area Improvements">
+      <created>1622266680572</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1622266680572</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,5 +286,16 @@
     <MESSAGE value="wip: ChatAreaUI - chatHeader area Improvements" />
     <MESSAGE value="wip: ChatAreaUI - ChatFooter area Improvements" />
     <option name="LAST_COMMIT_MESSAGE" value="wip: ChatAreaUI - ChatFooter area Improvements" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/screens/DirectChatScreen.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
