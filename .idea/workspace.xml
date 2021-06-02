@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Layout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/SidebarDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/SidebarDemo.java" afterDir="false" />
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="edit message component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/create/assets/clear.png" beforeDir="false" />
@@ -62,10 +59,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -73,13 +66,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.RegisterForm">
-    <configuration name="BarchartComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.dashboard.BarchartComponent" />
+  <component name="RunManager" selected="Application.AddGroupMembers">
+    <configuration name="AddGroupMembers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.add_group_member.AddGroupMembers" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
@@ -91,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Forms.form.LoginForm" />
+    <configuration name="Settings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Settings" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Forms.form.*" />
+          <option name="PATTERN" value="components.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,16 +163,9 @@
       <workItem from="1620714203212" duration="42000" />
       <workItem from="1620714273117" duration="415000" />
       <workItem from="1620672305351" duration="88000" />
-      <workItem from="1620723689881" duration="714000" />
-      <workItem from="1620724454927" duration="429000" />
-      <workItem from="1620763994291" duration="12000" />
-      <workItem from="1621942357030" duration="514000" />
-      <workItem from="1621943641317" duration="55000" />
-      <workItem from="1622439005076" duration="725000" />
-      <workItem from="1622557800043" duration="1265000" />
-      <workItem from="1622567105880" duration="3703000" />
-      <workItem from="1622598574397" duration="55000" />
-      <workItem from="1622598679082" duration="1651000" />
+      <workItem from="1622523311205" duration="71000" />
+      <workItem from="1622566445427" duration="8427000" />
+      <workItem from="1622614896360" duration="9700000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -202,28 +188,7 @@
       <option name="project" value="LOCAL" />
       <updated>1619978379541</updated>
     </task>
-    <task id="LOCAL-00004" summary="user settings component added">
-      <created>1620571278252</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1620571278252</updated>
-    </task>
-    <task id="LOCAL-00005" summary="text border radius added">
-      <created>1621936867050</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1621936867050</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: add shared models on client side">
-      <created>1622600245153</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1622600245153</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
