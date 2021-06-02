@@ -2,49 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: edit message component">
+      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jjwt-jackson-0.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jjwt-orgjson-0.11.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jsoup-1.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ActiveUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/AddMemberRequestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/AuthInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/DeleteMemberRequestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/GetGroupMembersRequestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/GroupMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/GroupResponseDataDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/MessageResponseDataDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/MessageResponseDataFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Messages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/NotificationDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Package.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/PasswordResets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ProfileRequestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Reports.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ResponseDataSuccessDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/SearchRequestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/Subscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/UserLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/UserResponseDataDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/UsersList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/categories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/enums/FileSizeTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/enums/FileStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/enums/HttpMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/enums/PasswordResetsStatusesEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/simplifiers/RequestSimplifiers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/ChatBetweenTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/CommonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/ConsoleColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/DirectMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Discount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Expiration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/GroupMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/GroupNotifications.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Mailing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/OTP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/SendInvitationEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/UserIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/ValidEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/ValidSubscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Validity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/CustomBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/EditMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/InputBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/RoundedBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundJTextField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedDateField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedPasswordField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$buttonActionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$textKeyListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/TeamsCreated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/create/Layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/create/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/PlaceholderTextField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/BarchartComponent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/BarchartComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/NewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/SideBarListItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/SidebarDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/sidebar/sample/Friends$1MyAdjustmentListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/sidebar/sample/Friends.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/sidebar/sample/Groups.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/gui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InputBorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputBorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Layout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Friends$1MyAdjustmentListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Friends.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Groups.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/SidebarDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/SidebarDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/MessagesStatisticsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/MessagesStatisticsPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,32 +100,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ChartDirector.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.MessagesStatisticsPage">
-    <configuration name="AddGroupMembers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.add_group_member.AddGroupMembers" />
-      <module name="chat_swing_client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="components.add_group_member.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.RegisterForm">
     <configuration name="BarchartComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="components.dashboard.BarchartComponent" />
       <module name="chat_swing_client" />
@@ -110,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
+    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Forms.form.LoginForm" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Teams.view.*" />
+          <option name="PATTERN" value="components.Forms.form.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamsCreated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Teams.TeamsCreated" />
+    <configuration name="RegisterForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Forms.form.RegisterForm" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Teams.*" />
+          <option name="PATTERN" value="components.Forms.form.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,26 +169,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="SidebarDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.navbar.SidebarDemo" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.navbar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RegisterForm" />
+        <item itemvalue="Application.SidebarDemo" />
+        <item itemvalue="Application.LoginForm" />
         <item itemvalue="Application.MessagesStatisticsPage" />
         <item itemvalue="Application.BarchartComponent" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.AddGroupMembers" />
-        <item itemvalue="Application.TeamsCreated" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +225,10 @@
       <workItem from="1621942357030" duration="514000" />
       <workItem from="1621943641317" duration="55000" />
       <workItem from="1622439005076" duration="725000" />
-      <workItem from="1622557800043" duration="607000" />
+      <workItem from="1622557800043" duration="1265000" />
+      <workItem from="1622567105880" duration="3703000" />
+      <workItem from="1622598574397" duration="55000" />
+      <workItem from="1622598679082" duration="1348000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
