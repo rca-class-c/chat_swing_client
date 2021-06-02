@@ -94,6 +94,7 @@ public class DirectChatScreen extends JFrame {
     public void MessageUI(JPanel panel, String type, String time, String message) {
         JPanel timePanel = new JPanel(new BorderLayout(60,20));
         JPanel messagePanel = new JPanel(new BorderLayout(30,4));
+
         messagePanel.setBackground(Color.decode("#FFFFFF"));
         timePanel.setBackground(null);
 
@@ -108,13 +109,21 @@ public class DirectChatScreen extends JFrame {
 
         JLabel timeLabel = new JLabel("18:00am");
         JLabel messageLabel = new JLabel();
+
+        Font timeLabelFont = timeLabel.getFont();
+// bold
+        timeLabel.setFont(timeLabelFont.deriveFont(f.getStyle() | Font.BOLD));
+
         timePanel.add(timeLabel, BorderLayout.CENTER);
 //        messageLabel.setBorder(new EmptyBorder(0,10,0,0));
 
-        containerPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        messagePanel.setBorder(BorderFactory.createEmptyBorder(5, 15, 5, 15));
         messageLabel.setText("Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat");
         messageLabel.setForeground(Color.decode("#3E4965"));
         messagePanel.add(messageLabel, BorderLayout.CENTER);
+
+        //TODO: Use Custom Font
+
 
 
         panel.add(timePanel);
