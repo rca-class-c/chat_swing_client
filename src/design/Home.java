@@ -1,4 +1,5 @@
-package design;
+package components;
+
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.AbstractBorder;
@@ -49,7 +50,7 @@ public class Home extends JFrame {
         JTextField name= new JTextField("name");
         name.setColumns(30);
         name.setForeground(Color.gray.brighter());
-        name.setBorder(new InputBorder(15));
+        name.setBorder(new design.InputBorder(15));
         name.setColumns(40);
         JTextField desc= new JTextField("Description");
         JButton save = new JButton("Save");
@@ -78,7 +79,7 @@ public class Home extends JFrame {
         descLabelPanel.setBackground(Color.WHITE);
         descLabelPanel.setLayout(new BorderLayout());
         descLabelPanel.add(desc, BorderLayout.SOUTH);
-        desc.setBorder(new InputBorder(15));
+        desc.setBorder(new design.InputBorder(15));
         desc.setForeground(Color.lightGray);
 
         JPanel savePanel = new JPanel(new BorderLayout());

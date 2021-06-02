@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8672137-041f-4dcb-842d-15b066636109" name="Default Changelist" comment="added file icon image">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/socket/IndexSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/socket/WriteThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Request.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ComposerSettings">
-    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,42 +22,46 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
+  <component name="ProjectId" id="1rsqxAdQnboMv4hDFA3Yhg9URPU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectId" id="1sbbp48rEGAr0RwmWibpNVPauMU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Codes/jsp-servlet-hibernate-mysql-tutorial" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.EditMessage">
-    <configuration name="BarchartComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.dashboard.BarchartComponent" />
+  <component name="RunManager" selected="Application.ChatIndex">
+    <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatIndex" />
+      <module name="chat_swing_client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Forms.form.LoginForm" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.dashboard.*" />
+          <option name="PATTERN" value="components.Forms.form.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,12 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EditMessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.EditMessage" />
+    <configuration name="RegisterForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Forms.form.RegisterForm" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.*" />
+          <option name="PATTERN" value="components.Forms.form.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Home" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="design.Home" />
+    <configuration name="SidebarDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.navbar.SidebarDemo" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="design.*" />
+          <option name="PATTERN" value="components.navbar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,231 +95,128 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="screens.Main" />
+    <configuration name="gui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.gui" />
       <module name="chat_swing_client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="screens.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EditMessage" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.BarchartComponent" />
-        <item itemvalue="Application.Home" />
+        <item itemvalue="Application.ChatIndex" />
+        <item itemvalue="Application.gui" />
+        <item itemvalue="Application.RegisterForm" />
+        <item itemvalue="Application.SidebarDemo" />
+        <item itemvalue="Application.LoginForm" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c8672137-041f-4dcb-842d-15b066636109" name="Default Changelist" comment="" />
-      <created>1621144416884</created>
+      <changelist id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="" />
+      <created>1619775391062</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1621144416884</updated>
-      <workItem from="1621144435741" duration="1062000" />
-      <workItem from="1621168669948" duration="915000" />
-      <workItem from="1621250633902" duration="1326000" />
-      <workItem from="1621370015073" duration="61000" />
-      <workItem from="1621787379159" duration="595000" />
-      <workItem from="1621833506635" duration="6431000" />
-      <workItem from="1621914009024" duration="7011000" />
-      <workItem from="1622009987041" duration="1148000" />
-      <workItem from="1622265460196" duration="4048000" />
-      <workItem from="1622489171637" duration="1435000" />
-      <workItem from="1622526960825" duration="40000" />
-      <workItem from="1622574074979" duration="3510000" />
-      <workItem from="1622580264916" duration="1398000" />
-      <workItem from="1622611613066" duration="9560000" />
+      <updated>1619775391062</updated>
+      <workItem from="1619775393331" duration="644000" />
+      <workItem from="1619965451973" duration="3852000" />
+      <workItem from="1620107700938" duration="834000" />
+      <workItem from="1620365209025" duration="705000" />
+      <workItem from="1620379708250" duration="659000" />
+      <workItem from="1620714203212" duration="42000" />
+      <workItem from="1620714273117" duration="415000" />
+      <workItem from="1620672305351" duration="88000" />
+      <workItem from="1620723689881" duration="714000" />
+      <workItem from="1620724454927" duration="429000" />
+      <workItem from="1620763994291" duration="12000" />
+      <workItem from="1621942357030" duration="514000" />
+      <workItem from="1621943641317" duration="55000" />
+      <workItem from="1622439005076" duration="725000" />
+      <workItem from="1622557800043" duration="1265000" />
+      <workItem from="1622567105880" duration="3703000" />
+      <workItem from="1622598574397" duration="55000" />
+      <workItem from="1622598679082" duration="1780000" />
+      <workItem from="1622626896607" duration="8454000" />
     </task>
-    <task id="LOCAL-00001" summary=".idea configurations">
-      <created>1621251753027</created>
+    <task id="LOCAL-00001" summary="start with intell">
+      <created>1619775491094</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1621251753027</updated>
+      <updated>1619775491094</updated>
     </task>
-    <task id="LOCAL-00002" summary="DirectChatScreenInitiation">
-      <created>1621252773794</created>
+    <task id="LOCAL-00002" summary="calma mi alma">
+      <created>1619775890428</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1621252773794</updated>
+      <updated>1619775890428</updated>
     </task>
-    <task id="LOCAL-00003" summary="Chat Screen initiation">
-      <created>1621855063946</created>
+    <task id="LOCAL-00003" summary="edit message component">
+      <created>1619978379541</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1621855063946</updated>
+      <updated>1619978379541</updated>
     </task>
-    <task id="LOCAL-00004" summary="new: sidebar-region">
-      <created>1621855723097</created>
+    <task id="LOCAL-00004" summary="user settings component added">
+      <created>1620571278252</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1621855723097</updated>
+      <updated>1620571278252</updated>
     </task>
-    <task id="LOCAL-00005" summary="new: sidebar-region ui initiation">
-      <created>1621855952981</created>
+    <task id="LOCAL-00005" summary="text border radius added">
+      <created>1621936867050</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1621855952981</updated>
+      <updated>1621936867050</updated>
     </task>
-    <task id="LOCAL-00006" summary="new: set border of centerPanel">
-      <created>1621856759234</created>
+    <task id="LOCAL-00006" summary="feat: add shared models on client side">
+      <created>1622600245153</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1621856759234</updated>
+      <updated>1622600245153</updated>
     </task>
-    <task id="LOCAL-00007" summary="new: set border of centerPanel">
-      <created>1621856822746</created>
+    <task id="LOCAL-00007" summary="fix: package import errors">
+      <created>1622600394525</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1621856822746</updated>
+      <updated>1622600394525</updated>
     </task>
-    <task id="LOCAL-00008" summary="new: set border of centerPanel">
-      <created>1621856827543</created>
+    <task id="LOCAL-00008" summary="feat: first move">
+      <created>1622636394247</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1621856827543</updated>
+      <updated>1622636394247</updated>
     </task>
-    <task id="LOCAL-00009" summary="new: chat-area startup">
-      <created>1621914069917</created>
+    <task id="LOCAL-00009" summary="feat: create global layout">
+      <created>1622637309046</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1621914069917</updated>
+      <updated>1622637309046</updated>
     </task>
-    <task id="LOCAL-00010" summary="wip: ChatAreaUI Improvements">
-      <created>1621914593449</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1621914593449</updated>
-    </task>
-    <task id="LOCAL-00011" summary="wip: ChatAreaUI - chatHeader area Improvements">
-      <created>1621915044458</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1621915044458</updated>
-    </task>
-    <task id="LOCAL-00012" summary="wip: ChatAreaUI - ChatFooter area Improvements">
-      <created>1621915481933</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1621915481933</updated>
-    </task>
-    <task id="LOCAL-00013" summary="wip: ChatAreaUI - ChatFooter area Improvements">
-      <created>1621915745492</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1621915745492</updated>
-    </task>
-    <task id="LOCAL-00014" summary="wip: ChatAreaUI - ChatFooter area Improvements">
-      <created>1621916740726</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1621916740726</updated>
-    </task>
-    <task id="LOCAL-00015" summary="wip: ChatAreaUI - ChatFooter area Improvements">
-      <created>1621917134941</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1621917134941</updated>
-    </task>
-    <task id="LOCAL-00016" summary="wip: ChatAreaUI - ChatFooter area Improvements">
-      <created>1621919364552</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1621919364552</updated>
-    </task>
-    <task id="LOCAL-00017" summary="wip: ChatAreaUI - ChatFooter area Improvements">
-      <created>1621921616688</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1621921616688</updated>
-    </task>
-    <task id="LOCAL-00018" summary="wip: ChatAreaUI - ChatFooter area Improvements">
-      <created>1622265536443</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1622265536443</updated>
-    </task>
-    <task id="LOCAL-00019" summary="wip: ChatAreaUI - ChatFooter area Improvements">
-      <created>1622266680572</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1622266680572</updated>
-    </task>
-    <task id="LOCAL-00020" summary="new: DirectChatScreen Messages Alignment">
-      <created>1622619204496</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1622619204496</updated>
-    </task>
-    <task id="LOCAL-00021" summary="new: DirectChatScreen Messages Alignment">
-      <created>1622619568102</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1622619568102</updated>
-    </task>
-    <task id="LOCAL-00022" summary="new: remove input field from chat body UI">
-      <created>1622621758326</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1622621758326</updated>
-    </task>
-    <task id="LOCAL-00023" summary="new: write message label">
-      <created>1622621828125</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1622621828125</updated>
-    </task>
-    <task id="LOCAL-00024" summary="added file icon image">
-      <created>1622622210903</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1622622210903</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,20 +235,32 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".idea configurations" />
-    <MESSAGE value="DirectChatScreenInitiation" />
-    <MESSAGE value="Chat Screen initiation" />
-    <MESSAGE value="new: sidebar-region" />
-    <MESSAGE value="new: sidebar-region ui initiation" />
-    <MESSAGE value="new: set border of centerPanel" />
-    <MESSAGE value="new: chat-area startup" />
-    <MESSAGE value="wip: ChatAreaUI Improvements" />
-    <MESSAGE value="wip: ChatAreaUI - chatHeader area Improvements" />
-    <MESSAGE value="wip: ChatAreaUI - ChatFooter area Improvements" />
-    <MESSAGE value="new: DirectChatScreen Messages Alignment" />
-    <MESSAGE value="new: remove input field from chat body UI" />
-    <MESSAGE value="new: write message label" />
-    <MESSAGE value="added file icon image" />
-    <option name="LAST_COMMIT_MESSAGE" value="added file icon image" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="start with intell" />
+    <MESSAGE value="calma mi alma" />
+    <MESSAGE value="edit message component" />
+    <MESSAGE value="user settings component added" />
+    <MESSAGE value="text border radius added" />
+    <MESSAGE value="feat: add shared models on client side" />
+    <MESSAGE value="fix: package import errors" />
+    <MESSAGE value="feat: first move" />
+    <MESSAGE value="feat: create global layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create global layout" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/components/EditMessage.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
