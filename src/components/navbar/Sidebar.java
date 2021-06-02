@@ -1,6 +1,4 @@
-
-package Components.navbar;
-
+package components.navbar;
 
 
 import javax.swing.*;
@@ -39,7 +37,7 @@ public class Sidebar extends JPanel {
         myLogo.setSize(160,110);
         myLogo.setBackground(Color.white);
 
-        ImageIcon imageIcon = new ImageIcon("/home/edine/Documents/Projects/java_class_project/front end/chat_swing_client/src/Components/navbar/classC.jpg");
+        ImageIcon imageIcon = new ImageIcon("classC.jpg");
         Image image = imageIcon.getImage(); // transform it
         Image newimg = image.getScaledInstance(170, 100,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way
         imageIcon = new ImageIcon(newimg);
