@@ -1,79 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: edit message component">
-      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jjwt-jackson-0.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jjwt-orgjson-0.11.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jsoup-1.13.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ActiveUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/AddMemberRequestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/AuthInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/DeleteMemberRequestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/GetGroupMembersRequestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/GroupMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/GroupResponseDataDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/MessageResponseDataDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/MessageResponseDataFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Messages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/NotificationDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Package.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/PasswordResets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ProfileRequestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Reports.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ResponseDataSuccessDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/SearchRequestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Subscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/UserLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/UserResponseDataDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/UsersList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/categories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/enums/FileSizeTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/enums/FileStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/enums/HttpMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/enums/PasswordResetsStatusesEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simplifiers/RequestSimplifiers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ChatBetweenTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/CommonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ConsoleColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/DirectMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Discount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Expiration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/GroupMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/GroupNotifications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Mailing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/OTP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/SendInvitationEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/UserIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ValidEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ValidSubscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Validity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Friends$1MyAdjustmentListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Friends.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Groups.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/MessagesStatisticsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/MessagesStatisticsPage.java" afterDir="false" />
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Layout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/SidebarDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/SidebarDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +158,7 @@
       <workItem from="1622557800043" duration="1265000" />
       <workItem from="1622567105880" duration="3703000" />
       <workItem from="1622598574397" duration="55000" />
-      <workItem from="1622598679082" duration="1348000" />
+      <workItem from="1622598679082" duration="1651000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -265,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621936867050</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: add shared models on client side">
+      <created>1622600245153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622600245153</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +227,8 @@
     <MESSAGE value="edit message component" />
     <MESSAGE value="user settings component added" />
     <MESSAGE value="text border radius added" />
-    <option name="LAST_COMMIT_MESSAGE" value="text border radius added" />
+    <MESSAGE value="feat: add shared models on client side" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add shared models on client side" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

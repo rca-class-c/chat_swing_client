@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class SidebarDemo extends JPanel {
     public static void main(String[] args) throws IOException {
-        JPanel body = new Components.navbar.NewPage();
+        JPanel body = new NewPage();
         new Layout(body);
     }
 }
