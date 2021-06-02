@@ -27,7 +27,8 @@ public class WriteThread extends Thread {
     private IndexSocket client;
     private Request request;
     private ObjectMapper objectMapper;
-    private JsonNode data;
+//    private JsonNode data;
+    ResponseDataSuccessDecoder response;
     public WriteThread(Socket socket, IndexSocket client, Request request) {
         this.socket = socket;
         this.client = client;
@@ -47,17 +48,19 @@ public class WriteThread extends Thread {
     }
 
 
-    public JsonNode run(Socket socket) {
+    public ResponseDataSuccessDecoder run(Socket socket) {
         try {
             objectMapper = new ObjectMapper();
             String LoginDataAsString = objectMapper.writeValueAsString(request);
             writer.println(LoginDataAsString);
-            ResponseDataSuccessDecoder response = new UserResponseDataDecoder().decodedResponse(reader.readLine());
-            data = objectMapper.readTree(response.getData());
+            response = new UserResponseDataDecoder().decodedResponse(reader.readLine());
+
+//            data = objectMapper.readTree(response.getData());
             socket.close();
+            return response;
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-        return data;
+        return response;
     }
 }
