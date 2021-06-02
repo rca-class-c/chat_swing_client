@@ -17,7 +17,7 @@ public class SideBarListItem extends JPanel{
         label.setSize(15, 35);
 
         System.out.println(System.getProperty("user.dir") + "/src/components/navbar/" + imagePath);
-        BufferedImage myPicture = ImageIO.read(new File(System.getProperty("user.dir") + "/chat_swing_client/src/components/navbar/" + imagePath));
+        BufferedImage myPicture = ImageIO.read(new File(System.getProperty("user.dir") + "/src/components/navbar/" + imagePath));
         JLabel picLabel = new JLabel(new ImageIcon(myPicture));
 
         picLabel.setBorder(new EmptyBorder(0, 0, 0, 23));
