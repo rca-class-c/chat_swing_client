@@ -67,6 +67,7 @@ public class Settings extends JFrame {
         JTextField firstname = new RoundJTextField();
         firstname.setText("Hirwa");
         firstname.setFont(new Font("Inter", Font.PLAIN, 14));
+        firstname.setForeground(Color.decode("#989494"));
         firstname.setPreferredSize(new Dimension(200, 35));
 
         JPanel firstnamePanel = new JPanel(new BorderLayout(10, 0));
@@ -78,6 +79,7 @@ public class Settings extends JFrame {
         JTextField lastname = new RoundJTextField();
         lastname.setText("Chanelle");
         lastname.setFont(new Font("Inter", Font.PLAIN, 14));
+        lastname.setForeground(Color.decode("#989494"));
         lastname.setPreferredSize(new Dimension(200, 35));
 
         JPanel lastnamePanel = new JPanel(new BorderLayout(10, 0));
@@ -98,6 +100,7 @@ public class Settings extends JFrame {
         JTextField username = new RoundJTextField();
         username.setText("Chanizzo");
         username.setFont(new Font("Inter", Font.PLAIN, 14));
+        username.setForeground(Color.decode("#989494"));
         username.setPreferredSize(new Dimension(400, 35));
 
         JPanel usernamePanel = new JPanel(new BorderLayout(10, 0));
@@ -112,6 +115,7 @@ public class Settings extends JFrame {
         dob.setPreferredSize(new Dimension(400, 35));
         dob.setText("07/30/2004");
         dob.setFont(new Font("Inter", Font.PLAIN, 14));
+        dob.setForeground(Color.decode("#989494"));
         dob.addKeyListener(new textKeyListener());
 
         JPanel dobPanel = new JPanel(new BorderLayout(10, 0));
@@ -123,6 +127,7 @@ public class Settings extends JFrame {
         JPasswordField password = new RoundedPasswordField();
         password.setText("Password");
         password.setFont(new Font("Inter", Font.PLAIN, 14));
+        password.setForeground(Color.decode("#989494"));
         password.setPreferredSize(new Dimension(400, 35));
 
         JPanel passwordPanel = new JPanel(new BorderLayout(10, 0));
@@ -201,7 +206,7 @@ public class Settings extends JFrame {
             super.paintComponent(g);
         }
         protected void paintBorder(Graphics g) {
-            g.setColor(getForeground());
+            g.setColor(Color.decode("#4C5B5C"));
             g.drawRoundRect(0, 0, getWidth()-1, getHeight()-1, 10, 10);
         }
         public boolean contains(int x, int y) {
@@ -223,7 +228,7 @@ public class Settings extends JFrame {
             super.paintComponent(g);
         }
         protected void paintBorder(Graphics g) {
-            g.setColor(getForeground());
+            g.setColor(Color.decode("#4C5B5C"));
             g.drawRoundRect(0, 0, getWidth()-1, getHeight()-1, 10, 10);
         }
         public boolean contains(int x, int y) {
@@ -243,7 +248,7 @@ public class Settings extends JFrame {
             super.paintComponent(g);
         }
         protected void paintBorder(Graphics g) {
-            g.setColor(getForeground());
+            g.setColor(Color.decode("#4C5B5C"));
             g.drawRoundRect(0, 0, getWidth()-1, getHeight()-1, 10, 10);
         }
         public boolean contains(int x, int y) {
