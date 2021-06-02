@@ -23,5 +23,4 @@ public class Request {
         this.data = data;
         this.request_type = request_type;
     }
-    public  Request(){}
 }

@@ -1,15 +1,18 @@
 package components.add_group_member;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import models.*;
+import socket.IndexSocket;
+import utils.CommonUtil;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.border.TitledBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.plaf.ScrollBarUI;
-import javax.swing.plaf.ScrollPaneUI;
 import javax.swing.plaf.basic.BasicScrollBarUI;
-import javax.swing.plaf.metal.MetalScrollBarUI;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableModel;
@@ -20,8 +23,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.AffineTransform;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class AddGroupMembers extends JFrame {
     private TableModel model;
@@ -29,9 +34,31 @@ public class AddGroupMembers extends JFrame {
     private TableRowSorter sorter;
     private JScrollPane jsp;
 
-    public AddGroupMembers(){
-        JFrame frame = new JFrame();
+    public AddGroupMembers() throws IOException {
+        //calling request from the server
 
+        boolean haveMembers=true;
+        String key= "groups/members";
+        Request request = new Request(new ProfileRequestData(1),key);
+        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+        if(response.isSuccess()){
+            User[] users = new UserResponseDataDecoder().returnUsersListDecoded(response.getData());
+            CommonUtil.addTabs(10, true);
+            if (users.length != 0){
+                for (User user : users) {
+                    System.out.println(user.getUserID()+". "+user.getFname()+" "+user.getLname());
+                    CommonUtil.addTabs(10, false);
+                }
+            }else{
+                System.out.println("No user found in this group");
+                haveMembers=false;
+            }
+        }else {
+            System.out.println("failed to fetch users in the given group");
+        }
+
+
+        JFrame frame = new JFrame();
         JPanel upPanel = new JPanel();
         upPanel.setLayout(new GridLayout(2,3));
         upPanel.setBackground(Color.white);
@@ -209,7 +236,7 @@ public class AddGroupMembers extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         new AddGroupMembers();
     }
 }
