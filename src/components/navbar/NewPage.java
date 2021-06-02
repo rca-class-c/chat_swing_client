@@ -1,11 +1,12 @@
 package components.navbar;
 
 import javax.swing.*;
+import java.awt.*;
 
 
 public class NewPage extends JPanel {
     public NewPage(){
-//        this.setBounds(300, 70, 1620, 780);
-//        this.setBackground(Color.WHITE);
+        this.setBounds(240, 10, 1020, 750);
+        this.setBackground(Color.WHITE);
     }
 }

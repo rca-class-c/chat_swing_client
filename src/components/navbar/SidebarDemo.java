@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.io.IOException;
 
 public class SidebarDemo extends JPanel {
-    public static void main(String[] args) throws IOException {
+    public SidebarDemo() throws IOException {
         JPanel body = new NewPage();
         new Layout(body);
     }
