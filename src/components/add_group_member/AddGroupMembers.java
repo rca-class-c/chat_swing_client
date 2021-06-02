@@ -1,8 +1,5 @@
 package components.add_group_member;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import models.*;
 import socket.IndexSocket;
 import utils.CommonUtil;
@@ -45,6 +42,7 @@ public class AddGroupMembers extends JFrame {
             User[] users = new UserResponseDataDecoder().returnUsersListDecoded(response.getData());
             CommonUtil.addTabs(10, true);
             if (users.length != 0){
+
                 for (User user : users) {
                     System.out.println(user.getUserID()+". "+user.getFname()+" "+user.getLname());
                     CommonUtil.addTabs(10, false);
