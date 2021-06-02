@@ -1,4 +1,6 @@
 package components.Forms.form;
+import components.navbar.SidebarDemo;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -9,7 +11,7 @@ import java.io.IOException;
 
 
 public class LoginForm extends JFrame implements ActionListener{
-
+    private ActionListener action;
     private static final Color themeColor = Color.decode("#011638");
 
 
@@ -57,6 +59,14 @@ public class LoginForm extends JFrame implements ActionListener{
 
         loginButton.setBackground(themeColor);
        loginButton.setForeground(Color.WHITE);
+        loginButton.addActionListener(e -> {
+            this.dispose();
+            try {
+                new SidebarDemo();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
+        });
 
         JPanel signupLabelPanel = new JPanel(new BorderLayout());
         JPanel helpPanel = new JPanel(new BorderLayout());
@@ -122,11 +132,9 @@ public class LoginForm extends JFrame implements ActionListener{
 
     }
 
-    public static void main(String[] args) throws IOException {
-        new LoginForm();
-    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        System.out.println(e);
     }
 }
