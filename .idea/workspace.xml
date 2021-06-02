@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8672137-041f-4dcb-842d-15b066636109" name="Default Changelist" comment="new: remove input field from chat body UI">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" afterDir="false" />
-    </list>
+    <list default="true" id="c8672137-041f-4dcb-842d-15b066636109" name="Default Changelist" comment="new: write message label" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +129,7 @@
       <workItem from="1622526960825" duration="40000" />
       <workItem from="1622574074979" duration="3510000" />
       <workItem from="1622580264916" duration="1398000" />
-      <workItem from="1622611613066" duration="7314000" />
+      <workItem from="1622611613066" duration="7693000" />
     </task>
     <task id="LOCAL-00001" summary=".idea configurations">
       <created>1621251753027</created>
@@ -288,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622621758326</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="new: write message label">
+      <created>1622621828125</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1622621828125</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +323,7 @@
     <MESSAGE value="wip: ChatAreaUI - ChatFooter area Improvements" />
     <MESSAGE value="new: DirectChatScreen Messages Alignment" />
     <MESSAGE value="new: remove input field from chat body UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="new: remove input field from chat body UI" />
+    <MESSAGE value="new: write message label" />
+    <option name="LAST_COMMIT_MESSAGE" value="new: write message label" />
   </component>
 </project>
