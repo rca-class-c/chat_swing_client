@@ -106,7 +106,25 @@ public class DirectChatScreen extends JFrame {
         writeMessageTextField.setBorder(new EmptyBorder(0, 10, 0, 10));
         writeMessageTextField.setText("try here");
 
+        ImageIcon image = new ImageIcon("src/images/upload-file.svg");
+
+
+        JLabel jLabel = new JLabel();
+
+        jLabel.setIcon(image);
+        jLabel.setHorizontalTextPosition(JLabel.LEFT);
+        jLabel.setLayout(null);
+        jLabel.setBounds(70, 700, 500, 300);
+        jLabel.setVerticalTextPosition(JLabel.TOP);
+        jLabel.setFont(new Font("MV Boli", Font.BOLD, 12));
+        jLabel.setIconTextGap(10);
+        jLabel.setForeground(new Color(255, 255, 255));
+        jLabel.setVerticalAlignment(JLabel.CENTER);
+        jLabel.setHorizontalAlignment(JLabel.CENTER);
+
         panel.add(writeMessageTextField);
+        panel.add(jLabel);
+
     }
 
     public void MessageUI(JPanel panel, String type, String time, String message) {
@@ -138,7 +156,16 @@ public class DirectChatScreen extends JFrame {
 
         messagePanel.setBorder(BorderFactory.createEmptyBorder(5, 15, 5, 15));
         messageLabel.setText("Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat");
-        messageLabel.setForeground(Color.decode("#3E4965"));
+
+        if (type.equals("INCOMING")) {
+            messageLabel.setForeground(Color.decode("#3E4965"));
+            messagePanel.setBackground(Color.decode("#ffffff"));
+        }
+        else if (type.equals("OUTGOING")) {
+            messagePanel.setBackground(Color.decode("#3E4965"));
+            messageLabel.setForeground(Color.decode("#FFFFFF"));
+        }
+
         messagePanel.add(messageLabel, BorderLayout.CENTER);
 
         //TODO: Use Custom Font
