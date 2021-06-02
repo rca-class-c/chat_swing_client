@@ -103,7 +103,7 @@ public class DirectChatScreen extends JFrame {
 
 
         writeMessageTextField.setBounds( 0, yVerticalCounter + 50, 740, 36);
-        writeMessageTextField.setBounds(null);
+        writeMessageTextField.setBorder(new EmptyBorder(0, 10, 0, 10));
         writeMessageTextField.setText("try here");
 
         panel.add(writeMessageTextField);
