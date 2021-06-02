@@ -57,11 +57,7 @@ public class WriteThread extends Thread {
 
 //            data = objectMapper.readTree(response.getData());
             socket.close();
-<<<<<<< HEAD
-            return data;
-=======
             return response;
->>>>>>> 87aff286c8e9b1b74b15773c0d3f2c425dcd59e1
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
