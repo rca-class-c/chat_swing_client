@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/socket/IndexSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/socket/WriteThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Layout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/DirectMessages/HeaderScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/GroupMessages/HeaderScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/MessagesStatisticsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/CustomBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/Home$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/Home.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/RoundedBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Friends$1MyAdjustmentListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Friends.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Groups.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +56,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jsoup-1.13.1.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.ChatIndex">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
       <module name="chat_swing_client" />
@@ -56,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Forms.form.LoginForm" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Forms.form.*" />
+          <option name="PATTERN" value="components.Teams.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,26 +117,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ChatIndex" />
         <item itemvalue="Application.gui" />
         <item itemvalue="Application.RegisterForm" />
         <item itemvalue="Application.SidebarDemo" />
-        <item itemvalue="Application.LoginForm" />
       </list>
     </recent_temporary>
   </component>
@@ -152,6 +165,7 @@
       <workItem from="1622598574397" duration="55000" />
       <workItem from="1622598679082" duration="1780000" />
       <workItem from="1622626896607" duration="8454000" />
+      <workItem from="1622632303182" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
