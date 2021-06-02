@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/socket/IndexSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/socket/WriteThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/IndexSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/IndexSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/WriteThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/WriteThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,19 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ChatIndex" />
@@ -151,7 +137,10 @@
       <workItem from="1622567105880" duration="3703000" />
       <workItem from="1622598574397" duration="55000" />
       <workItem from="1622598679082" duration="1780000" />
-      <workItem from="1622626896607" duration="8454000" />
+      <workItem from="1622626896607" duration="9207000" />
+      <workItem from="1622643386600" duration="879000" />
+      <workItem from="1622654871779" duration="959000" />
+      <workItem from="1622670108954" duration="1853000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -216,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622637309046</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: global server connection">
+      <created>1622640491501</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622640491501</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +241,8 @@
     <MESSAGE value="fix: package import errors" />
     <MESSAGE value="feat: first move" />
     <MESSAGE value="feat: create global layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create global layout" />
+    <MESSAGE value="feat: global server connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: global server connection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

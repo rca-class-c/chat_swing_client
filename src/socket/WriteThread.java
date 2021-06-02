@@ -55,6 +55,7 @@ public class WriteThread extends Thread {
             ResponseDataSuccessDecoder response = new UserResponseDataDecoder().decodedResponse(reader.readLine());
             data = objectMapper.readTree(response.getData());
             socket.close();
+            return data;
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }

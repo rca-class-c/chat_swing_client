@@ -18,6 +18,7 @@ public class IndexSocket {
             System.out.println();
 
             data = new socket.WriteThread(socket, this,new Request()).run(socket);
+            return data;
         } catch (UnknownHostException ex) {
             System.out.println("Server not found");
         } catch (IOException ex) {
