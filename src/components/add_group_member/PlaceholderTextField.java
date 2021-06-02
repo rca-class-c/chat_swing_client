@@ -5,16 +5,16 @@ import javax.swing.*;
 import javax.swing.text.Document;
 @SuppressWarnings("serial")
 public class PlaceholderTextField extends JTextField {
-    public static void main(final String[] args) {
-        final PlaceholderTextField tf = new PlaceholderTextField("");
-        tf.setColumns(20);
-        tf.setPlaceholder("Add a comment!");
-        final Font f = tf.getFont();
-        tf.setFont(new Font(f.getName(), f.getStyle(), 15));
-        JOptionPane.showMessageDialog(null, tf);
-    }
+//    public static void main(final String[] args) {
+////        final PlaceholderTextField tf = new PlaceholderTextField("");
+////        tf.setColumns(20);
+////        tf.setPlaceholder("Add a comment!");
+////        final Font f = tf.getFont();
+////        tf.setFont(new Font(f.getName(), f.getStyle(), 15));
+////        JOptionPane.showMessageDialog(null, tf);
+//    }
     private String placeholder;
-    
+
     public PlaceholderTextField() {
     }
     public PlaceholderTextField(final String pText) {

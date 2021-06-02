@@ -15,13 +15,15 @@ import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.geom.AffineTransform;
 import java.io.File;
 import java.io.IOException;
 
 public class AddGroupMembers extends JFrame {
-    private JTextField jtf;
-    private JLabel searchLbl;
     private TableModel model;
     private JTable table;
     private TableRowSorter sorter;
@@ -64,7 +66,7 @@ public class AddGroupMembers extends JFrame {
         midPanel.setLayout(new BorderLayout(0, 0));
         midPanel.setBorder(new EmptyBorder(25, 25, 0, 25));
         String[] columnNames = {"Name", "Action"};
-        Object[][] rowData = {{"Uwikoreye dada" },{"Umudjama didi"},{"Kalisa diane"},{"Umudjama didi"},{"Kalisa diane"},{"Majyane benji"},{"Majyane benji"},{"Jai kamari"}};
+        Object[][] rowData = {{"Uwikoreye dada","Add" },{"Umudjama didi","Add"},{"Kalisa diane","Add"},{"Umudjama didi","Add"},{"Kalisa diane","Add"},{"Majyane benji","Add"},{"Majyane benji","Add"},{"Jai kamari","Add"}};
         model = new DefaultTableModel(rowData, columnNames);
         sorter = new TableRowSorter<>(model);
         table = new JTable(model);
@@ -72,13 +74,18 @@ public class AddGroupMembers extends JFrame {
         table.setIntercellSpacing(new Dimension(0, 0));
         table.setShowGrid(false);
         table.setRowSorter(sorter);
+        table.setDefaultEditor(Object.class, null);
+
+
 //        setLayout(new FlowLayout(FlowLayout.CENTER));
 
-        table.getColumn("Action").setCellRenderer(new ButtonRenderer());
+//        table.getColumn("Action").setCellRenderer(new ButtonRenderer());
+        table.getColumnModel().getColumn(1).setCellRenderer(new ButtonRenderer());
+        table.getColumnModel().getColumn(1).setCellEditor(new ButtonEditor(new JTextField()));
 
         table.setTableHeader(null);
-         jsp = new JScrollPane(table);
-         jsp.setBorder(null);
+        jsp = new JScrollPane(table);
+        jsp.setBorder(null);
 
 
         JScrollBar sb=jsp.getVerticalScrollBar();
@@ -124,6 +131,84 @@ public class AddGroupMembers extends JFrame {
         frame.setResizable(false);
         frame.setVisible(true);
     }
+
+    class ButtonEditor extends DefaultCellEditor
+    {
+        protected JButton btn;
+        private String lbl;
+        private Boolean clicked;
+
+        public ButtonEditor(JTextField txt) {
+            super(txt);
+
+            btn=new JButton();
+            btn.setOpaque(true);
+
+            //WHEN BUTTON IS CLICKED
+            btn.addActionListener(new ActionListener() {
+
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                    fireEditingStopped();
+                }
+            });
+        }
+
+        //OVERRIDE A COUPLE OF METHODS
+        @Override
+        public Component getTableCellEditorComponent(JTable table, Object obj,
+                                                     boolean selected, int row, int col) {
+
+            //SET TEXT TO BUTTON,SET CLICKED TO TRUE,THEN RETURN THE BTN OBJECT
+            lbl=(obj==null) ? "":obj.toString();
+            btn.setText(lbl);
+            clicked=true;
+            return btn;
+        }
+
+        //IF BUTTON CELL VALUE CHNAGES,IF CLICKED THAT IS
+        @Override
+        public Object getCellEditorValue() {
+
+            if(clicked)
+            {
+                //SHOW US SOME MESSAGE
+
+
+                table.addMouseListener(new MouseAdapter() {
+                    public void mouseClicked(MouseEvent e) {
+                        if (e.getClickCount() == 1) {
+                            JTable target = (JTable)e.getSource();
+                            int row = target.getSelectedRow();
+                            int column = target.getSelectedColumn();
+                            Object ob = table.getModel().getValueAt(row, 0);
+                            System.out.println("Value = "+ob);
+                            JOptionPane.showMessageDialog(btn, " user added");
+                        }
+                    }
+                });
+            }
+            //SET IT TO FALSE NOW THAT ITS CLICKED
+            clicked=false;
+            return new String(lbl);
+        }
+
+        @Override
+        public boolean stopCellEditing() {
+
+            //SET CLICKED TO FALSE FIRST
+            clicked=false;
+            return super.stopCellEditing();
+        }
+
+        @Override
+        protected void fireEditingStopped() {
+            // TODO Auto-generated method stub
+            super.fireEditingStopped();
+        }
+    }
+
     public static void main(String[] args) {
         new AddGroupMembers();
     }
@@ -175,18 +260,22 @@ class MyScrollbarUI extends BasicScrollBarUI {
 
 }
 
-class ButtonRenderer extends JButton implements TableCellRenderer {
+//BUTTON RENDERER CLASS
+class ButtonRenderer extends JButton implements  TableCellRenderer
+{
+
+    //CONSTRUCTOR
     public ButtonRenderer() {
-//        setOpaque(true);
-        setBackground(Color.decode("#011638"));
-        setForeground(Color.decode("#C9F7F5"));
+        //SET BUTTON PROPERTIES
+        setOpaque(true);
     }
-    public Component getTableCellRendererComponent(JTable table, Object value,boolean isSelected, boolean hasFocus, int row, int column) {
-        setText((value == null) ? "Add" : value.toString());
+    @Override
+    public Component getTableCellRendererComponent(JTable table, Object obj, boolean selected, boolean focused, int row, int col) {
+
+        //SET PASSED OBJECT AS BUTTON TEXT
+        setText((obj==null) ? "":obj.toString());
+
         return this;
     }
+
 }
-
-
-
-
