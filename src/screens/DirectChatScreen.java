@@ -8,6 +8,10 @@ import java.awt.*;
 public class DirectChatScreen extends JFrame {
 
     int yVerticalCounter = 10;
+    JPanel chatHeaderPanel = new JPanel();
+    JPanel chatBodyPanel = new JPanel();
+    JPanel chatFooterPanel = new JPanel();
+
     DirectChatScreen() {
         this.setTitle("Chat Screen");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -47,9 +51,7 @@ public class DirectChatScreen extends JFrame {
     }
 
     public void ChatAreaUI(JPanel panel) {
-        JPanel chatHeaderPanel = new JPanel();
-        JPanel chatBodyPanel = new JPanel();
-        JPanel chatFooterPanel = new JPanel();
+
 
         ChatHeaderUI(chatHeaderPanel);
         ChatBodyUI(chatBodyPanel);
@@ -72,7 +74,7 @@ public class DirectChatScreen extends JFrame {
 
     public void ChatBodyUI(JPanel panel) {
         panel.setLayout(null);
-        panel.setBounds(0,60, 1050,2000);
+        panel.setBounds(0,60, 1050,600);
 
         panel.setBackground( Color.decode("#F5F9FF"));
         MessageUI(panel, "INCOMING", "18:00AM", "TEST");
@@ -81,14 +83,30 @@ public class DirectChatScreen extends JFrame {
         MessageUI(panel, "OUTGOING", "18:00AM", "TEST");
         MessageUI(panel, "INCOMING", "18:00AM", "TEST");
         MessageUI(panel, "INCOMING", "18:00AM", "TEST");
+
+//        ChatFooterUI(chatFooterPanel);
     }
 
 
     public void ChatFooterUI(JPanel panel) {
         panel.setLayout(null);
-        panel.setBounds(0,0, 850,10);
-        panel.setBackground(Color.MAGENTA);
+        panel.setBounds(20,20, 810,900);
+        panel.setBackground(Color.blue);
 
+        WrietMessageUI(panel);
+
+    }
+
+    public void WrietMessageUI(JPanel panel) {
+        JTextField writeMessageTextField = new JTextField();
+        writeMessageTextField.setLayout(null);
+
+
+        writeMessageTextField.setBounds( 0, yVerticalCounter + 50, 740, 36);
+        writeMessageTextField.setBounds(null);
+        writeMessageTextField.setText("try here");
+
+        panel.add(writeMessageTextField);
     }
 
     public void MessageUI(JPanel panel, String type, String time, String message) {
@@ -103,7 +121,7 @@ public class DirectChatScreen extends JFrame {
             messagePanel.setBounds(20,(yVerticalCounter + 20),400,30);
         }
         else if (type.equals("OUTGOING")) {
-            timePanel.setBounds(430, yVerticalCounter,80,20);
+            timePanel.setBounds(425, yVerticalCounter,80,20);
             messagePanel.setBounds(430,(yVerticalCounter + 20),400,30);
         }
 
@@ -112,7 +130,8 @@ public class DirectChatScreen extends JFrame {
 
         Font timeLabelFont = timeLabel.getFont();
 // bold
-        timeLabel.setFont(timeLabelFont.deriveFont(f.getStyle() | Font.BOLD));
+        timeLabel.setForeground(Color.decode("#CCCCCC"));
+        timeLabel.setFont(timeLabelFont.deriveFont(timeLabelFont.getStyle() | Font.PLAIN));
 
         timePanel.add(timeLabel, BorderLayout.CENTER);
 //        messageLabel.setBorder(new EmptyBorder(0,10,0,0));
@@ -124,12 +143,12 @@ public class DirectChatScreen extends JFrame {
 
         //TODO: Use Custom Font
 
-
-
         panel.add(timePanel);
         panel.add(messagePanel);
 
         yVerticalCounter += 70;
+
+
 
     }
 }
