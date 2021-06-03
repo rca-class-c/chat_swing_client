@@ -127,6 +127,7 @@ public class Dashboard extends JFrame {
                 (Border) new CustomBorder(),
                 new EmptyBorder(new Insets(15,25,15,25))
         ));
+
         logs.setIcon(userLogs);
         logs.setBackground(Color.decode("#FFFFFF"));
         logs.setForeground(Color.decode("#F5F9FF"));
