@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="New: Successfully managed to insert a DirectChatScreen in Our Chat system client layout.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/UserResponseDataDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UserResponseDataDecoder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/IndexSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/IndexSocket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1rsqxAdQnboMv4hDFA3Yhg9URPU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -239,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622752992189</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="New: Successfully managed to insert a DirectChatScreen in Our Chat system client layout.">
+      <created>1622756729657</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622756729657</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

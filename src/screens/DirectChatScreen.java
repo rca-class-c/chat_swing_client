@@ -1,10 +1,12 @@
 package screens;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import components.DirectMessages.HeaderScreen;
 import components.navbar.SidebarDemo;
 import models.*;
 import simplifiers.RequestSimplifiers;
 import socket.IndexSocket;
+import utils.ChatBetweenTwo;
 import utils.CommonUtil;
 
 import javax.swing.*;
@@ -14,6 +16,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
 
 public class DirectChatScreen extends JFrame {
 
@@ -62,15 +67,17 @@ public class DirectChatScreen extends JFrame {
 
     public void ChatAreaUI(JPanel panel) {
 
+try {
+    ChatHeaderUI(chatHeaderPanel);
+    ChatBodyUI(chatBodyPanel);
+    ChatFooterUI(chatFooterPanel);
 
-        ChatHeaderUI(chatHeaderPanel);
-        ChatBodyUI(chatBodyPanel);
-        ChatFooterUI(chatFooterPanel);
-
-         panel.add(chatHeaderPanel);
-        panel.add(chatBodyPanel, BorderLayout.WEST);
-          panel.add(chatFooterPanel);
-
+    panel.add(chatHeaderPanel);
+    panel.add(chatBodyPanel, BorderLayout.WEST);
+    panel.add(chatFooterPanel);
+} catch (Exception e) {
+    e.printStackTrace();
+}
     }
 
 
@@ -90,7 +97,7 @@ public class DirectChatScreen extends JFrame {
     }
 
 
-    public void ChatBodyUI(JPanel panel) {
+    public void ChatBodyUI(JPanel panel) throws JsonProcessingException {
         panel.setLayout(null);
         panel.setBounds(0,60, 1050,600);
 
@@ -116,13 +123,30 @@ public class DirectChatScreen extends JFrame {
 //            System.out.println("failed to fetch users in the given group");
 //        }
         panel.setBackground( Color.decode("#F5F9FF"));
-        MessageUI(panel, "INCOMING", "18:00AM", "TEST");
-        MessageUI(panel, "OUTGOING", "18:00AM", "TEST");
-        MessageUI(panel, "OUTGOING", "18:00AM", "TEST");
-        MessageUI(panel, "OUTGOING", "18:00AM", "TEST");
-        MessageUI(panel, "INCOMING", "18:00AM", "TEST");
-        MessageUI(panel, "INCOMING", "18:00AM", "TEST");
 
+        String  key= "messages/direct";
+        Request request = new Request(new ChatBetweenTwo(2,1),key);
+        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+        System.out.println(response.isSuccess());
+        System.out.println("Res Data" + response.getData());
+
+        Messages[] messages = new UserResponseDataDecoder().returnMessagesListDecoded(response.getData());
+        messages = subArray(messages, 7, messages.length);
+
+        System.out.println(messages[0].toString());
+
+        for (Messages message: messages) {
+            //TODO: GET LOGGED IN ID
+            //TODO: Show subarray messages
+
+            if (message == null) {
+                if (message.getSender() == 2)
+                    MessageUI(panel, "OUTGOING", message.getSent_at(), message.getContent());
+                else
+                    MessageUI(panel, "INCOMING", message.getSent_at(), message.getContent());
+            }
+
+        }
 //        ChatFooterUI(chatFooterPanel);
     }
 
@@ -198,7 +222,7 @@ public class DirectChatScreen extends JFrame {
 
     }
 
-    public void MessageUI(JPanel panel, String type, String time, String message) {
+    public void MessageUI(JPanel panel, String type, Date time, String message) {
         JPanel timePanel = new JPanel(new BorderLayout(60,20));
         JPanel messagePanel = new JPanel(new BorderLayout(30,4));
 
@@ -214,7 +238,7 @@ public class DirectChatScreen extends JFrame {
             messagePanel.setBounds(430,(yVerticalCounter + 20),400,30);
         }
 
-        JLabel timeLabel = new JLabel("18:00am");
+        JLabel timeLabel = new JLabel(time.toString());
         JLabel messageLabel = new JLabel();
 
         Font timeLabelFont = timeLabel.getFont();
@@ -226,7 +250,7 @@ public class DirectChatScreen extends JFrame {
 //        messageLabel.setBorder(new EmptyBorder(0,10,0,0));
 
         messagePanel.setBorder(BorderFactory.createEmptyBorder(5, 15, 5, 15));
-        messageLabel.setText("Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat");
+        messageLabel.setText(message);
 
         if (type.equals("INCOMING")) {
             messageLabel.setForeground(Color.decode("#3E4965"));
@@ -257,4 +281,7 @@ public class DirectChatScreen extends JFrame {
 //    public static void main(String[] args) {
 //        new DirectChatScreen();
 //    }
+public static<T> T[] subArray(T[] array, int beg, int end) {
+    return Arrays.copyOfRange(array, beg, end + 1);
+}
 }
