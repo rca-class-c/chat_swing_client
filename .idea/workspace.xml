@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/ChatIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/ChatIndex.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatIndex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +173,7 @@
       <workItem from="1622626896607" duration="8454000" />
       <workItem from="1622632303182" duration="12027000" />
       <workItem from="1622663110031" duration="1669000" />
-      <workItem from="1622698727698" duration="5021000" />
+      <workItem from="1622698727698" duration="6405000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -248,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622632480016</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Feat: Getting all groups">
+      <created>1622705186426</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622705186426</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +282,8 @@
     <MESSAGE value="feat: first move" />
     <MESSAGE value="feat: create global layout" />
     <MESSAGE value="Fix: Image display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: Image display" />
+    <MESSAGE value="Feat: Getting all groups" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: Getting all groups" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

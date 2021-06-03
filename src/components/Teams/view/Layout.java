@@ -164,7 +164,7 @@ public class Layout {
     }
     public void cardInfo() throws IOException {
         String key= "groups/";
-        Request request = new Request(new ProfileRequestData(2), key);
+        Request request = new Request(new ProfileRequestData(4), key);
         ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
 
 
@@ -215,7 +215,6 @@ public class Layout {
         groupInfoFirstPanelEditButton = new JButton("Edit");
         groupInfoFirstPanelDeleteButton = new JButton("Delete");
 
-        groupNameLabel = new JLabel("Java");
         groupNameLabel.setBounds(200,0,0,0);
         groupInforFirstPanelTop.add(groupNameLabel);
         groupInfoFirstPanelEditButton.setBackground(Color.decode("#011638"));
