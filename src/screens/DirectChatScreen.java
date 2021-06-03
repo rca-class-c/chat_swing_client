@@ -1,6 +1,7 @@
 package screens;
 
 import components.DirectMessages.HeaderScreen;
+import components.navbar.SidebarDemo;
 import models.*;
 import simplifiers.RequestSimplifiers;
 import socket.IndexSocket;
@@ -10,6 +11,9 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class DirectChatScreen extends JFrame {
 
@@ -90,11 +94,12 @@ public class DirectChatScreen extends JFrame {
         panel.setLayout(null);
         panel.setBounds(0,60, 1050,600);
 
-        String key= "groups/";
-        Request request = new Request(new ProfileRequestData(4), key);
+
+
+//        Messages[] messages = new MessageResponseDataDecoder().returnDecodedMessage();
 //
-        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
-        System.out.println("Response"+ response.getData());
+//        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+//        System.out.println("Response"+ response.getData());
 //        if(response.isSuccess()){
 //            Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
 //            CommonUtil.addTabs(10, true);
@@ -136,9 +141,10 @@ public class DirectChatScreen extends JFrame {
         writeMessageTextField.setLayout(null);
 
 
-        writeMessageTextField.setBounds( 0, yVerticalCounter + 50, 740, 36);
+        writeMessageTextField.setBounds( 0, yVerticalCounter + 50, 700, 36);
         writeMessageTextField.setBorder(new EmptyBorder(0, 10, 0, 10));
-        writeMessageTextField.setText("try here");
+        writeMessageTextField.setText("Send Message");
+
 //
 //        Icon imageIcon = new ImageIcon(this.getClass().getResource("../assets/profile.png"));
 ////        Image image = imageIcon.getImage();
@@ -154,12 +160,35 @@ public class DirectChatScreen extends JFrame {
 //
 //        iconPanel.setBackground(Color.RED);
 
-        JButton btn = new JButton("4");
+        JButton btn = new JButton("Send");
+        btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String key = "messages/send/direct";
+                // TODO: Message Id refining
+                Messages message = new Messages(0, 4, 7, 0, writeMessageTextField.getText());
+                Request request = new Request(message, key);
+//                System.out.println("Request "+request.getData());
+                ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+                System.out.println(response.isSuccess());
+                if (response.isSuccess()) writeMessageTextField.setText("Send Message");
+               }
+        });
+
+
+//        if(response.isSuccess()){
+//            this.dispose();
+//            try {
+//                new SidebarDemo();
+//            } catch (IOException ioException) {
+//                ioException.printStackTrace();
+//            }
+//        }
         btn.setLayout(null);
 
 
 
-        btn.setBounds( 750, yVerticalCounter + 50, 50, 36);
+        btn.setBounds( 750, yVerticalCounter + 50, 90, 36);
 //        btn.setBorder(new EmptyBorder(0, 10, 0, 10));
 
 

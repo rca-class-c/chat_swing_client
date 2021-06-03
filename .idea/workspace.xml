@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="New: Successfully managed to insert a DirectChatScreen in Our Chat system client layout.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/assets/clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/assets/message.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/assets/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/DirectMessages/HeaderScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/GroupMessages/HeaderScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/chat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/classC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/logout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/user-group.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DirectMessages/HeaderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DirectMessages/HeaderScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Forms/form/ActivationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/ActivationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/IndexSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/IndexSocket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622737703343</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="New: Successfully managed to insert a DirectChatScreen in Our Chat system client layout.">
+      <created>1622752992188</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622752992189</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +266,8 @@
     <MESSAGE value="text border radius added" />
     <MESSAGE value="Modified Groups and Friends" />
     <MESSAGE value="fix: space error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: space error" />
+    <MESSAGE value="New: Successfully managed to insert a DirectChatScreen in Our Chat system client layout." />
+    <option name="LAST_COMMIT_MESSAGE" value="New: Successfully managed to insert a DirectChatScreen in Our Chat system client layout." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
