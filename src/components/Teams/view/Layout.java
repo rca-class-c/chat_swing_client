@@ -12,9 +12,7 @@ public class Layout {
     private JFrame window;
     private Container container;
     private JPanel mainPanel;
-    private JPanel sidePanel;
     private JPanel teamsPanel;
-    private JPanel friendsPanel;
     private JPanel headerPanel;
     private JPanel teamsDescPanel;
     private JPanel cardsMainPanel;
@@ -59,33 +57,22 @@ public class Layout {
         mainPanel = new JPanel();
         container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
         mainLayout();
-        window.setSize(1200, 750);
+        window.setSize(750, 750);
         window.setLocationRelativeTo(null);
         window.setVisible(true);
     }
-    public void mainLayout() throws IOException {
-        mainPanel.setPreferredSize(new Dimension(1200, 750));
-        sidePanel = new JPanel(new FlowLayout(SwingConstants.PREVIOUS, 10, 10));
+    public JPanel mainLayout() throws IOException {
+        mainPanel.setPreferredSize(new Dimension(750, 750));
         teamsPanel = new JPanel(new FlowLayout(SwingConstants.HORIZONTAL, 10, 10));
-        friendsPanel = new JPanel(new FlowLayout(SwingConstants.LEADING, 10, 10));
-        sidePanel.setPreferredSize(new Dimension(200, 750));
         teamsPanel.setPreferredSize(new Dimension(750, 750));
-        friendsPanel.setPreferredSize(new Dimension(200, 750));
-        friendsPanel.setBackground(Color.decode("#E5E5E5"));
-        mainPanel.add(sidePanel);
         mainPanel.add(teamsPanel);
-        mainPanel.add(friendsPanel);
-        sidebar();
         cardsLayout();
-        mainPanel.setSize(1200, 750);
+        mainPanel.setSize(750, 750);
+        mainPanel.setLocation(203,0);
         container.add(mainPanel);
+        return mainPanel;
     }
-    public void sidebar() {
-        JLabel label = new JLabel("Side bar");
-        sidePanel.add(label);
-        sidePanel.setBackground(Color.WHITE);
 
-    }
     public void cardsLayout() throws IOException {
         groupInfoPanel = new JPanel(new FlowLayout(SwingConstants.LEADING,10,10));
         teamsGeneralPanel = new JPanel(new FlowLayout(SwingConstants.LEADING,10,10));
