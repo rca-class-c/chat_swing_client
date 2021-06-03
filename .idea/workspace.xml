@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="Fix: Image display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/TeamsCreated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/Babins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/Peterson.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/adeline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/bugu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/curl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/cyrus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/kalisa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/kami.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/ruby.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/imgs/webgub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/view/Layout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/view/assets/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/GenerateFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/GenerateFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/SideBarListItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/SideBarListItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +40,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1rsqxAdQnboMv4hDFA3Yhg9URPU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -43,7 +63,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/codes/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -124,9 +150,9 @@
       <list>
         <item itemvalue="Application.AddGroupMembers" />
         <item itemvalue="Application.ChatIndex" />
-        <item itemvalue="Application.gui" />
-        <item itemvalue="Application.RegisterForm" />
-        <item itemvalue="Application.SidebarDemo" />
+        <item itemvalue="Application.CreatePanel" />
+        <item itemvalue="Application.Settings" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -157,11 +183,11 @@
       <workItem from="1622598574397" duration="55000" />
       <workItem from="1622598679082" duration="1780000" />
       <workItem from="1622626896607" duration="8454000" />
-      <workItem from="1622628161991" duration="4586000" />
-      <workItem from="1622648587409" duration="293000" />
-      <workItem from="1622648924977" duration="406000" />
-      <workItem from="1622649372799" duration="1222000" />
-      <workItem from="1622719335865" duration="11901000" />
+      <workItem from="1622632303182" duration="12027000" />
+      <workItem from="1622717765759" duration="7354000" />
+      <workItem from="1622709436075" duration="2256000" />
+      <workItem from="1622712398649" duration="94000" />
+      <workItem from="1622713056995" duration="8118000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
