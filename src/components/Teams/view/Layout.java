@@ -1,5 +1,10 @@
 package components.Teams.view;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import models.*;
+import socket.IndexSocket;
+import utils.CommonUtil;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -48,7 +53,7 @@ public class Layout {
     private JLabel groupNameThirdLabel;
     private JButton editButton;
     private JButton deleteButton;
-
+    public int userId;
     public Layout() throws IOException {
         window = new JFrame("Teams Created");
         container = window.getContentPane();
@@ -85,7 +90,7 @@ public class Layout {
         searchTeam.setText("search a team");
         searchTeam.setForeground(Color.decode("#CCCCCC"));
         searchTeam.setPreferredSize(new Dimension(1, 25));
-        BufferedImage img = ImageIO.read(new File("src\\assets\\clear.png"));
+        BufferedImage img = ImageIO.read(new File("src/components/Teams/view/assets/clear.png"));
         searchbg = new ImageIcon(img.getScaledInstance(20, 20, BufferedImage.SCALE_DEFAULT));
         JLabel imageLabel = new JLabel();
         imageLabel.setIcon(searchbg);
@@ -156,6 +161,25 @@ public class Layout {
         cardInfo();
     }
     public void cardInfo() throws IOException {
+        String key= "groups/";
+        Request request = new Request(new ProfileRequestData(4), key);
+        //get all group in the system
+        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+        if(response.isSuccess()){
+            Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
+            CommonUtil.addTabs(10, true);
+            if (groups.length != 0){
+                for(int i=0; i<groups.length; i++){
+                    groupNameLabel = new JLabel(groups[0].getName());
+                    groupNameSecondLabel = new JLabel(groups[1].getName());
+                    groupNameThirdLabel = new JLabel(groups[2].getName());
+                }
+            }else{
+                System.out.println("Request failed in this group");
+            }
+        }else {
+            System.out.println("failed to fetch users in the given group");
+        }
         groupInfoSubPanel = new JPanel(new FlowLayout(SwingConstants.LEADING,10,10));
         groupInfoFirstSubPanel = new JPanel(new FlowLayout(SwingConstants.LEADING));
         groupInfoSecondSubPanel = new JPanel(new FlowLayout(SwingConstants.LEADING));
@@ -183,7 +207,6 @@ public class Layout {
         groupInfoFirstPanelEditButton = new JButton("Edit");
         groupInfoFirstPanelDeleteButton = new JButton("Delete");
 
-        groupNameLabel = new JLabel("Java");
         groupNameLabel.setBounds(200,0,0,0);
         groupInforFirstPanelTop.add(groupNameLabel);
         groupInfoFirstPanelEditButton.setBackground(Color.decode("#011638"));
@@ -199,7 +222,7 @@ public class Layout {
         groupInfoFirstSubPanelBottom.add(groupInfoFirstPanelEditButton);
         groupInfoFirstSubPanelBottom.add(groupInfoFirstPanelDeleteButton);
 
-        BufferedImage img = ImageIO.read(new File("src\\assets\\message.png"));
+        BufferedImage img = ImageIO.read(new File("src/components/Teams/view/assets/message.png"));
         ImageIcon icon = new ImageIcon(img.getScaledInstance(25,25,BufferedImage.SCALE_DEFAULT));
         JLabel imageLabel = new JLabel();
         imageLabel.setIcon(icon);
@@ -212,9 +235,7 @@ public class Layout {
         groupInfoFirstSubPanel.add(groupInfoFirstSubPanelBottom);
 
 
-        groupNameSecondLabel = new JLabel("Java");
-
-        BufferedImage secondImage = ImageIO.read(new File("src\\assets\\message.png"));
+        BufferedImage secondImage = ImageIO.read(new File("src/components/Teams/view/assets/message.png"));
         ImageIcon icon1 = new ImageIcon(secondImage.getScaledInstance(25,25,BufferedImage.SCALE_DEFAULT));
         JLabel imageSecondLabel = new JLabel();
         imageSecondLabel.setIcon(icon1);
@@ -241,13 +262,9 @@ public class Layout {
         groupInfoSecondSubPanel.add(groupInfoSecondSubPanelBottom);
         groupInfoSecondSubPanelTop.add(imageSecondLabel);
 
-
-
-
         groupInfoThirdPanelEditButton = new JButton("Edit");
         groupInfoThirdPanelDeleteButton = new JButton("Delete");
 
-        groupNameThirdLabel = new JLabel("Java");
         groupNameThirdLabel.setBounds(200,0,0,0);
         groupInfoThirdSubPanelTop.add(groupNameThirdLabel);
         groupInfoThirdPanelEditButton.setBackground(Color.decode("#011638"));
@@ -262,7 +279,7 @@ public class Layout {
         groupInfoThirdSubPanelBottom.add(groupInfoThirdPanelEditButton);
         groupInfoThirdSubPanelBottom.add(groupInfoThirdPanelDeleteButton);
 
-        BufferedImage thirdImage = ImageIO.read(new File("src\\assets\\message.png"));
+        BufferedImage thirdImage = ImageIO.read(new File("src/components/Teams/view/assets/message.png"));
         ImageIcon thirdIcon = new ImageIcon(thirdImage.getScaledInstance(25,25,BufferedImage.SCALE_DEFAULT));
         JLabel thirdLabel = new JLabel();
         thirdLabel.setIcon(thirdIcon);
@@ -273,8 +290,6 @@ public class Layout {
         groupInfoThirdSubPanel.setBackground(Color.decode("#F3F6F9"));
         groupInfoThirdSubPanel.add(groupInfoThirdSubPanelTop);
         groupInfoThirdSubPanel.add(groupInfoThirdSubPanelBottom);
-
-
 
 
         groupInfoThirdSubPanel.add(groupInfoThirdSubPanelTop);
@@ -289,9 +304,7 @@ public class Layout {
     }
 
     private Image scaleImage(Image image, int w, int h) {
-
         Image scaled = image.getScaledInstance(w, h, Image.SCALE_SMOOTH);
-
         return scaled;
     }
 }
