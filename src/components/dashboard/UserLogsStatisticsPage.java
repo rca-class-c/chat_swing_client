@@ -12,7 +12,7 @@ public class UserLogsStatisticsPage extends JFrame{
 
 
     public UserLogsStatisticsPage() throws IOException {
-        setTitle("Message Statistics");
+        setTitle("User logs report");
         setSize(1200, 700);
         setMinimumSize(new Dimension(800,600));
         initUI();
@@ -27,34 +27,37 @@ public class UserLogsStatisticsPage extends JFrame{
         mainPanel.setBackground(new Color(229, 229, 229));
         JPanel tablePanel = new JPanel();
         tablePanel.setBackground(new Color(229, 229, 229));
-        JPanel chartPanel = new JPanel();
-        chartPanel.setBackground(new Color(229, 229, 229));
 
         BoxLayout tableLayout = new BoxLayout(tablePanel, BoxLayout.Y_AXIS);
         tablePanel.setLayout(tableLayout);
 
-        BoxLayout chartLayout = new BoxLayout(chartPanel, BoxLayout.Y_AXIS);
-        chartPanel.setLayout(chartLayout);
 
         this.addTable(tablePanel);
-        this.addChart(chartPanel);
 
 
         mainPanel.add(this.header(), BorderLayout.NORTH);
-        mainPanel.add(tablePanel, BorderLayout.WEST);
-        mainPanel.add(chartPanel, BorderLayout.EAST);
+        mainPanel.add(tablePanel, BorderLayout.CENTER);
         this.add(mainPanel);
     }
 
     public void addTable(JPanel panel){
         String[][] data = {
-                { "2021-01-23", "4031"},
-                { "2021-01-24", "6014" },
-                { "2021-01-25", "4031"},
-                { "2021-01-26", "6014" }
+                { "2021-01-23", "joined channel"},
+                { "2021-01-24", "changed profile" },
+                { "2021-01-25", "joined system"},
+                { "2021-01-26", "deleted channel" },
+                { "2021-01-26", "modified profile" },
+                { "2021-01-26", "modified channel" },
+                { "2021-01-26", "modified channel" },
+                { "2021-01-26", "modified channel" },
+                { "2021-01-26", "modified channel" },
+                { "2021-01-26", "modified channel" },
+                { "2021-01-26", "modified channel" },
+                { "2021-01-26", "modified channel" },
+                { "2021-01-26", "modified channel" },
         };
 
-        String[] columnNames = { "Date", "Messages" };
+        String[] columnNames = { "Date", "activity" };
 
         JScrollPane sp = new JScrollPane(new TableComponent(data,columnNames));
 
@@ -64,22 +67,6 @@ public class UserLogsStatisticsPage extends JFrame{
         sp.setBackground(new Color(229, 229, 229));
         tablePanel.setBackground(new Color(229, 229, 229));
         panel.add(tablePanel);
-    }
-    private CategoryDataset createDataset() {
-
-        var dataset = new DefaultCategoryDataset();
-        dataset.setValue(46, "Gold medals", "USA");
-        dataset.setValue(38, "Gold medals", "China");
-        dataset.setValue(29, "Gold medals", "UK");
-        dataset.setValue(22, "Gold medals", "Russia");
-        dataset.setValue(13, "Gold medals", "South Korea");
-        dataset.setValue(11, "Gold medals", "Germany");
-
-        return dataset;
-    }
-    public void addChart(JPanel panel){
-        BarchartComponent chart = new BarchartComponent("Message Sent across the system",this.createDataset(),"Number of messages");
-        panel.add(chart);
     }
 
     public JPanel header(){
