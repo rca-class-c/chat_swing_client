@@ -1,4 +1,7 @@
+package components.Teams;
+
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
 import java.awt.*;
 public class TeamsCreated extends JFrame
@@ -22,9 +25,9 @@ public class TeamsCreated extends JFrame
 
         // the table
 
-        table = new JTable();
+        JTable table = new JTable();
         Object[] columns ={"Teams","Members", "Creator", "Description", ""};
-        DefaultTableModel model = new DefaultTableMOdel();
+        DefaultTableModel model = new DefaultTableModel();
 
         model.setColumnIdentifiers(columns);
         table.setModel(model);
