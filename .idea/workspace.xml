@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: edit message component">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundJTextField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedDateField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedPasswordField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$buttonActionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$textKeyListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/PlaceholderTextField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/NewPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/SideBarListItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/SidebarDemo.class" beforeDir="false" />
-    </list>
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="Modified Groups and Friends" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621936867050</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modified Groups and Friends">
+      <created>1622737264042</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622737264042</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +216,8 @@
     <MESSAGE value="edit message component" />
     <MESSAGE value="user settings component added" />
     <MESSAGE value="text border radius added" />
-    <option name="LAST_COMMIT_MESSAGE" value="text border radius added" />
+    <MESSAGE value="Modified Groups and Friends" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified Groups and Friends" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -33,6 +33,8 @@ class Group extends JFrame {
     private JLabel friendsLabel;
     private JLabel imhgLabel;
 
+
+
     /**
      * Launch the application.
      */
