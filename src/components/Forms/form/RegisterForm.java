@@ -7,6 +7,7 @@ import models.Request;
 import models.ResponseDataSuccessDecoder;
 import models.User;
 import models.UserResponseDataDecoder;
+import socket.IndexSocket;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -211,31 +212,26 @@ public class RegisterForm extends JFrame implements ActionListener {
                 String password = passwordField.getText();
                 String email = emailField.getText();
 
-                ObjectMapper objectMapper = new ObjectMapper();
                 User user = new User(firstName,lastName,password,email,dob,userName,gender,1,"ACTIVE");
                 String key = "users/register";
                 Request request = new Request(user,key);
+                ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
 
 
-                PrintWriter writer=null;
-                BufferedReader reader = null;
-                String requestAsString = null;
-                try {
-                    requestAsString = objectMapper.writeValueAsString(request);
-                } catch (JsonProcessingException jsonProcessingException) {
-                    jsonProcessingException.printStackTrace();
-                }
-                writer.println(requestAsString);
 
-                ResponseDataSuccessDecoder response = null;
-                try {
-                    response = new UserResponseDataDecoder().decodedResponse(reader.readLine());
-                } catch (IOException ioException) {
-                    ioException.printStackTrace();
-                }
+
+
+
                 if(response.isSuccess()){
                     System.out.println("Your account was created successfully");
-                   // new UserView(client.getUserid(),writer,reader).viewOptions();
+                    try {
+                        new LoginForm();
+                    } catch (IOException ioException) {
+                        ioException.printStackTrace();
+                    }
+
+
+                    // new UserView(client.getUserid(),writer,reader).viewOptions();
                 }
                 else{
                     System.out.println("Account not created, Try again plz!");

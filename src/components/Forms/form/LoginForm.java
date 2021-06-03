@@ -1,5 +1,9 @@
 package components.Forms.form;
 import components.navbar.SidebarDemo;
+import models.AuthInput;
+import models.Request;
+import models.ResponseDataSuccessDecoder;
+import socket.IndexSocket;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -129,6 +133,7 @@ public class LoginForm extends JFrame implements ActionListener{
         formPanel.setBackground(Color.WHITE);
         mainPanel.add(formPanel);
         add(mainPanel);
+
 
     }
 
