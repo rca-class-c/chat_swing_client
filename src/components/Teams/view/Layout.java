@@ -90,7 +90,7 @@ public class Layout {
         searchTeam.setText("search a team");
         searchTeam.setForeground(Color.decode("#CCCCCC"));
         searchTeam.setPreferredSize(new Dimension(1, 25));
-        BufferedImage img = ImageIO.read(new File("src\\assets\\clear.png"));
+        BufferedImage img = ImageIO.read(new File("src/components/Teams/view/assets/clear.png"));
         searchbg = new ImageIcon(img.getScaledInstance(20, 20, BufferedImage.SCALE_DEFAULT));
         JLabel imageLabel = new JLabel();
         imageLabel.setIcon(searchbg);
@@ -228,7 +228,7 @@ public class Layout {
         groupInfoFirstSubPanelBottom.add(groupInfoFirstPanelEditButton);
         groupInfoFirstSubPanelBottom.add(groupInfoFirstPanelDeleteButton);
 
-        BufferedImage img = ImageIO.read(new File("src\\assets\\message.png"));
+        BufferedImage img = ImageIO.read(new File("src/components/Teams/view/assets/message.png"));
         ImageIcon icon = new ImageIcon(img.getScaledInstance(25,25,BufferedImage.SCALE_DEFAULT));
         JLabel imageLabel = new JLabel();
         imageLabel.setIcon(icon);
@@ -243,7 +243,7 @@ public class Layout {
 
 //        groupNameSecondLabel = new JLabel("Java");
 
-        BufferedImage secondImage = ImageIO.read(new File("src\\assets\\message.png"));
+        BufferedImage secondImage = ImageIO.read(new File("src/components/Teams/view/assets/message.png"));
         ImageIcon icon1 = new ImageIcon(secondImage.getScaledInstance(25,25,BufferedImage.SCALE_DEFAULT));
         JLabel imageSecondLabel = new JLabel();
         imageSecondLabel.setIcon(icon1);
@@ -291,7 +291,7 @@ public class Layout {
         groupInfoThirdSubPanelBottom.add(groupInfoThirdPanelEditButton);
         groupInfoThirdSubPanelBottom.add(groupInfoThirdPanelDeleteButton);
 
-        BufferedImage thirdImage = ImageIO.read(new File("src\\assets\\message.png"));
+        BufferedImage thirdImage = ImageIO.read(new File("src/components/Teams/view/assets/message.png"));
         ImageIcon thirdIcon = new ImageIcon(thirdImage.getScaledInstance(25,25,BufferedImage.SCALE_DEFAULT));
         JLabel thirdLabel = new JLabel();
         thirdLabel.setIcon(thirdIcon);

@@ -1,6 +1,7 @@
 package components.navbar;
 
 import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 
 public class GenerateFrame {
@@ -13,6 +14,7 @@ public class GenerateFrame {
         frame.setSize(1920, 900);
         frame.setVisible(true);
         frame.add(body);
+        body.setBackground(Color.WHITE);
         frame.add(sidebar);
         frame.setResizable(true);
     }
