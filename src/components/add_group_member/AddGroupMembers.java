@@ -24,12 +24,14 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 public class AddGroupMembers extends JFrame {
     private TableModel model;
     private JTable table;
     private TableRowSorter sorter;
     private JScrollPane jsp;
+    private ArrayList<User> groupMembers;
 
     public AddGroupMembers() throws IOException {
         //calling request from the server
@@ -46,6 +48,7 @@ public class AddGroupMembers extends JFrame {
                 for (User user : users) {
                     System.out.println(user.getUserID()+". "+user.getFname()+" "+user.getLname());
                     CommonUtil.addTabs(10, false);
+//                    groupMembers.add(user);
                 }
             }else{
                 System.out.println("No user found in this group");
@@ -92,6 +95,7 @@ public class AddGroupMembers extends JFrame {
         midPanel.setBorder(new EmptyBorder(25, 25, 0, 25));
         String[] columnNames = {"Name", "Action"};
         Object[][] rowData = {{"Uwikoreye dada","Add" },{"Umudjama didi","Add"},{"Kalisa diane","Add"},{"Umudjama didi","Add"},{"Kalisa diane","Add"},{"Majyane benji","Add"},{"Majyane benji","Add"},{"Jai kamari","Add"}};
+
         model = new DefaultTableModel(rowData, columnNames);
         sorter = new TableRowSorter<>(model);
         table = new JTable(model);
@@ -243,8 +247,8 @@ class MyScrollbarUI extends BasicScrollBarUI {
     private Image imageThumb, imageTrack;
     MyScrollbarUI() {
         try {
-            imageThumb = ImageIO.read(new File("C:\\Users\\DELL\\Documents\\java\\codes\\test\\Rectangle_1.png"));
-            imageTrack = ImageIO.read(new File("C:\\Users\\DELL\\Documents\\java\\codes\\test\\Rectangle.png"));
+            imageThumb = ImageIO.read(new File("C:\\Users\\DELL\\Documents\\GitHub\\chat_swing_client\\src\\assets\\Rectangle_1.png"));
+            imageTrack = ImageIO.read(new File("C:\\Users\\DELL\\Documents\\GitHub\\chat_swing_client\\src\\assets\\Rectangle.png"));
         } catch (IOException e){}
     }
 
