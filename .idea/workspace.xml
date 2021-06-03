@@ -1,38 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/CustomBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/DirectMessages/HeaderScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/EditMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/GroupMessages/HeaderScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/InputBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/RoundedBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/TeamsCreated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/PlaceholderTextField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/gui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/SideBarListItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/view/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/view/assets/clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/view/assets/message.png" beforeDir="false" />
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="edit message component">
+      <change afterPath="$PROJECT_DIR$/lib/gnujaxp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jcommon-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jfreechart-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/UserLogsStatisticsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ChartDirector.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/MessagesStatisticsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/MessagesStatisticsPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,40 +47,40 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TERM 2/Revision" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.side.proportion" value="0.3095685" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager" selected="Application.ChatIndex">
-    <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ChatIndex" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\tuyishime\classc\chat_swing_client\lib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="components.dashboard" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MessagesStatisticsPage">
+    <configuration name="BarchartComponent (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BarchartComponent" />
       <module name="chat_swing_client" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ChatIndex" />
-      <module name="chat_swing_client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
+    <configuration name="BarchartComponent (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.dashboard.BarchartComponent" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Teams.view.*" />
+          <option name="PATTERN" value="components.dashboard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
+    <configuration name="BarchartComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.dashboard.BarchartComponent" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Teams.view.*" />
+          <option name="PATTERN" value="components.dashboard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +101,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Forms.form.RegisterForm" />
+    <configuration name="BarchartComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BarchartComponent" />
+      <module name="chat_swing_client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessagesStatisticsPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.dashboard.MessagesStatisticsPage" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.*" />
+          <option name="PATTERN" value="components.dashboard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,30 +121,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.gui" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.dashboard.test" />
       <module name="chat_swing_client" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.dashboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ChatIndex" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.gui" />
-        <item itemvalue="Application.RegisterForm" />
+        <item itemvalue="Application.MessagesStatisticsPage" />
+        <item itemvalue="Application.BarchartComponent (2)" />
+        <item itemvalue="Application.BarchartComponent" />
+        <item itemvalue="Application.BarchartComponent" />
+        <item itemvalue="Application.BarchartComponent (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -169,18 +160,9 @@
       <workItem from="1620714203212" duration="42000" />
       <workItem from="1620714273117" duration="415000" />
       <workItem from="1620672305351" duration="88000" />
-      <workItem from="1620723689881" duration="714000" />
-      <workItem from="1620724454927" duration="429000" />
-      <workItem from="1620763994291" duration="12000" />
-      <workItem from="1621942357030" duration="514000" />
-      <workItem from="1621943641317" duration="55000" />
-      <workItem from="1622439005076" duration="725000" />
-      <workItem from="1622557800043" duration="1265000" />
-      <workItem from="1622567105880" duration="3703000" />
-      <workItem from="1622598574397" duration="55000" />
-      <workItem from="1622598679082" duration="1780000" />
-      <workItem from="1622626896607" duration="8454000" />
-      <workItem from="1622632303182" duration="12027000" />
+      <workItem from="1621943504741" duration="201000" />
+      <workItem from="1622665999187" duration="6694000" />
+      <workItem from="1622697094666" duration="1336000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -203,56 +185,7 @@
       <option name="project" value="LOCAL" />
       <updated>1619978379541</updated>
     </task>
-    <task id="LOCAL-00004" summary="user settings component added">
-      <created>1620571278252</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1620571278252</updated>
-    </task>
-    <task id="LOCAL-00005" summary="text border radius added">
-      <created>1621936867050</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1621936867050</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: add shared models on client side">
-      <created>1622600245153</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1622600245153</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fix: package import errors">
-      <created>1622600394525</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1622600394525</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: first move">
-      <created>1622636394247</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1622636394247</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: create global layout">
-      <created>1622637309046</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1622637309046</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fix: Image display">
-      <created>1622632480016</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1622632480016</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,14 +208,7 @@
     <MESSAGE value="start with intell" />
     <MESSAGE value="calma mi alma" />
     <MESSAGE value="edit message component" />
-    <MESSAGE value="user settings component added" />
-    <MESSAGE value="text border radius added" />
-    <MESSAGE value="feat: add shared models on client side" />
-    <MESSAGE value="fix: package import errors" />
-    <MESSAGE value="feat: first move" />
-    <MESSAGE value="feat: create global layout" />
-    <MESSAGE value="Fix: Image display" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: Image display" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit message component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
