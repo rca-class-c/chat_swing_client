@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: user logs chat panel">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: disable cell auto editable">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/TableComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/TableComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/UserLogsStatisticsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/UserLogsStatisticsPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,19 +165,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserLogsStatisticsPage" />
@@ -218,7 +209,8 @@
       <workItem from="1622713056995" duration="8378000" />
       <workItem from="1622751530883" duration="102000" />
       <workItem from="1622751691048" duration="1544000" />
-      <workItem from="1622753338703" duration="757000" />
+      <workItem from="1622753338703" duration="1482000" />
+      <workItem from="1622754897374" duration="532000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -325,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622753857537</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: disable cell auto editable">
+      <created>1622754270042</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1622754270042</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +357,8 @@
     <MESSAGE value="navigation through navbar(sidebar)" />
     <MESSAGE value="navigation through sidebar" />
     <MESSAGE value="feat: user logs chat panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: user logs chat panel" />
+    <MESSAGE value="feat: disable cell auto editable" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: disable cell auto editable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

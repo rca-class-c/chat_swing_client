@@ -57,7 +57,7 @@ public class UserLogsStatisticsPage extends JFrame{
                 { "2021-01-26", "modified channel" },
         };
 
-        String[] columnNames = { "Date", "activity" };
+        String[] columnNames = { "Date", "Activity" };
 
         JScrollPane sp = new JScrollPane(new TableComponent(data,columnNames));
 
