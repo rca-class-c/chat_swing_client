@@ -1,5 +1,10 @@
 package components.Teams.view;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import models.*;
+import socket.IndexSocket;
+import utils.CommonUtil;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -50,7 +55,7 @@ public class Layout {
     private JLabel groupNameThirdLabel;
     private JButton editButton;
     private JButton deleteButton;
-
+    public int userId;
     public Layout() throws IOException {
         window = new JFrame("Teams Created");
         container = window.getContentPane();
@@ -158,6 +163,31 @@ public class Layout {
         cardInfo();
     }
     public void cardInfo() throws IOException {
+        String key= "groups/";
+        Request request = new Request(new ProfileRequestData(2), key);
+        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+
+
+        if(response.isSuccess()){
+            Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
+            CommonUtil.addTabs(10, true);
+            System.out.println("Groups "+groups);;
+            if (groups.length != 0){
+
+                for (Group group : groups) {
+                    groupNameLabel =new JLabel(group.getName());
+                    System.out.println(group.getId()+". "+group.getName()+" "+group.getDescription());
+                    CommonUtil.addTabs(10, false);
+                }
+            }else{
+                System.out.println("Request failed in this group");
+
+            }
+        }else {
+            System.out.println("failed to fetch users in the given group");
+        }
+
+
         groupInfoSubPanel = new JPanel(new FlowLayout(SwingConstants.LEADING,10,10));
         groupInfoFirstSubPanel = new JPanel(new FlowLayout(SwingConstants.LEADING));
         groupInfoSecondSubPanel = new JPanel(new FlowLayout(SwingConstants.LEADING));
