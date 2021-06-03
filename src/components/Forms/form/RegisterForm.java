@@ -21,7 +21,7 @@ import java.io.PrintWriter;
 
 public class RegisterForm extends JFrame implements ActionListener {
 
-
+    private ActionListener action;
     private static final Color themeColor = Color.decode("#011638");
 
 
@@ -201,9 +201,8 @@ public class RegisterForm extends JFrame implements ActionListener {
         formPanel.setBackground(Color.WHITE);
         mainPanel.add(formPanel);
         add(mainPanel);
-        registerBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+
+        registerBtn.addActionListener(e -> {
                 String userName = userNameField.getText();
                 String firstName = firstNameField.getText();
                 String lastName = lastNameField.getText();
@@ -217,13 +216,9 @@ public class RegisterForm extends JFrame implements ActionListener {
                 Request request = new Request(user,key);
                 ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
 
-
-
-
-
-
                 if(response.isSuccess()){
                     System.out.println("Your account was created successfully");
+                    this.dispose();
                     try {
                         new LoginForm();
                     } catch (IOException ioException) {
@@ -238,7 +233,7 @@ public class RegisterForm extends JFrame implements ActionListener {
 //                    Component.alertDangerErrorMessage(11, "Account not created, try again!");
                 }
 
-            }
+
         });
 
 

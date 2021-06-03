@@ -63,14 +63,6 @@ public class LoginForm extends JFrame implements ActionListener{
 
         loginButton.setBackground(themeColor);
        loginButton.setForeground(Color.WHITE);
-        loginButton.addActionListener(e -> {
-            this.dispose();
-            try {
-                new SidebarDemo();
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
-            }
-        });
 
         JPanel signupLabelPanel = new JPanel(new BorderLayout());
         JPanel helpPanel = new JPanel(new BorderLayout());
@@ -133,6 +125,37 @@ public class LoginForm extends JFrame implements ActionListener{
         formPanel.setBackground(Color.WHITE);
         mainPanel.add(formPanel);
         add(mainPanel);
+
+        loginButton.addActionListener(e -> {
+
+
+            String username = userTextField.getText();
+            String password = passwordField.getText();
+
+
+            AuthInput loginData = new AuthInput(username,password);
+            String url = "users/login";
+            Request request = new Request(loginData,url);
+            ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+            if(response.isSuccess()){
+                this.dispose();
+                try {
+                    new SidebarDemo();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+
+            else{
+                this.dispose();
+                try {
+                    new LoginForm();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+
+        });
 
 
     }
