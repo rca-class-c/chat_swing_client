@@ -12,9 +12,7 @@ public class Layout {
     private JFrame window;
     private Container container;
     private JPanel mainPanel;
-    private JPanel sidePanel;
     private JPanel teamsPanel;
-    private JPanel friendsPanel;
     private JPanel headerPanel;
     private JPanel teamsDescPanel;
     private JPanel cardsMainPanel;

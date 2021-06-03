@@ -1,4 +1,4 @@
-package design;
+package components;
 
 import javax.swing.border.Border;
 import java.awt.*;
