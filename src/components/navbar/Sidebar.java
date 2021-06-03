@@ -8,7 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
-
 public class Sidebar extends JPanel {
     private JFrame frame;
     public Sidebar(JFrame frame) throws IOException {
