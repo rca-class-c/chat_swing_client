@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="fix: frame dispose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Forms/form/ActivationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/ActivationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Forms/form/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/RegisterForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,17 +165,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ChatIndex" />
@@ -224,6 +207,7 @@
       <workItem from="1622709436075" duration="2256000" />
       <workItem from="1622712398649" duration="94000" />
       <workItem from="1622713056995" duration="8378000" />
+      <workItem from="1622749804649" duration="149000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -330,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622737789388</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix: frame dispose">
+      <created>1622744197507</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1622744197516</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -16,8 +16,6 @@ import java.io.IOException;
 
 public class ActivationForm extends JFrame implements ActionListener{
 
-
-
     private static final Color themeColor = Color.decode("#011638");
     JLabel activationLabel = new JLabel("Activation Code ");
     JTextField activationField = new JTextField();
