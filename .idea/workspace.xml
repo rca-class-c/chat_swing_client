@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="Modified Groups and Friends" />
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="fix: space error">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622737264042</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix: space error">
+      <created>1622737703343</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622737703343</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +226,8 @@
     <MESSAGE value="user settings component added" />
     <MESSAGE value="text border radius added" />
     <MESSAGE value="Modified Groups and Friends" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified Groups and Friends" />
+    <MESSAGE value="fix: space error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: space error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
