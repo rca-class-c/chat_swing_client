@@ -3,14 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EditMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Teams/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/assets/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/assets/message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/assets/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/DirectMessages/HeaderScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/GroupMessages/HeaderScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/Select.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/classC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/user-group.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DirectMessages/HeaderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DirectMessages/HeaderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forms/form/ActivationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/ActivationForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DirectChatScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/IndexSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/IndexSocket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,7 +76,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.EditMessage">
+  <component name="RunManager" selected="Application.ChatIndex">
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
       <module name="chat_swing_client" />
@@ -138,21 +169,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EditMessage" />
         <item itemvalue="Application.ChatIndex" />
+        <item itemvalue="Application.EditMessage" />
         <item itemvalue="Application.CreatePanel" />
         <item itemvalue="Application.Main" />
       </list>
@@ -263,7 +296,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/components/EditMessage.java</url>
-          <line>8</line>
+          <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

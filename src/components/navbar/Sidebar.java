@@ -3,6 +3,7 @@ package components.navbar;
 
 import components.Teams.create.CreatePanel;
 import components.Teams.view.Layout;
+import screens.DirectChatScreen;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -86,7 +87,7 @@ public class Sidebar extends JPanel {
         });
 
          JButton chat = new SideBarListItem("chat.png", "Chat");
-        chat.setActionCommand("Chatting");
+        chat.setActionCommand("messaging");
        JLabel label2 = new JLabel("Hello from chatting");
        label2.setVisible(false);
         chat.addActionListener(e-> {
@@ -170,6 +171,11 @@ public class Sidebar extends JPanel {
                 System.out.println("chat action listener");
                 frame.dispose();
                 new GenerateFrame(new CreatePanel().returnPanel());
+            }
+            case "messaging" -> {
+                System.out.println("chat action listener");
+                frame.dispose();
+                new GenerateFrame(new DirectChatScreen().export());
             }
             case "settings" -> {
                 System.out.println("settings action listener");

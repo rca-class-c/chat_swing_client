@@ -1,5 +1,11 @@
 package screens;
 
+import components.DirectMessages.HeaderScreen;
+import models.*;
+import simplifiers.RequestSimplifiers;
+import socket.IndexSocket;
+import utils.CommonUtil;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
@@ -11,8 +17,11 @@ public class DirectChatScreen extends JFrame {
     JPanel chatHeaderPanel = new JPanel();
     JPanel chatBodyPanel = new JPanel();
     JPanel chatFooterPanel = new JPanel();
+    JPanel leftPanel = new JPanel();
+    JPanel centerPanel = new JPanel();
+    JPanel rightPanel = new JPanel();
 
-    DirectChatScreen() {
+    public DirectChatScreen() {
         this.setTitle("Chat Screen");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(1000, 700);
@@ -27,9 +36,6 @@ public class DirectChatScreen extends JFrame {
     }
 
     public void UI() {
-        JPanel leftPanel = new JPanel();
-        JPanel centerPanel = new JPanel();
-        JPanel rightPanel = new JPanel();
 
         leftPanel.setLayout(null);
         leftPanel.setBounds(0,0, 200,2000);
@@ -65,9 +71,17 @@ public class DirectChatScreen extends JFrame {
 
 
     public void ChatHeaderUI(JPanel panel) {
-        panel.setLayout(null);
-        panel.setBounds(0,0, 850,60);
-        panel.setBackground(Color.green);
+        try {
+
+
+            panel.setLayout(null);
+            panel.setBounds(0, 0, 850, 60);
+            panel.setBackground(Color.green);
+//            new HeaderScreen().export();
+            //TODO: Add Header Screen to chat
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -76,6 +90,26 @@ public class DirectChatScreen extends JFrame {
         panel.setLayout(null);
         panel.setBounds(0,60, 1050,600);
 
+        String key= "groups/";
+        Request request = new Request(new ProfileRequestData(4), key);
+//
+        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+        System.out.println("Response"+ response.getData());
+//        if(response.isSuccess()){
+//            Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
+//            CommonUtil.addTabs(10, true);
+//            if (groups.length != 0){
+//                for(int i=0; i<groups.length; i++){
+//                    groupNameLabel = new JLabel(groups[0].getName());
+//                    groupNameSecondLabel = new JLabel(groups[1].getName());
+//                    groupNameThirdLabel = new JLabel(groups[2].getName());
+//                }
+//            }else{
+//                System.out.println("Request failed in this group");
+//            }
+//        }else {
+//            System.out.println("failed to fetch users in the given group");
+//        }
         panel.setBackground( Color.decode("#F5F9FF"));
         MessageUI(panel, "INCOMING", "18:00AM", "TEST");
         MessageUI(panel, "OUTGOING", "18:00AM", "TEST");
@@ -105,25 +139,33 @@ public class DirectChatScreen extends JFrame {
         writeMessageTextField.setBounds( 0, yVerticalCounter + 50, 740, 36);
         writeMessageTextField.setBorder(new EmptyBorder(0, 10, 0, 10));
         writeMessageTextField.setText("try here");
+//
+//        Icon imageIcon = new ImageIcon(this.getClass().getResource("../assets/profile.png"));
+////        Image image = imageIcon.getImage();
+////
+////        Image newimg = image.getScaledInstance(200, 200,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way
+////        imageIcon = new ImageIcon(newimg);
+//
+//        JPanel iconPanel = new JPanel();
+//
+//        JLabel label = new JLabel(imageIcon);
+//        iconPanel.setLayout(null);
+//        iconPanel.setBounds( 400, 500, 40, 36);
+//
+//        iconPanel.setBackground(Color.RED);
 
-        ImageIcon image = new ImageIcon("src/images/upload-file.svg");
+        JButton btn = new JButton("4");
+        btn.setLayout(null);
 
 
-        JLabel jLabel = new JLabel();
 
-        jLabel.setIcon(image);
-        jLabel.setHorizontalTextPosition(JLabel.LEFT);
-        jLabel.setLayout(null);
-        jLabel.setBounds(70, 700, 500, 300);
-        jLabel.setVerticalTextPosition(JLabel.TOP);
-        jLabel.setFont(new Font("MV Boli", Font.BOLD, 12));
-        jLabel.setIconTextGap(10);
-        jLabel.setForeground(new Color(255, 255, 255));
-        jLabel.setVerticalAlignment(JLabel.CENTER);
-        jLabel.setHorizontalAlignment(JLabel.CENTER);
+        btn.setBounds( 750, yVerticalCounter + 50, 50, 36);
+//        btn.setBorder(new EmptyBorder(0, 10, 0, 10));
+
 
         panel.add(writeMessageTextField);
-        panel.add(jLabel);
+//        panel.add(iconPanel);
+        panel.add(btn);
 
     }
 
@@ -178,4 +220,12 @@ public class DirectChatScreen extends JFrame {
 
 
     }
+    public JPanel export() {
+        return centerPanel;
+    }
+
+
+//    public static void main(String[] args) {
+//        new DirectChatScreen();
+//    }
 }
