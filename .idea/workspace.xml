@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar/GenerateFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/IndexSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/IndexSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Layout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/NewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/NewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +40,33 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TERM 2/Revision" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="AddGroupMembers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.add_group_member.AddGroupMembers" />
+  <component name="RunManager" selected="Application.ChatIndex">
+    <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatIndex" />
+      <module name="chat_swing_client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.add_group_member.*" />
+          <option name="PATTERN" value="components.Teams.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,6 +130,7 @@
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.AddGroupMembers" />
         <item itemvalue="Application.ChatIndex" />
+        <item itemvalue="Application.SidebarDemo" />
         <item itemvalue="Application.gui" />
         <item itemvalue="Application.RegisterForm" />
       </list>
@@ -153,10 +163,7 @@
       <workItem from="1622598574397" duration="55000" />
       <workItem from="1622598679082" duration="1780000" />
       <workItem from="1622626896607" duration="8454000" />
-      <workItem from="1622628161991" duration="4586000" />
-      <workItem from="1622648587409" duration="293000" />
-      <workItem from="1622648924977" duration="406000" />
-      <workItem from="1622649372799" duration="1222000" />
+      <workItem from="1622632303182" duration="12027000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -221,12 +228,12 @@
       <option name="project" value="LOCAL" />
       <updated>1622637309046</updated>
     </task>
-    <task id="LOCAL-00010" summary="feat: get users from server">
-      <created>1622650388849</created>
+    <task id="LOCAL-00010" summary="Fix: Image display">
+      <created>1622632480016</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1622650388849</updated>
+      <updated>1622632480016</updated>
     </task>
     <option name="localTasksCounter" value="11" />
     <servers />
@@ -257,8 +264,8 @@
     <MESSAGE value="fix: package import errors" />
     <MESSAGE value="feat: first move" />
     <MESSAGE value="feat: create global layout" />
-    <MESSAGE value="feat: get users from server" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: get users from server" />
+    <MESSAGE value="Fix: Image display" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: Image display" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
