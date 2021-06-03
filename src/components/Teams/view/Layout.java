@@ -165,7 +165,6 @@ public class Layout {
         Request request = new Request(new ProfileRequestData(4), key);
         ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
 
-
         if(response.isSuccess()){
             Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
             CommonUtil.addTabs(10, true);
@@ -177,12 +176,7 @@ public class Layout {
                     groupNameSecondLabel = new JLabel(groups[1].getName());
                     groupNameThirdLabel = new JLabel(groups[2].getName());
                 }
-//                for (Group group : groups) {
-//                    groupNameSecondLabel = new JLabel(group.getName());
-//                    groupNameLabel =new JLabel(group.getName());
-////                    System.out.println(group.getId()+". "+group.getName()+" "+group.getDescription());
-//                    CommonUtil.addTabs(10, false);
-//                }
+
             }else{
                 System.out.println("Request failed in this group");
 
