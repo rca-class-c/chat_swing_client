@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/models/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/codes/test" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -155,7 +161,7 @@
       <workItem from="1622648587409" duration="293000" />
       <workItem from="1622648924977" duration="406000" />
       <workItem from="1622649372799" duration="1222000" />
-      <workItem from="1622719335865" duration="8649000" />
+      <workItem from="1622719335865" duration="11901000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -227,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622650388849</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: create group members">
+      <created>1622734567460</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622734567460</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +270,8 @@
     <MESSAGE value="feat: first move" />
     <MESSAGE value="feat: create global layout" />
     <MESSAGE value="feat: get users from server" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: get users from server" />
+    <MESSAGE value="feat: create group members" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create group members" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -11,10 +11,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.plaf.basic.BasicScrollBarUI;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableModel;
-import javax.swing.table.TableRowSorter;
+import javax.swing.table.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -39,7 +36,7 @@ public class AddGroupMembers extends JFrame {
         //calling request from the server
         usersToBeAdded = new ArrayList<>();
         boolean haveMembers=true;
-        String key= "groups/members";
+        String key= "users/";
         Request request = new Request(new ProfileRequestData(1),key);
         ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
         if(response.isSuccess()){
@@ -110,19 +107,12 @@ public class AddGroupMembers extends JFrame {
         model = new DefaultTableModel(rowData, columnNames);
         sorter = new TableRowSorter<>(model);
         table = new JTable(model);
-        table.getColumnModel().getColumn(0).setPreferredWidth(0);
         table.setRowHeight(60);
-        table.setIntercellSpacing(new Dimension(0, 0));
         table.setShowGrid(false);
         table.setRowSorter(sorter);
         table.setDefaultEditor(Object.class, null);
 
-
-
-
 //        setLayout(new FlowLayout(FlowLayout.CENTER));
-
-//        table.getColumn("Action").setCellRenderer(new ButtonRenderer());
         table.getColumnModel().getColumn(2).setCellRenderer(new ButtonRenderer());
         table.getColumnModel().getColumn(2).setCellEditor(new ButtonEditor(new JTextField()));
 
@@ -168,13 +158,13 @@ public class AddGroupMembers extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String key = "groups/members/create";
                 Request request = new Request(new AddMemberRequestData(1, members), key);
-                System.out.println("this is the request to create group member "+request);
                 ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
                 if (response.isSuccess()) {
                     System.out.println("your Group members was created successfully");
                 } else {
                     System.out.println("Group members not created, try again!");
                 }
+                frame.dispose();
             }
         });
 
@@ -187,7 +177,7 @@ public class AddGroupMembers extends JFrame {
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setVisible(true);
-        members= new Integer[usersToBeAdded.size()];
+        members= new Integer[1];
     }
 
     class ButtonEditor extends DefaultCellEditor
