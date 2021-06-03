@@ -8,10 +8,10 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.io.IOException;
 
-public class MessagesStatisticsPage extends JFrame{
+public class UserLogsStatisticsPage extends JFrame{
 
 
-    public MessagesStatisticsPage() throws IOException {
+    public UserLogsStatisticsPage() throws IOException {
         setTitle("Message Statistics");
         setSize(1200, 700);
         setMinimumSize(new Dimension(800,600));
@@ -104,7 +104,7 @@ public class MessagesStatisticsPage extends JFrame{
     }
 
     public static void main(String[] args) throws IOException {
-        new MessagesStatisticsPage();
+        new UserLogsStatisticsPage();
 
 
 
