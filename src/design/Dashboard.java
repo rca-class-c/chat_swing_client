@@ -1,4 +1,6 @@
 package design;
+import design.CustomBorder;
+
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

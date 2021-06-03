@@ -1,4 +1,6 @@
-package components;
+package design;
+
+import components.InputBorder;
 
 import java.awt.*;
 import javax.swing.*;
