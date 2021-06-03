@@ -7,7 +7,7 @@ import java.awt.*;
 public class TeamsCreated extends JFrame
 {
 
-    TeamsCreated()
+    public TeamsCreated()
     {
         super("Teams Created");
         setSize(810, 390);

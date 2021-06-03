@@ -1,14 +1,17 @@
 package components.Teams.create;
 
+import models.Group;
+import models.Request;
+import models.ResponseDataSuccessDecoder;
+import socket.IndexSocket;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 public class CreatePanel {
-    public CreatePanel(){
-
-    }
     public JPanel returnPanel(){
         Border border = BorderFactory.createLineBorder(Color.BLACK);
         JButton btn = new JButton("Save Group");
@@ -59,6 +62,16 @@ public class CreatePanel {
         panel.setSize(750, 750);
         panel.setLocation(400,20);
 
+
+        btn.addActionListener(ActionListener->{
+            String name = textField.getText();
+            String description = textArea.getText();
+            Group newGroup = new Group(name,description,4);
+            String key = "groups/new";
+            Request request = new Request(newGroup,key);
+            ResponseDataSuccessDecoder responseDataSuccessDecoder = new IndexSocket().execute(request);
+            System.out.println(responseDataSuccessDecoder);
+        });
         panel.add(header);
         panel.add(namePanel);
         panel.add(textPanel);
