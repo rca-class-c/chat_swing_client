@@ -1,16 +1,30 @@
 package components.dashboard;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import models.*;
 import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.category.DefaultCategoryDataset;
+import socket.IndexSocket;
+import utils.CommonUtil;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 public class UserLogsStatisticsPage extends JFrame{
 
-
+   private enum Days {
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
     public UserLogsStatisticsPage() throws IOException {
         setTitle("Message Statistics");
         setSize(1200, 700);
@@ -22,7 +36,7 @@ public class UserLogsStatisticsPage extends JFrame{
 
     }
 
-    public void initUI(){
+    public void initUI() throws JsonProcessingException {
         JPanel mainPanel = new JPanel(new BorderLayout());
         mainPanel.setBackground(new Color(229, 229, 229));
         JPanel tablePanel = new JPanel();
@@ -45,14 +59,45 @@ public class UserLogsStatisticsPage extends JFrame{
         mainPanel.add(chartPanel, BorderLayout.EAST);
         this.add(mainPanel);
     }
+    public  List<List> data() throws JsonProcessingException {
+        String key= "stats/messages/daily";
 
-    public void addTable(JPanel panel){
-        String[][] data = {
-                { "2021-01-23", "4031"},
-                { "2021-01-24", "6014" },
-                { "2021-01-25", "4031"},
-                { "2021-01-26", "6014" }
-        };
+        Request request = new Request(null, key);
+        //get all group in the system
+        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+        if (response.isSuccess()){
+            List<List> reports = new Reports().returnreport(response.getData());
+            return  reports;
+        }
+
+        return  null;
+
+    }
+   public  String[][] getdata() throws JsonProcessingException {
+       if (this.data() != null) {
+
+
+           String[][] report;
+           report = new String[this.data().get(0).size()][2];
+           List<List> reports = this.data();
+               if (reports.get(0).size() != 0) {
+                   for (int i = 0; i < reports.get(0).size(); i++) {
+                       report[i][0] = reports.get(0).get(i).toString().replace("message", "");
+                       report[i][1] = reports.get(1).get(i).toString();
+                   }
+               } else {
+                   System.out.println("Request failed in this group");
+               }
+
+           return report;
+       }
+
+       return null;
+
+   }
+    public void addTable(JPanel panel) throws JsonProcessingException {
+        //this.getdata();
+        String[][] data = this.getdata();
 
         String[] columnNames = { "Date", "Messages" };
 
@@ -65,19 +110,24 @@ public class UserLogsStatisticsPage extends JFrame{
         tablePanel.setBackground(new Color(229, 229, 229));
         panel.add(tablePanel);
     }
-    private CategoryDataset createDataset() {
+    private CategoryDataset createDataset() throws JsonProcessingException {
 
         var dataset = new DefaultCategoryDataset();
-        dataset.setValue(46, "Gold medals", "USA");
-        dataset.setValue(38, "Gold medals", "China");
-        dataset.setValue(29, "Gold medals", "UK");
-        dataset.setValue(22, "Gold medals", "Russia");
-        dataset.setValue(13, "Gold medals", "South Korea");
-        dataset.setValue(11, "Gold medals", "Germany");
+        List<List> report = this.data();
+        for (int i = 0;report.get(0).size()>i;i++){
+            dataset.setValue(Double.parseDouble(this.data().get(1).get(i).toString()), "users", Days.values()[i]);
+        }
+//        dataset.setValue(46, "user", "Monday");
+//        dataset.setValue(38, "user", "Tuesday");
+//        dataset.setValue(29, "user", "Wednesday");
+//        dataset.setValue(22, "user", "Thursday");
+//        dataset.setValue(13, "user", "Friday");
+//        dataset.setValue(11, "user", "Saturday");
+//        dataset.setValue(89, "user", "Sunday");
 
         return dataset;
     }
-    public void addChart(JPanel panel){
+    public void addChart(JPanel panel) throws JsonProcessingException {
         BarchartComponent chart = new BarchartComponent("Message Sent across the system",this.createDataset(),"Number of messages");
         panel.add(chart);
     }

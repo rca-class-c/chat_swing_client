@@ -1,5 +1,10 @@
 package models;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.util.List;
+
 /**
  * model for all reports
  * @author damour
@@ -32,5 +37,12 @@ public class Reports {
 
     public void setCreateAt(String createAt) {
         this.createAt = createAt;
+    }
+
+    public List returnreport(String data) throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        List reports = objectMapper.readValue(data, List.class);
+        return reports;
     }
 }
