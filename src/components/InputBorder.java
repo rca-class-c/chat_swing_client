@@ -1,11 +1,11 @@
-package design;
+package components;
 
 import javax.swing.border.Border;
 import java.awt.*;
 
 public class InputBorder implements Border {
     private int radius;
-    InputBorder(int radius) {
+    public InputBorder(int radius) {
         this.radius = radius;
     }
     public Insets getBorderInsets(Component c) {
