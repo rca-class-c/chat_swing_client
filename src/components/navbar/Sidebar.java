@@ -1,11 +1,14 @@
 package components.navbar;
 
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 
 public class Sidebar extends JPanel {
@@ -31,17 +34,8 @@ public class Sidebar extends JPanel {
             });
 
          JPanel chat = new SideBarListItem("chat.png", "Chat");
-        JButton chatting = new JButton("Chatting");
-        chatting.setActionCommand("Chatting");
-       JLabel label1 = new JLabel("Hello from chatting");
-       label1.setVisible(false);
-        chatting.addActionListener(e-> {
-            try {
-                actionListener(e);
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
-            }
-        });
+
+
         JPanel team = new SideBarListItem("user-group.png", "Team");
         JPanel settings = new SideBarListItem("settings.png", "Settings");
         JPanel logout = new SideBarListItem("logout.png", "Logout");
@@ -50,7 +44,6 @@ public class Sidebar extends JPanel {
 //        navBarItems.add(label);
 //        navBarItems.add(label1);
         navBarItems.add(user);
-        navBarItems.add(chatting);
         navBarItems.add(chat);
         navBarItems.add(team);
         navBarItems.add(settings);

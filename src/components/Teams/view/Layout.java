@@ -171,14 +171,20 @@ public class Layout {
         if(response.isSuccess()){
             Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
             CommonUtil.addTabs(10, true);
-            System.out.println("Groups "+groups);;
+
             if (groups.length != 0){
 
-                for (Group group : groups) {
-                    groupNameLabel =new JLabel(group.getName());
-                    System.out.println(group.getId()+". "+group.getName()+" "+group.getDescription());
-                    CommonUtil.addTabs(10, false);
+                for(int i=0; i<groups.length; i++){
+                    groupNameLabel = new JLabel(groups[0].getName());
+                    groupNameSecondLabel = new JLabel(groups[1].getName());
+                    groupNameThirdLabel = new JLabel(groups[2].getName());
                 }
+//                for (Group group : groups) {
+//                    groupNameSecondLabel = new JLabel(group.getName());
+//                    groupNameLabel =new JLabel(group.getName());
+////                    System.out.println(group.getId()+". "+group.getName()+" "+group.getDescription());
+//                    CommonUtil.addTabs(10, false);
+//                }
             }else{
                 System.out.println("Request failed in this group");
 
@@ -243,7 +249,7 @@ public class Layout {
         groupInfoFirstSubPanel.add(groupInfoFirstSubPanelBottom);
 
 
-        groupNameSecondLabel = new JLabel("Java");
+//        groupNameSecondLabel = new JLabel("Java");
 
         BufferedImage secondImage = ImageIO.read(new File("src\\assets\\message.png"));
         ImageIcon icon1 = new ImageIcon(secondImage.getScaledInstance(25,25,BufferedImage.SCALE_DEFAULT));
@@ -278,7 +284,7 @@ public class Layout {
         groupInfoThirdPanelEditButton = new JButton("Edit");
         groupInfoThirdPanelDeleteButton = new JButton("Delete");
 
-        groupNameThirdLabel = new JLabel("Java");
+//        groupNameThirdLabel = new JLabel("Java");
         groupNameThirdLabel.setBounds(200,0,0,0);
         groupInfoThirdSubPanelTop.add(groupNameThirdLabel);
         groupInfoThirdPanelEditButton.setBackground(Color.decode("#011638"));
