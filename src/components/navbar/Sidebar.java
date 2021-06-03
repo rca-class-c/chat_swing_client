@@ -1,6 +1,9 @@
 package components.navbar;
 
 
+import components.Teams.create.CreatePanel;
+import components.Teams.view.Layout;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -43,6 +46,7 @@ public class Sidebar extends JPanel {
             }
         });
         JPanel team = new SideBarListItem("user-group.png", "Team");
+        JPanel new_team = new SideBarListItem("user-group.png", "New Team");
         JPanel settings = new SideBarListItem("settings.png", "Settings");
         JPanel logout = new SideBarListItem("logout.png", "Logout");
         logout.setBorder(new EmptyBorder(200, 0, 0, 0));
@@ -52,7 +56,6 @@ public class Sidebar extends JPanel {
         navBarItems.add(user);
         navBarItems.add(chatting);
         navBarItems.add(chat);
-        navBarItems.add(team);
         navBarItems.add(settings);
         navBarItems.add(logout);
 
@@ -75,7 +78,8 @@ public class Sidebar extends JPanel {
 //            body.add(label);
         }else if(command.equals("Chatting")){
             System.out.println("chat action listener");
-//            body.add(label);
+            frame.dispose();
+            new GenerateFrame(new CreatePanel().returnPanel());
         }else{
             System.out.println("Unknown");
         }

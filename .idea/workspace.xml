@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Teams/define/Layout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Teams/define/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Teams/define/assets/clear.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/teams/create/Layout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/teams/create/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/teams/create/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/teams/create/assets/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TERM 2/Revision" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,7 +54,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.CreatePanel">
+  <component name="RunManager" selected="Application.ChatIndex">
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
       <module name="chat_swing_client" />
@@ -137,9 +134,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.gui" />
+    <configuration name="Settings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Settings" />
       <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CreatePanel" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.ChatIndex" />
+        <item itemvalue="Application.CreatePanel" />
+        <item itemvalue="Application.Settings" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.gui" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +198,7 @@
       <workItem from="1622598679082" duration="1780000" />
       <workItem from="1622626896607" duration="8454000" />
       <workItem from="1622632303182" duration="12027000" />
-      <workItem from="1622717765759" duration="3136000" />
+      <workItem from="1622717765759" duration="7354000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -274,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622684058190</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fix: Image display">
+      <created>1622721078574</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622721078574</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
