@@ -1,13 +1,11 @@
 package components.navbar;
 
-
 import javax.swing.*;
-import java.awt.*;
 import java.io.IOException;
 
-public class Layout {
-    public Layout(JPanel body) throws IOException {
-        JFrame frame = new JFrame("Navbar");
+public class GenerateFrame {
+    public GenerateFrame(JPanel body) throws IOException {
+        JFrame frame = new JFrame();
         JPanel sidebar = new Sidebar(frame);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -17,6 +15,5 @@ public class Layout {
         frame.add(body);
         frame.add(sidebar);
         frame.setResizable(true);
-
     }
 }
