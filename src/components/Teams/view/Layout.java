@@ -36,6 +36,7 @@ public class Layout {
     private JPanel groupInfoSecondSubPanelBottom;
     private JPanel groupInfoThirdSubPanelTop;
     private JPanel groupInfoThirdSubPanelBottom;
+    private JPanel settingPanel;
     private JButton groupInfoFirstPanelEditButton;
     private JButton groupInfoFirstPanelDeleteButton;
     private JButton groupInfoSecondPanelEditButton;

@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-public class Settings extends JFrame {
+public class Settings extends JPanel {
     private JTextField firstname;
     private JTextField lastname;
     private JTextField username;
@@ -47,7 +47,8 @@ public class Settings extends JFrame {
 
             JPanel headerPanel = new JPanel(new GridBagLayout());
             JPanel profilePanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-            profilePanel.setBackground(Color.decode("#F5F9FF"));
+//            profilePanel.setBackground(Color.decode("#F5F9FF"));
+            profilePanel.setBackground(Color.decode("#FFFFFF"));
 
             BufferedImage profileImg = ImageIO.read(new File("src/assets/profile.png"));
             BufferedImage masked = this.resizeImage(profileImg, 190, 200, BufferedImage.TYPE_INT_ARGB);
@@ -83,7 +84,8 @@ public class Settings extends JFrame {
 //            headerPanel.add(remove);
 
             JPanel namesPanel = new JPanel();
-            namesPanel.setBackground(Color.decode("#F5F9FF"));
+//            namesPanel.setBackground(Color.decode("#F5F9FF"));
+            namesPanel.setBackground(Color.decode("#FFFFFF"));
             BoxLayout namesLayout = new BoxLayout(namesPanel, BoxLayout.X_AXIS);
             Box box = Box.createHorizontalBox();
             namesPanel.setLayout(namesLayout);
@@ -114,7 +116,8 @@ public class Settings extends JFrame {
             namesPanel.add(box);
 
             JPanel credentialPanel = new JPanel();
-            credentialPanel.setBackground(Color.decode("#F5F9FF"));
+//            credentialPanel.setBackground(Color.decode("#F5F9FF"));
+            credentialPanel.setBackground(Color.decode("#FFFFFF"));
             BoxLayout credentialLayout = new BoxLayout(credentialPanel, BoxLayout.X_AXIS);
             Box boxC = Box.createHorizontalBox();
             credentialPanel.setLayout(credentialLayout);
@@ -189,7 +192,8 @@ public class Settings extends JFrame {
             formPanel.add(boxV);
 
             JPanel save = new JPanel(new FlowLayout(FlowLayout.RIGHT));
-            save.setBackground(Color.decode("#F5F9FF"));
+//            save.setBackground(Color.decode("#F5F9FF"));
+            save.setBackground(Color.decode("#FFFFFF"));
             save.setSize(10, 32);
             JButton saveBtn = new JButton();
             saveBtn.setText("Save");
@@ -212,15 +216,19 @@ public class Settings extends JFrame {
             gridC.gridy = 1;
             mainPanel.add(formPanel, gridC);
 
-            headerPanel.setBackground(Color.decode("#F5F9FF"));
-            formPanel.setBackground(Color.decode("#F5F9FF"));
-            mainPanel.setBackground(Color.decode("#F5F9FF"));
+//            headerPanel.setBackground(Color.decode("#F5F9FF"));
+//            formPanel.setBackground(Color.decode("#F5F9FF"));
+//            mainPanel.setBackground(Color.decode("#F5F9FF"));
+
+            headerPanel.setBackground(Color.decode("#FFFFFF"));
+            formPanel.setBackground(Color.decode("#FFFFFF"));
+            mainPanel.setBackground(Color.decode("#FFFFFF"));
 
             add(mainPanel);
             setBounds(280, 20, 700, 600);
-            setTitle("Settings");
-            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            setVisible(true);
+//            setTitle("Settings");
+//            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//            setVisible(true);
         }
     }
 
