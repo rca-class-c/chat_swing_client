@@ -131,7 +131,7 @@ try {
         System.out.println("Res Data" + response.getData());
 
         Messages[] messages = new UserResponseDataDecoder().returnMessagesListDecoded(response.getData());
-        messages = subArray(messages, 7, messages.length);
+//        messages = subArray(messages, 7, messages.length);
 
         System.out.println(messages[0].toString());
 
@@ -139,7 +139,7 @@ try {
             //TODO: GET LOGGED IN ID
             //TODO: Show subarray messages
 
-            if (message == null) {
+            if (message != null) {
                 if (message.getSender() == 2)
                     MessageUI(panel, "OUTGOING", message.getSent_at(), message.getContent());
                 else
