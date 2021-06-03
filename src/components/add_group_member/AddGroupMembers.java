@@ -1,5 +1,6 @@
 package components.add_group_member;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import models.*;
 import socket.IndexSocket;
 import utils.CommonUtil;
@@ -10,10 +11,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.plaf.basic.BasicScrollBarUI;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableModel;
-import javax.swing.table.TableRowSorter;
+import javax.swing.table.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,24 +29,24 @@ public class AddGroupMembers extends JFrame {
     private JTable table;
     private TableRowSorter sorter;
     private JScrollPane jsp;
-    private ArrayList<User> groupMembers;
+    private ArrayList<User> usersToBeAdded;
+    private Integer[] members;
 
     public AddGroupMembers() throws IOException {
         //calling request from the server
-
+        usersToBeAdded = new ArrayList<>();
         boolean haveMembers=true;
-        String key= "groups/members";
+        String key= "users/";
         Request request = new Request(new ProfileRequestData(1),key);
         ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
         if(response.isSuccess()){
             User[] users = new UserResponseDataDecoder().returnUsersListDecoded(response.getData());
             CommonUtil.addTabs(10, true);
             if (users.length != 0){
-
                 for (User user : users) {
                     System.out.println(user.getUserID()+". "+user.getFname()+" "+user.getLname());
                     CommonUtil.addTabs(10, false);
-//                    groupMembers.add(user);
+                    usersToBeAdded.add(new User(user.getUserID(),user.getLname()+" "+user.getFname()));
                 }
             }else{
                 System.out.println("No user found in this group");
@@ -57,7 +55,6 @@ public class AddGroupMembers extends JFrame {
         }else {
             System.out.println("failed to fetch users in the given group");
         }
-
 
         JFrame frame = new JFrame();
         JPanel upPanel = new JPanel();
@@ -93,24 +90,31 @@ public class AddGroupMembers extends JFrame {
         frame.getContentPane().add(midPanel, BorderLayout.CENTER);
         midPanel.setLayout(new BorderLayout(0, 0));
         midPanel.setBorder(new EmptyBorder(25, 25, 0, 25));
-        String[] columnNames = {"Name", "Action"};
-        Object[][] rowData = {{"Uwikoreye dada","Add" },{"Umudjama didi","Add"},{"Kalisa diane","Add"},{"Umudjama didi","Add"},{"Kalisa diane","Add"},{"Majyane benji","Add"},{"Majyane benji","Add"},{"Jai kamari","Add"}};
+        String[] columnNames = {"Id","Name", "Action"};
+//        Object[][] rowData = {{"Uwikoreye dada","Add" },{"Umudjama didi","Add"},{"Kalisa diane","Add"},{"Umudjama didi","Add"},{"Kalisa diane","Add"},{"Majyane benji","Add"},{"Majyane benji","Add"},{"Jai kamari","Add"}};
+
+
+        Object[][] rowData = new Object[usersToBeAdded.size()][usersToBeAdded.size()];
+        int length = 0;
+        for (User user : usersToBeAdded) {
+
+            rowData[length] = new Object[]{user.getUserID(),user.getFname(), "Add"};
+            length++;
+
+        }
+
 
         model = new DefaultTableModel(rowData, columnNames);
         sorter = new TableRowSorter<>(model);
         table = new JTable(model);
         table.setRowHeight(60);
-        table.setIntercellSpacing(new Dimension(0, 0));
         table.setShowGrid(false);
         table.setRowSorter(sorter);
         table.setDefaultEditor(Object.class, null);
 
-
 //        setLayout(new FlowLayout(FlowLayout.CENTER));
-
-//        table.getColumn("Action").setCellRenderer(new ButtonRenderer());
-        table.getColumnModel().getColumn(1).setCellRenderer(new ButtonRenderer());
-        table.getColumnModel().getColumn(1).setCellEditor(new ButtonEditor(new JTextField()));
+        table.getColumnModel().getColumn(2).setCellRenderer(new ButtonRenderer());
+        table.getColumnModel().getColumn(2).setCellEditor(new ButtonEditor(new JTextField()));
 
         table.setTableHeader(null);
         jsp = new JScrollPane(table);
@@ -149,6 +153,20 @@ public class AddGroupMembers extends JFrame {
         downPanel.setBackground(Color.white);
         downPanel.setBorder(new EmptyBorder(25, 25, 25, 25));
         JButton done = new JButton("Done");
+        done.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String key = "groups/members/create";
+                Request request = new Request(new AddMemberRequestData(1, members), key);
+                ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+                if (response.isSuccess()) {
+                    System.out.println("your Group members was created successfully");
+                } else {
+                    System.out.println("Group members not created, try again!");
+                }
+                frame.dispose();
+            }
+        });
 
         frame.getContentPane().add(downPanel, BorderLayout.SOUTH);
         downPanel.setLayout(new BorderLayout(0, 0));
@@ -159,6 +177,7 @@ public class AddGroupMembers extends JFrame {
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setVisible(true);
+        members= new Integer[1];
     }
 
     class ButtonEditor extends DefaultCellEditor
@@ -184,6 +203,7 @@ public class AddGroupMembers extends JFrame {
             });
         }
 
+        int index=0;
         //OVERRIDE A COUPLE OF METHODS
         @Override
         public Component getTableCellEditorComponent(JTable table, Object obj,
@@ -213,6 +233,8 @@ public class AddGroupMembers extends JFrame {
                             int column = target.getSelectedColumn();
                             Object ob = table.getModel().getValueAt(row, 0);
                             System.out.println("Value = "+ob);
+                            members[index]= (Integer) ob;
+                            index++;
                             JOptionPane.showMessageDialog(btn, " user added");
                         }
                     }
