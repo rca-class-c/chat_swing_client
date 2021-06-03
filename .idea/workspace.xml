@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,25 +141,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ChatIndex" />
         <item itemvalue="Application.CreatePanel" />
         <item itemvalue="Application.Settings" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
