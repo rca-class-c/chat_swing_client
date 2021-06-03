@@ -19,8 +19,8 @@ public class SideBarListItem extends JButton{
         System.out.println(System.getProperty("user.dir") + "/src/components/navbar/" + imagePath);
         BufferedImage myPicture = ImageIO.read(new File(System.getProperty("user.dir") + "/src/components/navbar/" + imagePath));
         JLabel picLabel = new JLabel(new ImageIcon(myPicture));
-        label.setBorder(new EmptyBorder(50,50,0,0));
-        picLabel.setBorder(new EmptyBorder(50, 0, 0, 23));
+        label.setBorder(new EmptyBorder(35,50,0,0));
+        picLabel.setBorder(new EmptyBorder(35, 0, 0, 23));
         add(picLabel);
         setBackground( Color.white);
         add(label);
