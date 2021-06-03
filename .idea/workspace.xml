@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,11 +169,19 @@
       <workItem from="1622598574397" duration="55000" />
       <workItem from="1622598679082" duration="1780000" />
       <workItem from="1622626896607" duration="8454000" />
+<<<<<<< Updated upstream
       <workItem from="1622632303182" duration="12027000" />
       <workItem from="1622717765759" duration="7354000" />
       <workItem from="1622709436075" duration="2256000" />
       <workItem from="1622712398649" duration="94000" />
       <workItem from="1622713056995" duration="8118000" />
+=======
+      <workItem from="1622628161991" duration="4586000" />
+      <workItem from="1622648587409" duration="293000" />
+      <workItem from="1622648924977" duration="406000" />
+      <workItem from="1622649372799" duration="1222000" />
+      <workItem from="1622719335865" duration="14131000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -240,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622734567460</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix: create group member">
+      <created>1622745816173</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622745816174</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +298,8 @@
     <MESSAGE value="feat: create global layout" />
     <MESSAGE value="feat: get users from server" />
     <MESSAGE value="feat: create group members" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create group members" />
+    <MESSAGE value="fix: create group member" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: create group member" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
