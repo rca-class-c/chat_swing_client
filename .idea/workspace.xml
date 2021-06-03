@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="fix: frame dispose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forms/form/ActivationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/ActivationForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Forms/form/RegisterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/RegisterForm.java" afterDir="false" />
     </list>
@@ -62,6 +66,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Application.ChatIndex">
+    <configuration name="ActivationForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Forms.form.ActivationForm" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.Forms.form.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
       <module name="chat_swing_client" />
@@ -169,9 +186,9 @@
       <list>
         <item itemvalue="Application.ChatIndex" />
         <item itemvalue="Application.RegisterForm" />
+        <item itemvalue="Application.ActivationForm" />
         <item itemvalue="Application.CreatePanel" />
         <item itemvalue="Application.Settings" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622726008818</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix: frame dispose">
+      <created>1622737789388</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1622737789388</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +362,8 @@
     <MESSAGE value="Fix: Image display" />
     <MESSAGE value="navigation through navbar(sidebar)" />
     <MESSAGE value="navigation through sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="navigation through sidebar" />
+    <MESSAGE value="fix: frame dispose" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: frame dispose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

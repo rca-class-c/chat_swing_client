@@ -12,8 +12,7 @@ import socket.IndexSocket;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -84,6 +83,7 @@ public class RegisterForm extends JFrame implements ActionListener {
         confirmPassField.setPreferredSize(new Dimension(200, 25));
         emailField.setPreferredSize(new Dimension(200,25));
         registerBtn.setPreferredSize(new Dimension(120, 30));
+
 
         registerBtn.setForeground(Color.WHITE);
         registerBtn.setBackground(themeColor);
@@ -202,6 +202,19 @@ public class RegisterForm extends JFrame implements ActionListener {
         mainPanel.add(formPanel);
         add(mainPanel);
 
+        signInLabelPanel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        signInLabelPanel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                dispose();
+                try {
+                    new LoginForm();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+        });
+
         registerBtn.addActionListener(e -> {
                 String userName = userNameField.getText();
                 String firstName = firstNameField.getText();
@@ -224,16 +237,10 @@ public class RegisterForm extends JFrame implements ActionListener {
                     } catch (IOException ioException) {
                         ioException.printStackTrace();
                     }
-
-
-                    // new UserView(client.getUserid(),writer,reader).viewOptions();
                 }
                 else{
                     System.out.println("Account not created, Try again plz!");
-//                    Component.alertDangerErrorMessage(11, "Account not created, try again!");
                 }
-
-
         });
 
 

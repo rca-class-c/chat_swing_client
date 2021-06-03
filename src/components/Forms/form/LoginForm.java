@@ -126,6 +126,19 @@ public class LoginForm extends JFrame implements ActionListener{
         mainPanel.add(formPanel);
         add(mainPanel);
 
+        signupLabelPanel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        signupLabelPanel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                dispose();
+                try {
+                    new ActivationForm();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+        });
+
         loginButton.addActionListener(e -> {
 
 
