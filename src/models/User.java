@@ -73,8 +73,6 @@ public class User {
         this.status = status;
     }
 
-
-
     /**
  * Getters and setters for all the fields
  * */

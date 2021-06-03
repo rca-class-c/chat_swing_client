@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="Fix: Image display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/design/InputBorder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/models/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/socket/WriteThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/socket/WriteThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/ChatJava/chat-system-java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -147,11 +148,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ChatIndex" />
-        <item itemvalue="Application.CreatePanel" />
         <item itemvalue="Application.Settings" />
+        <item itemvalue="Application.CreatePanel" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -185,6 +197,8 @@
       <workItem from="1622626896607" duration="8454000" />
       <workItem from="1622632303182" duration="12027000" />
       <workItem from="1622717765759" duration="7354000" />
+      <workItem from="1622715017516" duration="9422000" />
+      <workItem from="1622734778549" duration="5077000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
