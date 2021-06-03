@@ -1,6 +1,12 @@
 package components.Forms.form;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.jdi.connect.spi.Connection;
+import models.Request;
+import models.ResponseDataSuccessDecoder;
+import models.User;
+import models.UserResponseDataDecoder;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -8,9 +14,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class RegisterForm extends JFrame implements ActionListener {
+
+
     private static final Color themeColor = Color.decode("#011638");
 
 
@@ -21,6 +31,8 @@ public class RegisterForm extends JFrame implements ActionListener {
     JLabel dobLabel = new JLabel("Date of Birth");
     JLabel passwordLabel = new JLabel("Password");
     JLabel confirmPassLabel = new JLabel("Confirm password");
+    JLabel emailLabel = new JLabel("Email");
+
 
     JTextField userNameField = new JTextField();
     JTextField firstNameField = new JTextField();
@@ -29,6 +41,7 @@ public class RegisterForm extends JFrame implements ActionListener {
     JTextField dobField = new JTextField();
     JPasswordField passwordField = new JPasswordField();
     JPasswordField confirmPassField = new JPasswordField();
+    JTextField emailField = new JTextField();
 
     JButton registerBtn = new JButton("REGISTER");
     JLabel signInLabel = new JLabel("<html> <font color='#011638'>Already registered?</font>  Sign in.</html>");
@@ -68,6 +81,7 @@ public class RegisterForm extends JFrame implements ActionListener {
         dobField.setPreferredSize(new Dimension(200, 25));
         passwordField.setPreferredSize(new Dimension(200, 25));
         confirmPassField.setPreferredSize(new Dimension(200, 25));
+        emailField.setPreferredSize(new Dimension(200,25));
         registerBtn.setPreferredSize(new Dimension(120, 30));
 
         registerBtn.setForeground(Color.WHITE);
@@ -104,6 +118,9 @@ public class RegisterForm extends JFrame implements ActionListener {
         JPanel confirmPassFieldPanel = new JPanel(new BorderLayout(10, 0));
         confirmPassFieldPanel.setBackground(Color.WHITE);
 
+        JPanel emailFieldPanel = new JPanel(new BorderLayout(90,0));
+        emailFieldPanel.setBackground(Color.WHITE);
+
         JPanel signButtonPanel = new JPanel(new GridBagLayout());
         signButtonPanel.setBackground(Color.WHITE);
 
@@ -138,6 +155,10 @@ public class RegisterForm extends JFrame implements ActionListener {
         confirmPassFieldPanel.add(confirmPassField, BorderLayout.CENTER);
         confirmPassFieldPanel.setBorder(BorderFactory.createEmptyBorder(0, 0, 12, 0));
 
+        emailFieldPanel.add(emailLabel,BorderLayout.WEST);
+        emailFieldPanel.add(emailField, BorderLayout.CENTER);
+        emailFieldPanel.setBorder(BorderFactory.createEmptyBorder(0,0,12,0));
+
         signButtonPanel.add(registerBtn);
         signButtonPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 0, 0));
 
@@ -158,6 +179,7 @@ public class RegisterForm extends JFrame implements ActionListener {
         genderLabel.setForeground(Color.decode("#011638"));
         dobLabel.setForeground(Color.decode("#011638"));
         confirmPassLabel.setForeground(Color.decode("#011638"));
+        emailLabel.setForeground(Color.decode("#011638"));
 
 
         formPanel.add(imgPanel);
@@ -167,6 +189,7 @@ public class RegisterForm extends JFrame implements ActionListener {
         formPanel.add(lnameTextFieldPanel);
         formPanel.add(genderTextFieldPanel);
         formPanel.add(dobTextFieldPanel);
+        formPanel.add(emailFieldPanel);
         formPanel.add(passwordFieldPanel);
         formPanel.add(confirmPassFieldPanel);
         formPanel.add(signButtonPanel);
@@ -186,17 +209,39 @@ public class RegisterForm extends JFrame implements ActionListener {
                 String gender = genderField.getText();
                 String dob = dobField.getText();
                 String password = passwordField.getText();
+                String email = emailField.getText();
 
-                String msg = "" + firstName;
-                msg+=" \n";
+                ObjectMapper objectMapper = new ObjectMapper();
+                User user = new User(firstName,lastName,password,email,dob,userName,gender,1,"ACTIVE");
+                String key = "users/register";
+                Request request = new Request(user,key);
 
-//                try{
-//                    Connection connection = PostegresConfig.getConnection();
-//
-//
-//                }catch(Exception exception){
-//                    exception.printStackTrace();
-//                }
+
+                PrintWriter writer=null;
+                BufferedReader reader = null;
+                String requestAsString = null;
+                try {
+                    requestAsString = objectMapper.writeValueAsString(request);
+                } catch (JsonProcessingException jsonProcessingException) {
+                    jsonProcessingException.printStackTrace();
+                }
+                writer.println(requestAsString);
+
+                ResponseDataSuccessDecoder response = null;
+                try {
+                    response = new UserResponseDataDecoder().decodedResponse(reader.readLine());
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+                if(response.isSuccess()){
+                    System.out.println("Your account was created successfully");
+                   // new UserView(client.getUserid(),writer,reader).viewOptions();
+                }
+                else{
+                    System.out.println("Account not created, Try again plz!");
+//                    Component.alertDangerErrorMessage(11, "Account not created, try again!");
+                }
+
             }
         });
 
