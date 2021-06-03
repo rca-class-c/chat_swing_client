@@ -1,14 +1,14 @@
 package components.navbar;
 
 
-import javax.imageio.ImageIO;
+import components.Teams.create.CreatePanel;
+import components.Teams.view.Layout;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 
 public class Sidebar extends JPanel {
@@ -34,9 +34,19 @@ public class Sidebar extends JPanel {
             });
 
          JPanel chat = new SideBarListItem("chat.png", "Chat");
-
-
+        JButton chatting = new JButton("Chatting");
+        chatting.setActionCommand("Chatting");
+       JLabel label1 = new JLabel("Hello from chatting");
+       label1.setVisible(false);
+        chatting.addActionListener(e-> {
+            try {
+                actionListener(e);
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
+        });
         JPanel team = new SideBarListItem("user-group.png", "Team");
+        JPanel new_team = new SideBarListItem("user-group.png", "New Team");
         JPanel settings = new SideBarListItem("settings.png", "Settings");
         JPanel logout = new SideBarListItem("logout.png", "Logout");
         logout.setBorder(new EmptyBorder(200, 0, 0, 0));
@@ -44,8 +54,8 @@ public class Sidebar extends JPanel {
 //        navBarItems.add(label);
 //        navBarItems.add(label1);
         navBarItems.add(user);
+        navBarItems.add(chatting);
         navBarItems.add(chat);
-        navBarItems.add(team);
         navBarItems.add(settings);
         navBarItems.add(logout);
 
@@ -68,7 +78,8 @@ public class Sidebar extends JPanel {
 //            body.add(label);
         }else if(command.equals("Chatting")){
             System.out.println("chat action listener");
-//            body.add(label);
+            frame.dispose();
+            new GenerateFrame(new CreatePanel().returnPanel());
         }else{
             System.out.println("Unknown");
         }

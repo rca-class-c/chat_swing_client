@@ -1,6 +1,4 @@
-public class Main {
-    public static void main(String[] args) throws Exception {
+package components.Teams.create;
 
-        Layout layout = new Layout();
-    }
+public class Main {
 }
