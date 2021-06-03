@@ -71,7 +71,7 @@ public class UserLogsStatisticsPage extends JFrame{
 
     public JPanel header(){
         JPanel header = new JPanel(new BorderLayout());
-        JLabel headerText = new JLabel("Messages");
+        JLabel headerText = new JLabel("User logs");
         headerText.setBorder(new EmptyBorder(10,10,10,10));
 
         String[] options = {"2021", "2020", "2019"};

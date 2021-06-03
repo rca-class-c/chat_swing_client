@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="navigation through sidebar">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/SideBarListItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/SideBarListItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BarchartComponent.java" afterDir="false" />
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: user logs chat panel">
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/UserLogsStatisticsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/UserLogsStatisticsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/SideBarListItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/SideBarListItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +218,7 @@
       <workItem from="1622713056995" duration="8378000" />
       <workItem from="1622751530883" duration="102000" />
       <workItem from="1622751691048" duration="1544000" />
-      <workItem from="1622753338703" duration="458000" />
+      <workItem from="1622753338703" duration="757000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -323,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622726008818</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: user logs chat panel">
+      <created>1622753857537</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1622753857537</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +357,8 @@
     <MESSAGE value="Fix: Image display" />
     <MESSAGE value="navigation through navbar(sidebar)" />
     <MESSAGE value="navigation through sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="navigation through sidebar" />
+    <MESSAGE value="feat: user logs chat panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: user logs chat panel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
