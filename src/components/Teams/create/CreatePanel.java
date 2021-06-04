@@ -66,7 +66,7 @@ public class CreatePanel {
         btn.addActionListener(ActionListener->{
             String name = textField.getText();
             String description = textArea.getText();
-            Group newGroup = new Group(name,description,4);
+            Group newGroup = new Group(name,description,2);
             String key = "groups/new";
             Request request = new Request(newGroup,key);
             ResponseDataSuccessDecoder responseDataSuccessDecoder = new IndexSocket().execute(request);

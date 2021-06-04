@@ -9,7 +9,7 @@ import java.net.UnknownHostException;
 
 public class IndexSocket {
     private ResponseDataSuccessDecoder response;
-    private String hostname = "localhost";
+    private String hostname = "192.168.0.90";
     private int port=9812;
     public ResponseDataSuccessDecoder execute(Request request) {
         try {

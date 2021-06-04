@@ -10,16 +10,21 @@ import java.io.File;
 import java.io.IOException;
 
 public class HeaderScreen extends JFrame {
-
+    JPanel mainPanel = new JPanel(new BorderLayout());
+    JPanel topPanel = new JPanel();
+    JPanel bottomPanel = new JPanel();
     public HeaderScreen() throws IOException {
-        JPanel mainPanel = new JPanel(new BorderLayout());
-        JPanel topPanel = new JPanel();
-        JPanel bottomPanel = new JPanel();
+//     UI();
+    }
+
+    public void UI() throws IOException {
+
 
         JPanel profile = new JPanel();
         profile.setBackground(Color.decode("#F5F9FF"));
 
-        BufferedImage profileImg = ImageIO.read(new File("src/assets/profile.png"));
+        BufferedImage profileImg =  ImageIO.read(new File("C:\\Users\\DELL\\OneDrive\\Studies\\OOP\\Projects\\Class\\chat-system\\desktop\\chat_swing_client\\src\\assets\\profile.png"));
+
         BufferedImage masked = this.resizeImage(profileImg, 60, 60, BufferedImage.TYPE_INT_ARGB);
         JLabel profileLabel= new JLabel(new ImageIcon(masked));
         profile.add(profileLabel);
@@ -36,7 +41,7 @@ public class HeaderScreen extends JFrame {
         topPanel.setBackground(Color.decode("#F5F9FF"));
 
         JPanel leftArrowPanel = new JPanel();
-        BufferedImage leftArrowIcon = ImageIO.read(new File("src/assets/right-arrow.png"));
+        BufferedImage leftArrowIcon = ImageIO.read(new File("C:\\Users\\DELL\\OneDrive\\Studies\\OOP\\Projects\\Class\\chat-system\\desktop\\chat_swing_client\\src\\assets\\profile.png"));
         BufferedImage leftMask = this.resizeImage(leftArrowIcon, 10, 10, BufferedImage.TYPE_INT_ARGB);
         JLabel leftArrowLabel= new JLabel(new ImageIcon(leftMask));
         leftArrowPanel.setBackground(Color.decode("#F5F9FF"));
@@ -78,9 +83,12 @@ public class HeaderScreen extends JFrame {
         g.dispose();
         return resizedImage;
     }
-
     public static void main(String[] args) throws IOException {
         new HeaderScreen();
+    }
+
+    public JPanel export() {
+        return mainPanel;
     }
 
 }
