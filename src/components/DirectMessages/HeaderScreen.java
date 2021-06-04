@@ -70,7 +70,7 @@ public class HeaderScreen extends JFrame {
         mainPanel.add(bottomPanel);
 
         add(mainPanel);
-        setBounds(280, 20, 800, 600);
+        setBounds(0, 0, 850, 600);
         setTitle("Direct Message");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
