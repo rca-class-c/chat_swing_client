@@ -1,6 +1,7 @@
 package components.navbar;
 
 
+import components.Settings;
 import components.Teams.create.CreatePanel;
 import components.Teams.view.Layout;
 import screens.DirectChatScreen;
@@ -180,7 +181,7 @@ public class Sidebar extends JPanel {
             case "settings" -> {
                 System.out.println("settings action listener");
                 frame.dispose();
-                new GenerateFrame(new CreatePanel().returnPanel());
+                new GenerateFrame(new Settings());
             }
              case "group" -> {
                 System.out.println("group action listener");

@@ -73,6 +73,8 @@ public class User {
         this.status = status;
     }
 
+<<<<<<< HEAD
+=======
     public User(int userID, String name) {
         this.userID = userID;
         this.fname = name;
@@ -80,6 +82,7 @@ public class User {
 
 
 
+>>>>>>> ef185707e6324e427412b81c49401376fe808a53
     /**
  * Getters and setters for all the fields
  * */
