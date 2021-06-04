@@ -22,14 +22,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
   <component name="ProjectId" id="1rsqxAdQnboMv4hDFA3Yhg9URPU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,12 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -78,7 +65,7 @@
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Teams.create.*" />
+          <option name="PATTERN" value="components.dashboard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,7 +91,7 @@
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Teams.view.*" />
+          <option name="PATTERN" value="components.sidebar.sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Teams.define.Main" />
+    <configuration name="Friends" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.Friends" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Teams.define.*" />
+          <option name="PATTERN" value="sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
+    <configuration name="Group" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.sidebar.sample.Group" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.Teams.view.*" />
+          <option name="PATTERN" value="components.sidebar.sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,25 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Forms.form.RegisterForm" />
+    <configuration name="TeamsCreated" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.TeamsCreated" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="components.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Settings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Settings" />
-      <module name="chat_swing_client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="components.*" />
+          <option name="PATTERN" value="components.Teams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,17 +180,6 @@
       <workItem from="1620763994291" duration="12000" />
       <workItem from="1621942357030" duration="514000" />
       <workItem from="1621943641317" duration="55000" />
-      <workItem from="1622439005076" duration="725000" />
-      <workItem from="1622557800043" duration="1265000" />
-      <workItem from="1622567105880" duration="3703000" />
-      <workItem from="1622598574397" duration="55000" />
-      <workItem from="1622598679082" duration="1780000" />
-      <workItem from="1622626896607" duration="8454000" />
-      <workItem from="1622632303182" duration="12027000" />
-      <workItem from="1622717765759" duration="7354000" />
-      <workItem from="1622709436075" duration="2256000" />
-      <workItem from="1622712398649" duration="94000" />
-      <workItem from="1622713056995" duration="8378000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -253,70 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621936867050</updated>
     </task>
-    <task id="LOCAL-00006" summary="feat: add shared models on client side">
-      <created>1622600245153</created>
+    <task id="LOCAL-00006" summary="Modified Groups and Friends">
+      <created>1622737264042</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1622600245153</updated>
+      <updated>1622737264042</updated>
     </task>
-    <task id="LOCAL-00007" summary="fix: package import errors">
-      <created>1622600394525</created>
+    <task id="LOCAL-00007" summary="fix: space error">
+      <created>1622737703343</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1622600394525</updated>
+      <updated>1622737703343</updated>
     </task>
-    <task id="LOCAL-00008" summary="feat: first move">
-      <created>1622636394247</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1622636394247</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat: create global layout">
-      <created>1622637309046</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1622637309046</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fix: Image display">
-      <created>1622632480016</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1622632480016</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Fix: Image display">
-      <created>1622684058190</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1622684058190</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Fix: Image display">
-      <created>1622721078574</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1622721078574</updated>
-    </task>
-    <task id="LOCAL-00013" summary="navigation through navbar(sidebar)">
-      <created>1622725944591</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1622725944591</updated>
-    </task>
-    <task id="LOCAL-00014" summary="navigation through sidebar">
-      <created>1622726008818</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1622726008818</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,14 +255,9 @@
     <MESSAGE value="edit message component" />
     <MESSAGE value="user settings component added" />
     <MESSAGE value="text border radius added" />
-    <MESSAGE value="feat: add shared models on client side" />
-    <MESSAGE value="fix: package import errors" />
-    <MESSAGE value="feat: first move" />
-    <MESSAGE value="feat: create global layout" />
-    <MESSAGE value="Fix: Image display" />
-    <MESSAGE value="navigation through navbar(sidebar)" />
-    <MESSAGE value="navigation through sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="navigation through sidebar" />
+    <MESSAGE value="Modified Groups and Friends" />
+    <MESSAGE value="fix: space error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: space error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
