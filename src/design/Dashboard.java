@@ -1,11 +1,11 @@
 package design;
+import design.CustomBorder;
 import components.Teams.create.CreatePanel;
 import components.Teams.view.Layout;
 import components.dashboard.MessagesStatisticsPage;
 import  components.Teams.TeamsCreated;
 import components.dashboard.UserLogsStatisticsPage;
 import components.navbar.GenerateFrame;
-import design.CustomBorder;
 
 import java.awt.*;
 import java.io.IOException;

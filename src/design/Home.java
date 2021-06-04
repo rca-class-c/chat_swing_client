@@ -1,4 +1,7 @@
-package components;
+package design;
+
+import components.InputBorder;
+import design.CustomBorder;
 
 import java.awt.*;
 import javax.swing.*;
@@ -111,30 +114,5 @@ public class Home extends JFrame {
                 new Home();
             }
         });
-    }
-}
-class CustomBorder extends  AbstractBorder {
-    public void paintBorder(Component c, Graphics g, int x, int y,
-                            int width, int height) {
-        super.paintBorder(c, g, x, y, width, height);
-        Graphics2D g2d = (Graphics2D)g;
-        g2d.setStroke(new BasicStroke(12));
-        g2d.drawRoundRect(x, y, width - 1, height - 1, 25, 25);
-    }
-}
-
-class RoundedBorder implements Border{
-    private int radius;
-    RoundedBorder(int radius) {
-        this.radius = radius;
-    }
-    public Insets getBorderInsets(Component c) {
-        return new Insets(this.radius+1, this.radius+1, this.radius+2, this.radius);
-    }
-    public boolean isBorderOpaque() {
-        return true;
-    }
-    public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
-        g.drawRoundRect(x, y, width-1, height-1, radius, radius);
     }
 }
