@@ -1,4 +1,7 @@
 package components.Forms.form;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import components.navbar.SidebarDemo;
 import models.AuthInput;
 import models.Request;
@@ -17,6 +20,7 @@ import java.io.IOException;
 
 public class LoginForm extends JFrame implements ActionListener{
     private ActionListener action;
+    ObjectMapper objectMapper;
     private static final Color themeColor = Color.decode("#011638");
 
 
@@ -152,6 +156,13 @@ public class LoginForm extends JFrame implements ActionListener{
             Request request = new Request(loginData,url);
             ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
             if(response.isSuccess()){
+                JsonNode data = null;
+                try {
+                    data = objectMapper.readTree(response.getData());
+                } catch (JsonProcessingException jsonProcessingException) {
+                    jsonProcessingException.printStackTrace();
+                }
+                int userID = data.get("userID").asInt();
                 this.dispose();
                 try {
                     new SidebarDemo();
