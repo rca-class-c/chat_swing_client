@@ -86,19 +86,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
-      <module name="chat_swing_client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="components.sidebar.sample.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Friends" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Friends" />
       <module name="chat_swing_client" />
@@ -114,6 +101,19 @@
     </configuration>
     <configuration name="Group" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="components.sidebar.sample.Group" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.sidebar.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
       <module name="chat_swing_client" />
       <extension name="coverage">
         <pattern>
@@ -154,7 +154,6 @@
         <item itemvalue="Application.EditMessage" />
         <item itemvalue="Application.ChatIndex" />
         <item itemvalue="Application.CreatePanel" />
-        <item itemvalue="Application.Settings" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
