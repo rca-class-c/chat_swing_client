@@ -54,7 +54,7 @@ public class Dashboard extends JFrame {
 
         //user logs icon
         ImageIcon userLogs = new ImageIcon("src\\images\\bars.jpg");
-        Image imageLogs= userLogs.getImage();
+        Image imageLogs = userLogs.getImage();
         Image newLog= imageLogs.getScaledInstance(19, 19,  java.awt.Image.SCALE_SMOOTH);
         userLogs= new ImageIcon(newLog);
 
