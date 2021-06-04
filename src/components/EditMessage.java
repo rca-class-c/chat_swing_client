@@ -39,7 +39,7 @@ public class EditMessage
         message.add(p);
         message.setVisible(true);
     }
-    EditMessage(){
+    EditMessage(int id,int user){
         JFrame f= new JFrame();
         Border border = BorderFactory.createLineBorder(Color.BLACK);
         JLabel header = new JLabel("Edit Message");
@@ -60,7 +60,7 @@ public class EditMessage
         btn.setBounds(50,220,300,30);
         btn.addActionListener(ActionListener->{
             String name = area.getText();
-            MessageResponseDataFormat messageResponseDataFormat = new MessageResponseDataFormat(2,9,name);
+            MessageResponseDataFormat messageResponseDataFormat = new MessageResponseDataFormat(user,id,name);
             String key = "messages/edit";
             Request request = new Request(messageResponseDataFormat,key);
             ObjectMapper objectMapper = new ObjectMapper();

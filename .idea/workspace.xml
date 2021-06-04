@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="105df7b1-6107-4396-9c07-e3bdbb79d169" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundJTextField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundJTextField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedDateField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedDateField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedPasswordField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedPasswordField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$buttonActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$buttonActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$textKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$textKeyListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/view/Layout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622804569893</updated>
-      <workItem from="1622804573124" duration="303000" />
+      <workItem from="1622804573124" duration="1440000" />
     </task>
     <task id="LOCAL-00001" summary="feat: runnable">
       <created>1622804644647</created>
