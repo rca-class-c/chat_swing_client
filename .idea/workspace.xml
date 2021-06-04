@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="New: Successfully managed to insert a DirectChatScreen in Our Chat system client layout.">
+      <change afterPath="$PROJECT_DIR$/out/production/chat_swing_client/assets/Rectangle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat_swing_client/assets/Rectangle_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/CustomBorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/Dashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/RoundedBorder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/design/leftPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/bars.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/hashtag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/msg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/users.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_17_2021_1_40_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_17_2021_1_40_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/ChatIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/CustomBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/ActivationForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Forms/form/RegisterForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Home.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/RoundedBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundJTextField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedDateField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$RoundedPasswordField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$buttonActionListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Settings$textKeyListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/Teams/TeamsCreated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers$ButtonEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/AddGroupMembers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/ButtonRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/MyScrollbarUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/add_group_member/PlaceholderTextField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/gui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/GenerateFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Layout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/NewPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/SideBarListItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/Sidebar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/navbar/SidebarDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/ActiveUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/AddMemberRequestData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/AuthInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/DeleteMemberRequestData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/GetGroupMembersRequestData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/GroupMember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/GroupResponseDataDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/MessageResponseDataDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/MessageResponseDataFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Messages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/NotificationDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/PasswordResets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Payment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/ProfileRequestData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Reports.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/ResponseDataSuccessDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/SearchRequestData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/Subscription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/UserLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/UserResponseDataDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/models/UserResponseDataDecoder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/UsersList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/categories.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/enums/FileSizeTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/enums/FileStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/enums/HttpMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/models/enums/PasswordResetsStatusesEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/simplifiers/RequestSimplifiers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/socket/IndexSocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/socket/WriteThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ChatBetweenTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/CommonUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ConsoleColor$BackgroundColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ConsoleColor$BoldColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ConsoleColor$BoldHighIntensityColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ConsoleColor$HighIntensityBackgroundColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ConsoleColor$HighIntensityColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ConsoleColor$RegularColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ConsoleColor$UnderlineColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ConsoleColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/DirectMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/Discount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/Expiration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/GroupMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/GroupNotifications.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/OTP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/SendInvitationEmail$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/SendInvitationEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/UserIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ValidEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/ValidSubscription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/utils/Validity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Teams/TeamsCreated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/TeamsCreated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add_group_member/AddGroupMembers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1rsqxAdQnboMv4hDFA3Yhg9URPU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Application.ChatIndex">
+    <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatIndex" />
+      <module name="chat_swing_client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatIndex" />
+      <module name="chat_swing_client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatePanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.create.CreatePanel" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.Teams.create.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.create.Main" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.Teams.create.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.Teams.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.define.Main" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.Teams.define.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Teams.view.Main" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.Teams.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Forms.form.RegisterForm" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Settings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.Settings" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ChatIndex" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.CreatePanel" />
+        <item itemvalue="Application.Settings" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="" />
+      <created>1619775391062</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619775391062</updated>
+      <workItem from="1619775393331" duration="644000" />
+      <workItem from="1619965451973" duration="3852000" />
+      <workItem from="1620107700938" duration="834000" />
+      <workItem from="1620365209025" duration="705000" />
+      <workItem from="1620379708250" duration="659000" />
+      <workItem from="1620714203212" duration="42000" />
+      <workItem from="1620714273117" duration="415000" />
+      <workItem from="1620672305351" duration="88000" />
+      <workItem from="1620723689881" duration="714000" />
+      <workItem from="1620724454927" duration="429000" />
+      <workItem from="1620763994291" duration="12000" />
+      <workItem from="1621942357030" duration="514000" />
+      <workItem from="1621943641317" duration="55000" />
+      <workItem from="1622439005076" duration="725000" />
+      <workItem from="1622557800043" duration="1265000" />
+      <workItem from="1622567105880" duration="3703000" />
+      <workItem from="1622598574397" duration="55000" />
+      <workItem from="1622598679082" duration="1780000" />
+      <workItem from="1622626896607" duration="8454000" />
+      <workItem from="1622632303182" duration="12027000" />
+      <workItem from="1622717765759" duration="7354000" />
+      <workItem from="1622709436075" duration="2256000" />
+      <workItem from="1622712398649" duration="94000" />
+      <workItem from="1622713056995" duration="8378000" />
+      <workItem from="1622750113331" duration="314000" />
+      <workItem from="1622759224005" duration="49000" />
+      <workItem from="1622759294387" duration="32000" />
+    </task>
+    <task id="LOCAL-00001" summary="start with intell">
+      <created>1619775491094</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619775491094</updated>
+    </task>
+    <task id="LOCAL-00002" summary="calma mi alma">
+      <created>1619775890428</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619775890428</updated>
+    </task>
+    <task id="LOCAL-00003" summary="edit message component">
+      <created>1619978379541</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619978379541</updated>
+    </task>
+    <task id="LOCAL-00004" summary="user settings component added">
+      <created>1620571278252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620571278252</updated>
+    </task>
+    <task id="LOCAL-00005" summary="text border radius added">
+      <created>1621936867050</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621936867050</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add shared models on client side">
+      <created>1622600245153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622600245153</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: package import errors">
+      <created>1622600394525</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622600394525</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: first move">
+      <created>1622636394247</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622636394247</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: create global layout">
+      <created>1622637309046</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622637309046</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix: Image display">
+      <created>1622632480016</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622632480016</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fix: Image display">
+      <created>1622684058190</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622684058190</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix: Image display">
+      <created>1622721078574</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622721078574</updated>
+    </task>
+    <task id="LOCAL-00013" summary="navigation through navbar(sidebar)">
+      <created>1622725944591</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1622725944591</updated>
+    </task>
+    <task id="LOCAL-00014" summary="navigation through sidebar">
+      <created>1622726008818</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1622726008818</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Feat: Display of group names">
+      <created>1622737480241</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1622737480241</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="start with intell" />
+    <MESSAGE value="calma mi alma" />
+    <MESSAGE value="edit message component" />
+    <MESSAGE value="user settings component added" />
+    <MESSAGE value="text border radius added" />
+    <MESSAGE value="feat: add shared models on client side" />
+    <MESSAGE value="fix: package import errors" />
+    <MESSAGE value="feat: first move" />
+    <MESSAGE value="feat: create global layout" />
+    <MESSAGE value="Fix: Image display" />
+    <MESSAGE value="navigation through navbar(sidebar)" />
+    <MESSAGE value="navigation through sidebar" />
+    <MESSAGE value="Feat: Display of group names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: Display of group names" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/components/EditMessage.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
