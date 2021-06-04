@@ -2,6 +2,8 @@ package screens;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import components.DirectMessages.HeaderScreen;
+import components.Teams.create.CreatePanel;
+import components.navbar.GenerateFrame;
 import components.navbar.SidebarDemo;
 import models.*;
 import simplifiers.RequestSimplifiers;
@@ -75,6 +77,7 @@ try {
     panel.add(chatHeaderPanel);
     panel.add(chatBodyPanel, BorderLayout.WEST);
     panel.add(chatFooterPanel);
+
 } catch (Exception e) {
     e.printStackTrace();
 }
@@ -89,7 +92,9 @@ try {
             panel.setBounds(0, 0, 850, 60);
             panel.setBackground(Color.green);
 //            new HeaderScreen().export();
+            panel.add(new HeaderScreen().export());
             //TODO: Add Header Screen to chat
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -131,30 +136,39 @@ try {
         System.out.println("Res Data" + response.getData());
 
         Messages[] messages = new UserResponseDataDecoder().returnMessagesListDecoded(response.getData());
-//        messages = subArray(messages, 7, messages.length);
 
-        System.out.println(messages[0].toString());
 
-        for (Messages message: messages) {
-            //TODO: GET LOGGED IN ID
-            //TODO: Show subarray messages
 
-            if (message != null) {
-                if (message.getSender() == 2)
-                    MessageUI(panel, "OUTGOING", message.getSent_at(), message.getContent());
-                else
-                    MessageUI(panel, "INCOMING", message.getSent_at(), message.getContent());
+        if (messages.length > 6) {
+            for (int i = (messages.length - 1); i >= ((messages.length - 1)-6); i--) {
+                //TODO: GET LOGGED IN ID
+                //TODO: Show subarray messages
+
+                if (messages[i] != null) {
+                    if (messages[i].getSender() == 2)
+                        MessageUI(panel, "OUTGOING", messages[i].getSent_at(), messages[i].getContent());
+                    else
+                        MessageUI(panel, "INCOMING", messages[i].getSent_at(), messages[i].getContent());
+                }
+
             }
-
+        }else {
+            for (Messages message: messages) {
+                if (message != null) {
+                    if (message.getSender() == 2)
+                        MessageUI(panel, "OUTGOING", message.getSent_at(), message.getContent());
+                    else
+                        MessageUI(panel, "INCOMING", message.getSent_at(), message.getContent());
+                }
+            }
         }
-//        ChatFooterUI(chatFooterPanel);
     }
 
 
     public void ChatFooterUI(JPanel panel) {
         panel.setLayout(null);
         panel.setBounds(20,20, 810,900);
-        panel.setBackground(Color.blue);
+        panel.setBackground(Color.decode("#F5F9FF"));
 
         WrietMessageUI(panel);
 
@@ -165,7 +179,7 @@ try {
         writeMessageTextField.setLayout(null);
 
 
-        writeMessageTextField.setBounds( 0, yVerticalCounter + 50, 700, 36);
+        writeMessageTextField.setBounds( 0, yVerticalCounter + 80, 700, 36);
         writeMessageTextField.setBorder(new EmptyBorder(0, 10, 0, 10));
         writeMessageTextField.setText("Send Message");
 
@@ -212,9 +226,10 @@ try {
 
 
 
-        btn.setBounds( 750, yVerticalCounter + 50, 90, 36);
-//        btn.setBorder(new EmptyBorder(0, 10, 0, 10));
-
+            btn.setBounds( 720, yVerticalCounter + 80, 85, 36);
+    //        btn.setBorder(new EmptyB
+        btn.setBackground(Color.decode("#011638"));
+        btn.setForeground(Color.WHITE);
 
         panel.add(writeMessageTextField);
 //        panel.add(iconPanel);

@@ -14,7 +14,7 @@ public class HeaderScreen extends JFrame {
     JPanel topPanel = new JPanel();
     JPanel bottomPanel = new JPanel();
     public HeaderScreen() throws IOException {
-//     UI();
+     UI();
     }
 
     public void UI() throws IOException {
@@ -23,7 +23,7 @@ public class HeaderScreen extends JFrame {
         JPanel profile = new JPanel();
         profile.setBackground(Color.decode("#F5F9FF"));
 
-        BufferedImage profileImg =  ImageIO.read(new File("C:\\Users\\DELL\\OneDrive\\Studies\\OOP\\Projects\\Class\\chat-system\\desktop\\chat_swing_client\\src\\assets\\profile.png"));
+        BufferedImage profileImg =  ImageIO.read(new File("src\\assets\\profile.png"));
 
         BufferedImage masked = this.resizeImage(profileImg, 60, 60, BufferedImage.TYPE_INT_ARGB);
         JLabel profileLabel= new JLabel(new ImageIcon(masked));
@@ -70,7 +70,7 @@ public class HeaderScreen extends JFrame {
         mainPanel.add(bottomPanel);
 
         add(mainPanel);
-        setBounds(280, 20, 700, 600);
+        setBounds(0, 0, 850, 600);
         setTitle("Direct Message");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
@@ -83,12 +83,9 @@ public class HeaderScreen extends JFrame {
         g.dispose();
         return resizedImage;
     }
-    public static void main(String[] args) throws IOException {
-        new HeaderScreen();
-    }
 
     public JPanel export() {
-        return mainPanel;
+        return topPanel;
     }
 
 }
