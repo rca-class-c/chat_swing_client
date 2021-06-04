@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="" />
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Teams/main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +58,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.ChatIndex">
+  <component name="RunManager" selected="Application.EditMessage">
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
       <module name="chat_swing_client" />
@@ -74,6 +79,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="components.Teams.create.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EditMessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.EditMessage" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,6 +177,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EditMessage" />
         <item itemvalue="Application.ChatIndex" />
         <item itemvalue="Application.CreatePanel" />
         <item itemvalue="Application.Settings" />

@@ -1,14 +1,46 @@
 package components;
 
+import models.*;
+import socket.IndexSocket;
+
 import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+
 public class EditMessage
 {
     EditMessage(){
         JFrame f= new JFrame();
+        Border border = BorderFactory.createLineBorder(Color.BLACK);
         JLabel header = new JLabel("Edit Message");
-        header.setBounds(10,30,150,30);
+        header.setBounds(10,30,400,30);
         JTextArea area=new JTextArea("Hello there this is you message content you can now edit them.");
         area.setBounds(10,60, 450,150);
+        area.setFont(new Font("Roboto",Font.PLAIN,20));
+        header.setFont(new Font("Roboto",Font.PLAIN,25));
+        area.setBorder(BorderFactory.createCompoundBorder(border,
+                BorderFactory.createEmptyBorder(10, 10, 10, 10)));
+        JButton btn = new JButton("Update Message");
+        btn.setBackground(new Color(53,32,88));
+        btn.setForeground(Color.white);
+        btn.setBorder(BorderFactory.createCompoundBorder(
+                btn.getBorder(),
+                BorderFactory.createEmptyBorder(7, 30, 7, 30)));
+        btn.setFont(new Font("Montserrat", Font.PLAIN, 18));
+        btn.setBounds(50,220,300,30);
+
+
+        btn.addActionListener(ActionListener->{
+            String name = area.getText();
+            MessageResponseDataFormat messageResponseDataFormat = new MessageResponseDataFormat(2,9,name);
+            String key = "messages/edit";
+            Request request = new Request(messageResponseDataFormat,key);
+            ResponseDataSuccessDecoder responseDataSuccessDecoder = new IndexSocket().execute(request);
+            System.out.println(responseDataSuccessDecoder);
+        });
+
+
+        f.add(btn);
         f.add(header);
         f.add(area);
         f.setSize(500,300);
