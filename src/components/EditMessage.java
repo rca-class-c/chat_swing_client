@@ -39,12 +39,12 @@ public class EditMessage
         message.add(p);
         message.setVisible(true);
     }
-    EditMessage(int id,int user){
+    EditMessage(Messages message){
         JFrame f= new JFrame();
         Border border = BorderFactory.createLineBorder(Color.BLACK);
         JLabel header = new JLabel("Edit Message");
         header.setBounds(10,30,400,30);
-        JTextArea area=new JTextArea("Hello there this is you message content you can now edit them.");
+        JTextArea area=new JTextArea(message.getContent());
         area.setBounds(10,60, 450,150);
         area.setFont(new Font("Roboto",Font.PLAIN,20));
         header.setFont(new Font("Roboto",Font.PLAIN,25));
@@ -60,7 +60,7 @@ public class EditMessage
         btn.setBounds(50,220,300,30);
         btn.addActionListener(ActionListener->{
             String name = area.getText();
-            MessageResponseDataFormat messageResponseDataFormat = new MessageResponseDataFormat(user,id,name);
+            MessageResponseDataFormat messageResponseDataFormat = new MessageResponseDataFormat(message.getSender(), message.getId(),name);
             String key = "messages/edit";
             Request request = new Request(messageResponseDataFormat,key);
             ObjectMapper objectMapper = new ObjectMapper();
@@ -81,7 +81,3 @@ public class EditMessage
         f.setLayout(null);
         f.setVisible(true);
     }
-    public static void main(String args[])
-    {
-        new EditMessage();
-    }}
