@@ -5,11 +5,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/EditMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/EditMessage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EditMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Forms/form/LoginForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,12 +28,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.EditMessage">
+  <component name="RunManager" selected="Application.ChatIndex">
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
       <module name="chat_swing_client" />
@@ -50,21 +55,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EditMessage" />
         <item itemvalue="Application.ChatIndex" />
+        <item itemvalue="Application.EditMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -77,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622804569893</updated>
       <workItem from="1622804573124" duration="1673000" />
+      <workItem from="1622785386344" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="feat: runnable">
       <created>1622804644647</created>
@@ -97,6 +92,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: runnable" />
