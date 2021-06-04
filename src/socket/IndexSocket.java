@@ -1,6 +1,5 @@
 package socket;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import models.Request;
 import models.ResponseDataSuccessDecoder;
 
