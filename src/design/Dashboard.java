@@ -10,6 +10,7 @@ import components.navbar.GenerateFrame;
 import java.awt.*;
 import java.io.IOException;
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.ImageIcon;
 import java.awt.event.ActionEvent;
@@ -61,7 +62,7 @@ public class Dashboard extends JFrame {
         JButton msg = new JButton("<html><font color='black'>Messages</font></html>");
         msg.setActionCommand("messages");
         msg.setBorder(BorderFactory.createCompoundBorder(
-                new CustomBorder(),
+                (Border) new CustomBorder(),
                 new EmptyBorder(new Insets(15,25,15,25))
         ));
         msg.addActionListener(e-> {
@@ -79,7 +80,7 @@ public class Dashboard extends JFrame {
         JButton Team = new JButton("<html><font color='black'>Teams</font></html>");
         Team.setActionCommand("Teams");
         Team.setBorder(BorderFactory.createCompoundBorder(
-                new CustomBorder(),
+                (Border) new CustomBorder(),
                 new EmptyBorder(new Insets(15,25,15,25))
         ));
         Team.addActionListener(e-> {
@@ -97,7 +98,7 @@ public class Dashboard extends JFrame {
         JButton user = new JButton("<html><font color='black'>Users</font></html>");
         user.setActionCommand("Users");
         user.setBorder(BorderFactory.createCompoundBorder(
-                new CustomBorder(),
+                (Border) new CustomBorder(),
                 new EmptyBorder(new Insets(15,25,15,25))
         ));
         user.addActionListener(e-> {
@@ -123,7 +124,7 @@ public class Dashboard extends JFrame {
         });
 
         logs.setBorder(BorderFactory.createCompoundBorder(
-                new CustomBorder(),
+                (Border) new CustomBorder(),
                 new EmptyBorder(new Insets(15,25,15,25))
         ));
         logs.setIcon(userLogs);

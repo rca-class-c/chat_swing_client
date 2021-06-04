@@ -11,6 +11,7 @@ import java.awt.*;
 import java.awt.Color;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 
 
@@ -44,7 +45,7 @@ public class LoginForm extends JFrame implements ActionListener{
         BoxLayout formLayout = new BoxLayout(formPanel, BoxLayout.Y_AXIS);
         formPanel.setLayout(formLayout);
 
-        BufferedImage img = ImageIO.read(this.getClass().getResource("../images/logo.png"));
+        BufferedImage img = ImageIO.read(new File("src/components/Forms/images/logo.png"));
         Image newImg = img.getScaledInstance(100,85,Image.SCALE_DEFAULT);
         JLabel imgLabel = new JLabel(new ImageIcon(newImg));
 
@@ -178,4 +179,5 @@ public class LoginForm extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         System.out.println(e);
     }
+
 }
