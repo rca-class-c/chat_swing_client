@@ -140,11 +140,18 @@ public class Layout {
         if(response.isSuccess()){
             Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
             CommonUtil.addTabs(10, true);
-            if (groups.length != 0){
-                for(Group group: groups){
-                    cardInfo(group.getName());
+            int limit = 0;
+            if (groups.length != 0 ){
+                    for(Group group: groups){
+                        if(limit <= 2){
+                        cardInfo(group.getName());
+                    }else{
+                            System.out.println("Limit reached");
+                        }
+                        limit++;
                 }
-            }else{
+            }
+            else{
                 System.out.println("Request failed in this group");
             }
         }else {
