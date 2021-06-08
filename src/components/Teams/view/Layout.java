@@ -1,5 +1,6 @@
 package components.Teams.view;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import models.*;
 import socket.IndexSocket;
@@ -9,6 +10,8 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -61,13 +64,13 @@ public class Layout {
         JLabel teamsParagraph;
         groupInfoPanel = new JPanel(new FlowLayout(SwingConstants.LEADING,10,10));
         teamsGeneralPanel = new JPanel(new FlowLayout(SwingConstants.LEADING,10,10));
-        headerPanel = new JPanel(new BorderLayout(170, 40));
+        headerPanel = new JPanel(new FlowLayout(SwingConstants.LEADING,70,10));
 
         teamsTitle = new JLabel("Teams");
         teamsTitle.setForeground(Color.decode("#011638"));
         teamsTitle.setFont(new Font("Inter", Font.BOLD, 16));
         searchTeam = new JTextField(30);
-        searchTeam.setText("search a team");
+//        searchTeam.setText("search a team");
         searchTeam.setForeground(Color.decode("#CCCCCC"));
         searchTeam.setPreferredSize(new Dimension(1, 25));
         BufferedImage img = ImageIO.read(new File("src/components/Teams/view/assets/clear.png"));
@@ -76,10 +79,17 @@ public class Layout {
         imageLabel.setIcon(searchbg);
         searchTeam.add(imageLabel);
         searchTeam.setBorder(new EmptyBorder(0, 30, 0, 0));
+        JButton searchBtn = new JButton("Search");
+
+        searchBtn.setBackground(Color.decode("#011638"));
+        searchBtn.setPreferredSize(new Dimension(80,40));
+        searchBtn.setForeground(Color.WHITE);
+        searchBtn.setBorder(new EmptyBorder(0, 0, 0, 0));
+
         JLabel label = new JLabel("");
-        headerPanel.add(teamsTitle, BorderLayout.LINE_START);
-        headerPanel.add(label, BorderLayout.CENTER);
-        headerPanel.add(searchTeam, BorderLayout.LINE_END);
+        headerPanel.add(teamsTitle);
+        headerPanel.add(searchTeam);
+        headerPanel.add(searchBtn);
         headerPanel.setBackground(new Color(0, 0, 0, 0));
         teamsPanel.add(headerPanel);
         //Cards
@@ -133,6 +143,7 @@ public class Layout {
         cardsMainPanel.setBackground(new Color(0,0,0,0));
         teamsPanel.setBackground(Color.decode("#F5F9FF"));
 
+
         String key= "groups/";
         Request request = new Request(new ProfileRequestData(4), key);
         //get all group in the system
@@ -140,16 +151,60 @@ public class Layout {
         if(response.isSuccess()){
             Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
             CommonUtil.addTabs(10, true);
-            if (groups.length != 0){
+            int limit = 0;
+            if (groups.length != 0 ){
                 for(Group group: groups){
-                    cardInfo(group.getName());
+                    if(limit <= 2){
+                        cardInfo(group.getName());
+                    }else{
+                        System.out.println("Limit reached");
+                    }
+                    limit++;
                 }
-            }else{
+            }
+            else{
                 System.out.println("Request failed in this group");
             }
         }else {
             System.out.println("failed to fetch users in the given group");
         }
+
+
+
+                searchBtn.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        String keyValue = "groups/search";
+                        Request request = new Request(new SearchRequestData(searchTeam.getText()),keyValue);
+                        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+                        System.out.println(response.getData()+" "+response.isSuccess());
+                        if(response.isSuccess()){
+                            try {
+                                Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
+                                if (groups.length != 0 ) {
+                                        for (Group group : groups) {
+                                            cardInfo(group.getName());
+                                    }
+                                }
+                                else{
+                                    System.out.println("Request failed in this group");
+                                }
+                            } catch (JsonProcessingException jsonProcessingException) {
+                                jsonProcessingException.printStackTrace();
+                            } catch (IOException ioException) {
+                                ioException.printStackTrace();
+                            }
+                            CommonUtil.addTabs(10, true);
+
+
+                        }else {
+                            System.out.println("failed to fetch users in the given group");
+                        }
+
+                    }
+                });
+
+
 
     }
     public void cardInfo(String label) throws IOException {
