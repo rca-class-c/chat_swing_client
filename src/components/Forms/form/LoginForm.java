@@ -1,5 +1,12 @@
 package components.Forms.form;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import components.navbar.SidebarDemo;
+import models.AuthInput;
+import models.Request;
+import models.ResponseDataSuccessDecoder;
+import socket.IndexSocket;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -7,11 +14,13 @@ import java.awt.*;
 import java.awt.Color;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 
 
 public class LoginForm extends JFrame implements ActionListener{
     private ActionListener action;
+    ObjectMapper objectMapper;
     private static final Color themeColor = Color.decode("#011638");
 
 
@@ -40,7 +49,7 @@ public class LoginForm extends JFrame implements ActionListener{
         BoxLayout formLayout = new BoxLayout(formPanel, BoxLayout.Y_AXIS);
         formPanel.setLayout(formLayout);
 
-        BufferedImage img = ImageIO.read(this.getClass().getResource("../images/logo.png"));
+        BufferedImage img = ImageIO.read(new File("src/components/Forms/images/logo.png"));
         Image newImg = img.getScaledInstance(100,85,Image.SCALE_DEFAULT);
         JLabel imgLabel = new JLabel(new ImageIcon(newImg));
 
@@ -59,14 +68,6 @@ public class LoginForm extends JFrame implements ActionListener{
 
         loginButton.setBackground(themeColor);
        loginButton.setForeground(Color.WHITE);
-        loginButton.addActionListener(e -> {
-            this.dispose();
-            try {
-                new SidebarDemo();
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
-            }
-        });
 
         JPanel signupLabelPanel = new JPanel(new BorderLayout());
         JPanel helpPanel = new JPanel(new BorderLayout());
@@ -130,6 +131,58 @@ public class LoginForm extends JFrame implements ActionListener{
         mainPanel.add(formPanel);
         add(mainPanel);
 
+        signupLabelPanel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        signupLabelPanel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                dispose();
+                try {
+                    new ActivationForm();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+        });
+
+        loginButton.addActionListener(e -> {
+
+
+            String username = userTextField.getText();
+            String password = passwordField.getText();
+
+
+            AuthInput loginData = new AuthInput(username,password);
+            String url = "users/login";
+            Request request = new Request(loginData,url);
+            ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+            if(response.isSuccess()){
+                JsonNode data = null;
+                try {
+                    data = objectMapper.readTree(response.getData());
+                } catch (JsonProcessingException jsonProcessingException) {
+                    jsonProcessingException.printStackTrace();
+                }
+                int userID = data.get("userID").asInt();
+                this.dispose();
+                try {
+                    new SidebarDemo(userID);
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+
+            else{
+                this.dispose();
+                try {
+                    new LoginForm();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+
+        });
+
+
     }
 
 
@@ -137,4 +190,5 @@ public class LoginForm extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         System.out.println(e);
     }
+
 }
