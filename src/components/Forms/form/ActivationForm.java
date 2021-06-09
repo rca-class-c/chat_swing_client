@@ -1,11 +1,18 @@
 package components.Forms.form;
 
+import components.navbar.SidebarDemo;
+import models.ProfileRequestData;
+import models.Request;
+import models.ResponseDataSuccessDecoder;
+import socket.IndexSocket;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.Color;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 
 public class ActivationForm extends JFrame implements ActionListener{
@@ -14,7 +21,7 @@ public class ActivationForm extends JFrame implements ActionListener{
     JLabel activationLabel = new JLabel("Activation Code ");
     JTextField activationField = new JTextField();
     JButton activateButton = new JButton("ACTIVATE");
-    JLabel signUpLabel = new JLabel("<html> <font color='#011638'>Don't have account?</font>  Sign Up.</html>");
+    JLabel signUpLabel = new JLabel("<html> <font color='#011638'>Already registered?</font>  Sign In.</html>");
     JLabel helpLabel = new JLabel("<html><font color='#EFA510'>Help?</font></html>");
 
     public ActivationForm() throws IOException {
@@ -34,7 +41,7 @@ public class ActivationForm extends JFrame implements ActionListener{
         BoxLayout formLayout = new BoxLayout(formPanel, BoxLayout.Y_AXIS);
         formPanel.setLayout(formLayout);
 
-        BufferedImage img = ImageIO.read(this.getClass().getResource("../images/logo.png"));
+        BufferedImage img = ImageIO.read(new File("src/components/Forms/images/logo.png"));
         Image newImg = img.getScaledInstance(100,85,Image.SCALE_DEFAULT);
         JLabel imgLabel = new JLabel(new ImageIcon(newImg));
 
@@ -102,6 +109,39 @@ public class ActivationForm extends JFrame implements ActionListener{
         formPanel.setBackground(Color.WHITE);
         mainPanel.add(formPanel);
         add(mainPanel);
+
+        signupLabelPanel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        signupLabelPanel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                dispose();
+                try {
+                    new LoginForm();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+        });
+
+        activateButton.addActionListener(e -> {
+
+
+            int code = Integer.parseInt(activationField.getText());
+            String  key= "users/verify";
+
+            Request request = new Request(new ProfileRequestData(code),key);
+            ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+            if(response.isSuccess()){
+                this.dispose();
+                try {
+                    new RegisterForm();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }else{
+                System.out.println("Activation code doesn't exist");
+            }
+            });
 
     }
 
