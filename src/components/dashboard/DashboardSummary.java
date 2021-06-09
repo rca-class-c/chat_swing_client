@@ -47,8 +47,8 @@ public class DashboardSummary extends JFrame{
 
 
         this.addTable(tablePanel);
-        this.addChart(chart1Panel, "Logs");
-        this.addChart(chart2Panel, "Messages");
+        this.addChart(chart1Panel, "Logs",this.createDataset(),"logs");
+        this.addChart(chart2Panel, "Messages",this.createDataset(),"messages");
 
 
         mainPanel.add(this.header(), BorderLayout.NORTH);
@@ -74,6 +74,7 @@ public class DashboardSummary extends JFrame{
 
         sp.setBackground(new Color(229, 229, 229));
         tablePanel.setBackground(new Color(229, 229, 229));
+        panel.setBorder(new EmptyBorder(10,10,10,10));
         panel.add(tablePanel);
     }
     private CategoryDataset createDataset() {
@@ -90,26 +91,19 @@ public class DashboardSummary extends JFrame{
     }
     public void addChart(JPanel panel, String header, CategoryDataset dataset, String yDesc){
         BarchartComponent chart = new BarchartComponent(header,dataset,yDesc);
+        panel.setBorder(new EmptyBorder(10,10,10,10));
         panel.add(chart);
     }
 
     public JPanel header(){
         JPanel header = new JPanel(new BorderLayout());
-        JLabel headerText = new JLabel("Messages");
-        headerText.setBorder(new EmptyBorder(10,10,10,10));
+        JLabel headerText = new JLabel("Dashboard / summary");
+        headerText.setFont(new Font(headerText.getFont().getName(),Font.PLAIN,25));
+        headerText.setBorder(new EmptyBorder(10,10,20,10));
 
-        String[] options = {"2021", "2020", "2019"};
-
-        JPanel selectPanel = new JPanel();
-        Select select = new Select(options);
-        selectPanel.setSize(300,50);
-        selectPanel.add(select.createSelect());
-        selectPanel.setBackground(new Color(229, 229, 229));
-        selectPanel.setBorder(new EmptyBorder(10,10,10,10));
 
 
         header.add(headerText, BorderLayout.WEST);
-        header.add(selectPanel, BorderLayout.CENTER);
         header.setBackground(new Color(229, 229, 229));
         return header;
     }
