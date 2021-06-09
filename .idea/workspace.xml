@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: disable cell auto editable">
+    <list default="true" id="df7bafc2-7c23-4fe5-b4f6-dcdc1ea8c158" name="Default Changelist" comment="feat: centering table content">
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/DashboardSummary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/components/dashboard/TableComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/TableComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/TableComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/UserLogsStatisticsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/UserLogsStatisticsPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.UserLogsStatisticsPage">
+  <component name="RunManager" selected="Application.DashboardSummary">
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
       <module name="chat_swing_client" />
@@ -80,6 +77,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="components.Teams.create.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardSummary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.dashboard.DashboardSummary" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.dashboard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,19 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Settings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="components.Settings" />
-      <module name="chat_swing_client" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="components.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserLogsStatisticsPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="components.dashboard.UserLogsStatisticsPage" />
       <module name="chat_swing_client" />
@@ -167,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DashboardSummary" />
         <item itemvalue="Application.UserLogsStatisticsPage" />
         <item itemvalue="Application.MessagesStatisticsPage" />
         <item itemvalue="Application.ChatIndex" />
         <item itemvalue="Application.CreatePanel" />
-        <item itemvalue="Application.Settings" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +207,9 @@
       <workItem from="1622751530883" duration="102000" />
       <workItem from="1622751691048" duration="1544000" />
       <workItem from="1622753338703" duration="1482000" />
-      <workItem from="1622754897374" duration="532000" />
+      <workItem from="1622754897374" duration="1170000" />
+      <workItem from="1622784349573" duration="1740000" />
+      <workItem from="1622786224519" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="start with intell">
       <created>1619775491094</created>
@@ -324,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622754270042</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: centering table content">
+      <created>1622755618276</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1622755618276</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +364,8 @@
     <MESSAGE value="navigation through sidebar" />
     <MESSAGE value="feat: user logs chat panel" />
     <MESSAGE value="feat: disable cell auto editable" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: disable cell auto editable" />
+    <MESSAGE value="feat: centering table content" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: centering table content" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
