@@ -165,7 +165,7 @@ public class LoginForm extends JFrame implements ActionListener{
 //                int userID = data.get("userID").asInt();
                 this.dispose();
                 try {
-                    new SidebarDemo();
+                    new SidebarDemo(userID);
                 } catch (IOException ioException) {
                     ioException.printStackTrace();
                 }
