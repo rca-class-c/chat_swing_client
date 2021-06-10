@@ -35,4 +35,11 @@ public class UserResponseDataDecoder {
         User[] users = objectMapper.readValue(data, User[].class);
         return users;
     }
+
+    public Messages[] returnMessagesListDecoded(String data)throws JsonProcessingException{
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        Messages[] messages = objectMapper.readValue(data, Messages[].class);
+        return messages;
+    }
 }

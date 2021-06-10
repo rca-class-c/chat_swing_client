@@ -73,6 +73,11 @@ public class User {
         this.status = status;
     }
 
+    public User(int userID, String name) {
+        this.userID = userID;
+        this.fname = name;
+    }
+
 
 
     /**

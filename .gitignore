@@ -1,5 +1,3 @@
-*.idea
 .idea
-.classpath
-.project
+chat_swing_client.iml
 out
