@@ -18,7 +18,7 @@ import java.io.IOException;
 
 
 public class LoginForm extends JFrame implements ActionListener{
-    ObjectMapper objectMapper;
+    ObjectMapper objectMapper = new ObjectMapper();
     private ActionListener action;
     private static final Color themeColor = Color.decode("#011638");
 
@@ -156,13 +156,15 @@ public class LoginForm extends JFrame implements ActionListener{
             ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
 
             if(response.isSuccess()){
-//                JsonNode data = null;
-//                try {
-//                    data = objectMapper.readTree(response.getData());
-//                } catch (JsonProcessingException jsonProcessingException) {
-//                    jsonProcessingException.printStackTrace();
-//                }
-//                int userID = data.get("userID").asInt();
+                JsonNode data = null;
+                System.out.println(response.getData());
+                try {
+                    data = objectMapper.readTree(response.getData());
+
+                } catch (JsonProcessingException jsonProcessingException) {
+                    jsonProcessingException.printStackTrace();
+                }
+                int userID = data.get("userID").asInt();
                 this.dispose();
                 try {
                     new SidebarDemo(userID);
