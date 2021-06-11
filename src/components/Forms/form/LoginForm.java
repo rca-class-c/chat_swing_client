@@ -156,13 +156,13 @@ public class LoginForm extends JFrame implements ActionListener{
             Request request = new Request(loginData,url);
             ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
             if(response.isSuccess()){
-                JsonNode data = null;
-                try {
-                    data = objectMapper.readTree(response.getData());
-                } catch (JsonProcessingException jsonProcessingException) {
-                    jsonProcessingException.printStackTrace();
-                }
-                int userID = data.get("userID").asInt();
+//                JsonNode data = null;
+//                try {
+//                    data = objectMapper.readTree(response.getData());
+//                } catch (JsonProcessingException jsonProcessingException) {
+//                    jsonProcessingException.printStackTrace();
+//                }
+//                int userID = data.get("userID").asInt();
                 this.dispose();
                 try {
                     new SidebarDemo();
