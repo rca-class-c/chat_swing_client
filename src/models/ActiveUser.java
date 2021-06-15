@@ -3,6 +3,14 @@ package models;
 import java.io.Serializable;
 
 public class ActiveUser implements  Serializable{
+
+    /**
+     * it is highly recommended that each class declares its serialVersionUID
+     * as the generated one is compiler dependent and thus may result in
+     * unexpected InvalidClassExceptions.
+     */
+    private static final long serialVersionUID = 1L;
+
     int userID;
     String username;
 
