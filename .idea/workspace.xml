@@ -23,6 +23,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Documents\MEGA\MEGAsync\Contributions\chat_swing_client\src\components\navbar\images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
