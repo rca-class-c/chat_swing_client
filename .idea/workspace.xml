@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="Added  serialVersionUID to all serializable classes" />
+    <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="Images from navbar grouped in their directory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623432139364</updated>
       <workItem from="1623432144213" duration="437000" />
-      <workItem from="1623784251436" duration="891000" />
+      <workItem from="1623784251436" duration="1245000" />
     </task>
     <task id="LOCAL-00001" summary="Added  serialVersionUID to all serializable classes">
       <created>1623784696409</created>
@@ -68,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623784696409</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Images from navbar grouped in their directory">
+      <created>1623785379491</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623785379491</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added  serialVersionUID to all serializable classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added  serialVersionUID to all serializable classes" />
+    <MESSAGE value="Images from navbar grouped in their directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Images from navbar grouped in their directory" />
   </component>
 </project>
