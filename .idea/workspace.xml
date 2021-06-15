@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="replaced unnecessary println statement with \n">
-      <change beforePath="$PROJECT_DIR$/src/utils/GroupMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/GroupMessage.java" afterDir="false" />
+    <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="removed default access modifiers from GroupMessage(For security purpose and G&amp;S to have value)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <updated>1623432139364</updated>
       <workItem from="1623432144213" duration="437000" />
       <workItem from="1623784251436" duration="1687000" />
-      <workItem from="1623786201888" duration="183000" />
+      <workItem from="1623786201888" duration="509000" />
     </task>
     <task id="LOCAL-00001" summary="Added  serialVersionUID to all serializable classes">
       <created>1623784696409</created>
@@ -84,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623785781745</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="removed default access modifiers from GroupMessage(For security purpose and G&amp;S to have value)">
+      <created>1623786659937</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623786659937</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,12 +108,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added  serialVersionUID to all serializable classes" />
     <MESSAGE value="Images from navbar grouped in their directory" />
     <MESSAGE value="Fixed package issue in Friends Class" />
     <MESSAGE value="replaced unnecessary println statement with \n" />
-    <option name="LAST_COMMIT_MESSAGE" value="replaced unnecessary println statement with \n" />
+    <MESSAGE value="removed default access modifiers from GroupMessage(For security purpose and G&amp;S to have value)" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed default access modifiers from GroupMessage(For security purpose and G&amp;S to have value)" />
   </component>
 </project>
