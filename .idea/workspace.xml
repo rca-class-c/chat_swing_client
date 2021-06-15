@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="replaced unnecessary println statement with \n">
-      <change beforePath="$PROJECT_DIR$/src/utils/ConsoleColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ConsoleColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/GroupMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/GroupMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +38,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ChatIndex" />
@@ -67,6 +54,7 @@
       <updated>1623432139364</updated>
       <workItem from="1623432144213" duration="437000" />
       <workItem from="1623784251436" duration="1687000" />
+      <workItem from="1623786201888" duration="183000" />
     </task>
     <task id="LOCAL-00001" summary="Added  serialVersionUID to all serializable classes">
       <created>1623784696409</created>
