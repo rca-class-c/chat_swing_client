@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ActiveUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ActiveUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/AuthInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/AuthInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/UserLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UserLog.java" afterDir="false" />
-    </list>
+    <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="Added  serialVersionUID to all serializable classes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +31,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ChatIndex" />
@@ -51,11 +59,34 @@
       <option name="presentableId" value="Default" />
       <updated>1623432139364</updated>
       <workItem from="1623432144213" duration="437000" />
-      <workItem from="1623784251436" duration="327000" />
+      <workItem from="1623784251436" duration="891000" />
     </task>
+    <task id="LOCAL-00001" summary="Added  serialVersionUID to all serializable classes">
+      <created>1623784696409</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623784696409</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added  serialVersionUID to all serializable classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added  serialVersionUID to all serializable classes" />
   </component>
 </project>
