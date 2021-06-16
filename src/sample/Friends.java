@@ -1,4 +1,6 @@
-package components.sidebar.sample;
+//package components.sidebar.sample;
+
+package sample;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

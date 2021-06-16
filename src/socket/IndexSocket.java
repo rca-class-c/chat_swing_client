@@ -14,8 +14,8 @@ public class IndexSocket {
     public ResponseDataSuccessDecoder execute(Request request) {
         try {
             Socket socket = new Socket(hostname, port);
-            System.out.println("Connected to Server Successfully");
-            System.out.println();
+            System.out.println("Connected to Server Successfully \n");
+//            System.out.println();
 
             response = new socket.WriteThread(socket, this,request).run(socket);
         } catch (UnknownHostException ex) {

@@ -14,13 +14,12 @@ import java.awt.*;
 import java.awt.Color;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 
 
 public class LoginForm extends JFrame implements ActionListener{
+    ObjectMapper objectMapper = new ObjectMapper();
     private ActionListener action;
-    ObjectMapper objectMapper;
     private static final Color themeColor = Color.decode("#011638");
 
 
@@ -49,7 +48,7 @@ public class LoginForm extends JFrame implements ActionListener{
         BoxLayout formLayout = new BoxLayout(formPanel, BoxLayout.Y_AXIS);
         formPanel.setLayout(formLayout);
 
-        BufferedImage img = ImageIO.read(new File("src/components/Forms/images/logo.png"));
+        BufferedImage img = ImageIO.read(this.getClass().getResource("../images/logo.png"));
         Image newImg = img.getScaledInstance(100,85,Image.SCALE_DEFAULT);
         JLabel imgLabel = new JLabel(new ImageIcon(newImg));
 
@@ -155,17 +154,20 @@ public class LoginForm extends JFrame implements ActionListener{
             String url = "users/login";
             Request request = new Request(loginData,url);
             ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+
             if(response.isSuccess()){
                 JsonNode data = null;
+                System.out.println(response.getData());
                 try {
                     data = objectMapper.readTree(response.getData());
+
                 } catch (JsonProcessingException jsonProcessingException) {
                     jsonProcessingException.printStackTrace();
                 }
                 int userID = data.get("userID").asInt();
                 this.dispose();
                 try {
-                    new SidebarDemo();
+                    new SidebarDemo(userID);
                 } catch (IOException ioException) {
                     ioException.printStackTrace();
                 }
@@ -181,14 +183,9 @@ public class LoginForm extends JFrame implements ActionListener{
             }
 
         });
-
-
     }
-
-
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println(e);
     }
-
 }
