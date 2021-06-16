@@ -3,12 +3,12 @@ package utils;
 import java.util.Date;
 
 public class GroupMessage {
-    String content;
-    Integer sender;
-    Integer group_receiver;
-    Integer original_message;
-    Date sent_at;
-    Integer id;
+    private String content;
+    private Integer sender;
+    private Integer group_receiver;
+    private Integer original_message;
+    private Date sent_at;
+    private Integer id;
 
 
 
