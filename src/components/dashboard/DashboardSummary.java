@@ -12,7 +12,7 @@ public class DashboardSummary extends JFrame{
 
     public DashboardSummary() throws IOException {
         setTitle("Dashboard Summary");
-        setSize(1200, 700);
+        setSize(1200, 1000);
         setMinimumSize(new Dimension(800,600));
         initUI();
         setLocationRelativeTo(null);
@@ -41,7 +41,7 @@ public class DashboardSummary extends JFrame{
         BoxLayout tableLayout = new BoxLayout(tablePanel, BoxLayout.Y_AXIS);
         tablePanel.setLayout(tableLayout);
 
-
+        chartsPanel.add(this.header("This week report"), BorderLayout.NORTH);
         chartsPanel.add(chart1Panel, BorderLayout.WEST);
         chartsPanel.add(chart2Panel, BorderLayout.EAST);
 
@@ -51,7 +51,7 @@ public class DashboardSummary extends JFrame{
         this.addChart(chart2Panel, "Messages",this.createDataset(),"messages");
 
 
-        mainPanel.add(this.header(), BorderLayout.NORTH);
+        mainPanel.add(this.header("Dashboard / summary"), BorderLayout.NORTH);
         mainPanel.add(tablePanel, BorderLayout.CENTER);
         mainPanel.add(chartsPanel, BorderLayout.SOUTH);
         this.add(mainPanel);
@@ -91,16 +91,19 @@ public class DashboardSummary extends JFrame{
     }
     public void addChart(JPanel panel, String header, CategoryDataset dataset, String yDesc){
         BarchartComponent chart = new BarchartComponent(header,dataset,yDesc);
+        JPanel chartContainer = new JPanel();
+        chartContainer.add(chart);
+        chartContainer.setSize(200,400);
+
         panel.setBorder(new EmptyBorder(10,10,10,10));
-        panel.add(chart);
+        panel.add(chartContainer);
     }
 
-    public JPanel header(){
+    public JPanel header(String text){
         JPanel header = new JPanel(new BorderLayout());
-        JLabel headerText = new JLabel("Dashboard / summary");
+        JLabel headerText = new JLabel(text);
         headerText.setFont(new Font(headerText.getFont().getName(),Font.PLAIN,25));
         headerText.setBorder(new EmptyBorder(10,10,20,10));
-
 
 
         header.add(headerText, BorderLayout.WEST);
