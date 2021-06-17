@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/chat_swing_client/ChatIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/chat_swing_client/ChatIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/view/Layout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +25,36 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ChatIndex">
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
       <module name="chat_swing_client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessagesStatisticsPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.dashboard.MessagesStatisticsPage" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.dashboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserLogsStatisticsPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="components.dashboard.UserLogsStatisticsPage" />
+      <module name="chat_swing_client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="components.dashboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -48,6 +73,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ChatIndex" />
+        <item itemvalue="Application.UserLogsStatisticsPage" />
+        <item itemvalue="Application.MessagesStatisticsPage" />
       </list>
     </recent_temporary>
   </component>
@@ -60,10 +87,15 @@
       <option name="presentableId" value="Default" />
       <updated>1623432139364</updated>
       <workItem from="1623432144213" duration="437000" />
+      <workItem from="1623445010270" duration="2557000" />
+      <workItem from="1623714851335" duration="139000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/chat_swing_client$ChatIndex.ic" NAME="ChatIndex Coverage Results" MODIFIED="1623714911230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
