@@ -1,43 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d5f8e424-ecb9-41b6-a200-5690d87ad958" name="Default Changelist" comment="fix: space error">
       <change afterPath="$PROJECT_DIR$/src/components/sidebar/sample/Group.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/sidebar/sample/People.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sidebar/sample/Friends.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sample/Friends.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sidebar/sample/Groups.java" beforeDir="false" />
+=======
+    <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="removed default access modifiers from GroupMessage(For security purpose and G&amp;S to have value)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+>>>>>>> da30659e5d8c700c2733c3d3d61c15c974fe7728
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1rsqxAdQnboMv4hDFA3Yhg9URPU" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1toOmvh8Ww7ycxAx49RoYDcXkaj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -62,6 +57,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Documents\MEGA\MEGAsync\Contributions\chat_swing_client\src\components\navbar\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+>>>>>>> da30659e5d8c700c2733c3d3d61c15c974fe7728
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatIndex" />
       <module name="chat_swing_client" />
@@ -69,6 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Friends (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="components.sidebar.sample.Friends" />
       <module name="chat_swing_client" />
@@ -115,12 +122,20 @@
         <item itemvalue="Application.ChatIndex" />
         <item itemvalue="Application.Friends" />
         <item itemvalue="Application.BarchartComponent" />
+=======
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ChatIndex" />
+        <item itemvalue="Application.UserLogsStatisticsPage" />
+        <item itemvalue="Application.MessagesStatisticsPage" />
+>>>>>>> da30659e5d8c700c2733c3d3d61c15c974fe7728
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="d5f8e424-ecb9-41b6-a200-5690d87ad958" name="Default Changelist" comment="fix: space error" />
       <created>1619775391062</created>
       <option name="number" value="Default" />
@@ -143,57 +158,53 @@
       <workItem from="1623150249602" duration="4343000" />
       <workItem from="1623215126966" duration="139000" />
       <workItem from="1623929317224" duration="340000" />
+=======
+      <changelist id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="" />
+      <created>1623432139364</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623432139364</updated>
+      <workItem from="1623432144213" duration="437000" />
+      <workItem from="1623784251436" duration="1687000" />
+      <workItem from="1623786201888" duration="509000" />
+>>>>>>> da30659e5d8c700c2733c3d3d61c15c974fe7728
     </task>
-    <task id="LOCAL-00001" summary="start with intell">
-      <created>1619775491094</created>
+    <task id="LOCAL-00001" summary="Added  serialVersionUID to all serializable classes">
+      <created>1623784696409</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1619775491094</updated>
+      <updated>1623784696409</updated>
     </task>
-    <task id="LOCAL-00002" summary="calma mi alma">
-      <created>1619775890428</created>
+    <task id="LOCAL-00002" summary="Images from navbar grouped in their directory">
+      <created>1623785379491</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1619775890428</updated>
+      <updated>1623785379491</updated>
     </task>
-    <task id="LOCAL-00003" summary="edit message component">
-      <created>1619978379541</created>
+    <task id="LOCAL-00003" summary="Fixed package issue in Friends Class">
+      <created>1623785644225</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1619978379541</updated>
+      <updated>1623785644225</updated>
     </task>
-    <task id="LOCAL-00004" summary="user settings component added">
-      <created>1620571278252</created>
+    <task id="LOCAL-00004" summary="replaced unnecessary println statement with \n">
+      <created>1623785781745</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1620571278252</updated>
+      <updated>1623785781745</updated>
     </task>
-    <task id="LOCAL-00005" summary="text border radius added">
-      <created>1621936867050</created>
+    <task id="LOCAL-00005" summary="removed default access modifiers from GroupMessage(For security purpose and G&amp;S to have value)">
+      <created>1623786659937</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1621936867050</updated>
+      <updated>1623786659937</updated>
     </task>
-    <task id="LOCAL-00006" summary="Modified Groups and Friends">
-      <created>1622737264042</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1622737264042</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fix: space error">
-      <created>1622737703343</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1622737703343</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,25 +223,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="start with intell" />
-    <MESSAGE value="calma mi alma" />
-    <MESSAGE value="edit message component" />
-    <MESSAGE value="user settings component added" />
-    <MESSAGE value="text border radius added" />
-    <MESSAGE value="Modified Groups and Friends" />
-    <MESSAGE value="fix: space error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: space error" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/components/EditMessage.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added  serialVersionUID to all serializable classes" />
+    <MESSAGE value="Images from navbar grouped in their directory" />
+    <MESSAGE value="Fixed package issue in Friends Class" />
+    <MESSAGE value="replaced unnecessary println statement with \n" />
+    <MESSAGE value="removed default access modifiers from GroupMessage(For security purpose and G&amp;S to have value)" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed default access modifiers from GroupMessage(For security purpose and G&amp;S to have value)" />
   </component>
 </project>

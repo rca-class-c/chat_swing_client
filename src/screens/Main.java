@@ -1,8 +1,9 @@
-import components.Forms.form.LoginForm;
+package screens;
 
 import java.io.IOException;
-public class ChatIndex {
+
+public class Main {
     public static void main(String[] args) throws IOException {
-        new LoginForm();
+        DirectChatScreen screen = new DirectChatScreen();
     }
 }

@@ -1,5 +1,12 @@
 package components.Forms.form;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import components.navbar.SidebarDemo;
+import models.AuthInput;
+import models.Request;
+import models.ResponseDataSuccessDecoder;
+import socket.IndexSocket;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -11,6 +18,7 @@ import java.io.IOException;
 
 
 public class LoginForm extends JFrame implements ActionListener{
+    ObjectMapper objectMapper = new ObjectMapper();
     private ActionListener action;
     private static final Color themeColor = Color.decode("#011638");
 
@@ -59,14 +67,6 @@ public class LoginForm extends JFrame implements ActionListener{
 
         loginButton.setBackground(themeColor);
        loginButton.setForeground(Color.WHITE);
-        loginButton.addActionListener(e -> {
-            this.dispose();
-            try {
-                new SidebarDemo();
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
-            }
-        });
 
         JPanel signupLabelPanel = new JPanel(new BorderLayout());
         JPanel helpPanel = new JPanel(new BorderLayout());
@@ -130,9 +130,60 @@ public class LoginForm extends JFrame implements ActionListener{
         mainPanel.add(formPanel);
         add(mainPanel);
 
+        signupLabelPanel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        signupLabelPanel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                dispose();
+                try {
+                    new ActivationForm();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+        });
+
+        loginButton.addActionListener(e -> {
+
+
+            String username = userTextField.getText();
+            String password = passwordField.getText();
+
+
+            AuthInput loginData = new AuthInput(username,password);
+            String url = "users/login";
+            Request request = new Request(loginData,url);
+            ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+
+            if(response.isSuccess()){
+                JsonNode data = null;
+                System.out.println(response.getData());
+                try {
+                    data = objectMapper.readTree(response.getData());
+
+                } catch (JsonProcessingException jsonProcessingException) {
+                    jsonProcessingException.printStackTrace();
+                }
+                int userID = data.get("userID").asInt();
+                this.dispose();
+                try {
+                    new SidebarDemo(userID);
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+
+            else{
+                this.dispose();
+                try {
+                    new LoginForm();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+
+        });
     }
-
-
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println(e);
