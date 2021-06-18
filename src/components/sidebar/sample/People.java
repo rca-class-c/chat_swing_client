@@ -97,7 +97,7 @@ public class People implements Scrollable{
     public void resetY_axis() {
         this.y_axis = 11;
     }
-    final JPanel allUsers(List<String> users,JButton button) {
+    public final JPanel allUsers(List<String> users, JButton button) {
         JPanel allusers = new JPanel();
         allusers.setBackground(new Color(240, 248, 255));
         allusers.setBorder(new EmptyBorder(5, 5, 5, 5));

@@ -1,19 +1,11 @@
-<<<<<<< HEAD:src/components/sidebar/sample/Friends.java
 package components.sidebar.sample;
-=======
-//package components.sidebar.sample;
 
-package sample;
-
->>>>>>> da30659e5d8c700c2733c3d3d61c15c974fe7728:src/sample/Friends.java
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
