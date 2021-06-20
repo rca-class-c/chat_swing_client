@@ -1,5 +1,7 @@
 package components.sidebar.sample;
 
+import components.add_group_member.AddGroupMembers;
+
 import java.awt.BorderLayout;
 
 import java.awt.Color;
@@ -15,6 +17,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -100,6 +105,17 @@ public class Group extends JFrame {
         JButton btnNewButton = new JButton("ADD");
         btnNewButton.setBackground(new Color(0, 0, 0));
         btnNewButton.setForeground(new Color(255, 255, 255));
+
+        btnNewButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new AddGroupMembers();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }
+        });
         People p = new People();
         universal.add(p.allUsers(userNames,btnNewButton),BorderLayout.CENTER);
         scrollPane.setBorder(null);
