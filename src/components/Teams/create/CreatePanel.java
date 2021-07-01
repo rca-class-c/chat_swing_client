@@ -68,10 +68,10 @@ public class CreatePanel {
 //        textPanel.setSize(750, 100);
 //        textPanel.setSize(750, 100);
 //        panel.setSize(750, 750);
-        headerPanel.setBounds(34,35,700,40);
-        textPanel.setBounds(34,75,700,40);
-        textPanel.setBounds(34,115,700,40);
-        panel.setBounds(30,30,700,700);
+        headerPanel.setBounds(13,35,700,40);
+        textPanel.setBounds(13,75,700,40);
+        textPanel.setBounds(13,115,700,40);
+        panel.setBounds(10,30,700,700);
         panel.setLocation(400,20);
 
 

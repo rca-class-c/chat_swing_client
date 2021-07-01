@@ -14,12 +14,21 @@ public class NewPage extends JPanel {
         perform();
     }
 public void perform(){
-    JLabel form = new JLabel("Checking");
-    this.add(form);
+        JPanel panel1 = new JPanel();
+        JPanel panel2 = new JPanel();
+    JLabel form = new JLabel("Welcome");
+    panel1.setFont(new Font("Montserrat", Font.BOLD, 28));
+    form.setBounds(30,30,500,10);
+    panel1.add(form);
     try{
-        JLabel check = new JLabel("Checkingggggg");
-        this.add(check);
+        JLabel check = new JLabel("Welcome to Official classC chat system with you lovely Java!");
+        panel2.setBounds(30,40,500,10);
+        check.setFont(new Font("Montserrat", Font.PLAIN, 18));
+        panel2.add(check);
         System.out.println(this);
+
+        this.add(panel1);
+        this.add(panel2);
 
 
 

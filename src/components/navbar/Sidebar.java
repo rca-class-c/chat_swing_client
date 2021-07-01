@@ -28,7 +28,7 @@ public class Sidebar extends JPanel {
         navBarItems.setBackground(new Color(0,0,0,0));
 
         JButton home = new SideBarListItem("home.png", "Home");
-        home.setActionCommand("teams");
+        home.setActionCommand("welcome");
         JLabel label5 = new JLabel("Hello from teams");
         label5.setVisible(false);
         home.addActionListener(e-> {
@@ -63,29 +63,29 @@ public class Sidebar extends JPanel {
             }
         });
 
-        JButton new_group = new SideBarListItem("add-group.png", "New group");
-        new_group.setActionCommand("new_group");
-        JLabel label8 = new JLabel("Hello from new_group");
-        label8.setVisible(false);
-        new_group.addActionListener(e-> {
-            try {
-                actionListener(e);
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
-            }
-        });
+//        JButton new_group = new SideBarListItem("add-group.png", "New group");
+//        new_group.setActionCommand("new_group");
+//        JLabel label8 = new JLabel("Hello from new_group");
+//        label8.setVisible(false);
+//        new_group.addActionListener(e-> {
+//            try {
+//                actionListener(e);
+//            } catch (IOException ioException) {
+//                ioException.printStackTrace();
+//            }
+//        });
 
-        JButton teams = new SideBarListItem("user-group.png", "teams");
-        teams.setActionCommand("teams");
-        JLabel label1 = new JLabel("Hello from teams");
-        label1.setVisible(false);
-        teams.addActionListener(e-> {
-            try {
-                actionListener(e);
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
-            }
-        });
+//        JButton teams = new SideBarListItem("user-group.png", "teams");
+//        teams.setActionCommand("teams");
+//        JLabel label1 = new JLabel("Hello from teams");
+//        label1.setVisible(false);
+//        teams.addActionListener(e-> {
+//            try {
+//                actionListener(e);
+//            } catch (IOException ioException) {
+//                ioException.printStackTrace();
+//            }
+//        });
 
          JButton chat = new SideBarListItem("chat.png", "Chat");
         chat.setActionCommand("messaging");
@@ -127,17 +127,13 @@ public class Sidebar extends JPanel {
         home.setBorder(new EmptyBorder(0, 20, 0, 50));
         logout.setBorder(new EmptyBorder(68, 20, 0, 50));
         group.setBorder(new EmptyBorder(0, 20, 0, 50));
-        new_group.setBorder(new EmptyBorder(0, 20, 0, 50));
         chat.setBorder(new EmptyBorder(0, 20,0 , 50));
         settings.setBorder(new EmptyBorder(0, 20, 0, 30));
-        teams.setBorder(new EmptyBorder( 0, 20, 0, 50));
         new_teams.setBorder(new EmptyBorder( 0, 20, 0, 50));
 
         navBarItems.add(home);
-        navBarItems.add(teams);
         navBarItems.add(new_teams);
         navBarItems.add(group);
-        navBarItems.add(new_group);
         navBarItems.add(chat);
         navBarItems.add(settings);
         navBarItems.add(logout);
@@ -188,11 +184,6 @@ public class Sidebar extends JPanel {
                 frame.dispose();
                 new GenerateFrame(new CreatePanel().returnPanel(frame));
              }
-            case "new_group" -> {
-                System.out.println("new_group action listener");
-                frame.dispose();
-                new GenerateFrame(new CreatePanel().returnPanel(frame));
-            }
             case "new_teams" -> {
                 System.out.println("new_teams action listener");
                 frame.dispose();

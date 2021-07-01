@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="">
+    <list default="true" id="2862a313-a393-4ecf-8c4f-78713240775b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_swing_client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_swing_client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Teams/create/CreatePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/NewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/NewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Sidebar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1toOmvh8Ww7ycxAx49RoYDcXkaj" />
+  <component name="ProjectId" id="1uijj1YQXNbhG9CFWiUTdrbbZfz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,9 +26,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="ChatIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -54,28 +58,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c98cbe7d-4d4a-4baf-97b6-5f4c71e15aea" name="Default Changelist" comment="" />
-      <created>1623432139364</created>
+      <changelist id="2862a313-a393-4ecf-8c4f-78713240775b" name="Default Changelist" comment="" />
+      <created>1625155435087</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1623432139364</updated>
-      <workItem from="1623432144213" duration="437000" />
-      <workItem from="1623599761255" duration="610000" />
-      <workItem from="1623783539254" duration="1344000" />
-      <workItem from="1623787103451" duration="2614000" />
-      <workItem from="1623820660783" duration="115000" />
-      <workItem from="1623865708125" duration="786000" />
-      <workItem from="1623918542462" duration="2174000" />
-      <workItem from="1623994921935" duration="225000" />
-      <workItem from="1625079827905" duration="1618000" />
-      <workItem from="1625121667198" duration="4479000" />
+      <updated>1625155435087</updated>
+      <workItem from="1625155436844" duration="920000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
