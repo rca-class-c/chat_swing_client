@@ -174,7 +174,7 @@ public class Dashboard extends JFrame {
             case "Users" -> {
                 System.out.println("Users action listener");
                 dispose();
-                new GenerateFrame(new CreatePanel().returnPanel());
+                new GenerateFrame(new CreatePanel().returnPanel(frame));
             }
             case "User Logs" -> {
                 System.out.println("Logs action listener");

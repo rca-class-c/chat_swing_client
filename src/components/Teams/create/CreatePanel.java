@@ -1,5 +1,7 @@
 package components.Teams.create;
 
+import components.Teams.view.Layout;
+import components.navbar.GenerateFrame;
 import models.Group;
 import models.Request;
 import models.ResponseDataSuccessDecoder;
@@ -10,9 +12,10 @@ import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class CreatePanel {
-    public JPanel returnPanel(){
+    public JPanel returnPanel(Frame frame){
         Border border = BorderFactory.createLineBorder(Color.BLACK);
         JButton btn = new JButton("Save Group");
         btn.setBackground(new Color(53,32,88));
@@ -60,10 +63,15 @@ public class CreatePanel {
         namePanel.add(textField);
         textPanel.add(textArea);
 
-        namePanel.setSize(700, 100);
-        headerPanel.setSize(700, 120);
-        textPanel.setSize(700, 100);
-        panel.setSize(750, 750);
+//        namePanel.setSize(750, 100);
+//        headerPanel.setSize(750, 100);
+//        textPanel.setSize(750, 100);
+//        textPanel.setSize(750, 100);
+//        panel.setSize(750, 750);
+        headerPanel.setBounds(34,35,700,40);
+        textPanel.setBounds(34,75,700,40);
+        textPanel.setBounds(34,115,700,40);
+        panel.setBounds(30,30,700,700);
         panel.setLocation(400,20);
 
 
@@ -74,6 +82,14 @@ public class CreatePanel {
             String key = "groups/new";
             Request request = new Request(newGroup,key);
             ResponseDataSuccessDecoder responseDataSuccessDecoder = new IndexSocket().execute(request);
+            if(responseDataSuccessDecoder.isSuccess()){
+                frame.dispose();
+                try {
+                    new GenerateFrame(new Layout().mainLayout());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
             System.out.println(responseDataSuccessDecoder);
         });
         panel.add(headerPanel);

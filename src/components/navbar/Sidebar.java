@@ -171,7 +171,7 @@ public class Sidebar extends JPanel {
             case "Chatting" -> {
                 System.out.println("chat action listener");
                 frame.dispose();
-                new GenerateFrame(new CreatePanel().returnPanel());
+                new GenerateFrame(new CreatePanel().returnPanel(frame));
             }
             case "messaging" -> {
                 System.out.println("chat action listener");
@@ -186,22 +186,22 @@ public class Sidebar extends JPanel {
              case "group" -> {
                 System.out.println("group action listener");
                 frame.dispose();
-                new GenerateFrame(new CreatePanel().returnPanel());
+                new GenerateFrame(new CreatePanel().returnPanel(frame));
              }
             case "new_group" -> {
                 System.out.println("new_group action listener");
                 frame.dispose();
-                new GenerateFrame(new CreatePanel().returnPanel());
+                new GenerateFrame(new CreatePanel().returnPanel(frame));
             }
             case "new_teams" -> {
                 System.out.println("new_teams action listener");
                 frame.dispose();
-                new GenerateFrame(new CreatePanel().returnPanel());
+                new GenerateFrame(new CreatePanel().returnPanel(frame));
             }
             case "logout" -> {
                 System.out.println("logout action listener");
                 frame.dispose();
-                new GenerateFrame(new CreatePanel().returnPanel());
+                new GenerateFrame(new CreatePanel().returnPanel(frame));
             }
             default -> System.out.println("Unknown");
         }
