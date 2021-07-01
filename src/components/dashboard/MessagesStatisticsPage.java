@@ -68,12 +68,12 @@ public class MessagesStatisticsPage extends JFrame{
     private CategoryDataset createDataset() {
 
         var dataset = new DefaultCategoryDataset();
-        dataset.setValue(46, "Gold medals", "USA");
-        dataset.setValue(38, "Gold medals", "China");
-        dataset.setValue(29, "Gold medals", "UK");
-        dataset.setValue(22, "Gold medals", "Russia");
-        dataset.setValue(13, "Gold medals", "South Korea");
-        dataset.setValue(11, "Gold medals", "Germany");
+        dataset.setValue(46, "Gold medals", "Sunday");
+        dataset.setValue(38, "Gold medals", "Monday");
+        dataset.setValue(29, "Gold medals", "Tuesday");
+        dataset.setValue(22, "Gold medals", "Wednesday");
+        dataset.setValue(45, "Gold medals", "Friday");
+        dataset.setValue(11, "Gold medals", "Saturday");
 
         return dataset;
     }
