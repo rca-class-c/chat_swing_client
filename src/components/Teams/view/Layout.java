@@ -178,6 +178,12 @@ public class Layout {
                         Request request = new Request(new SearchRequestData(searchTeam.getText()),keyValue);
                         ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
                         System.out.println(response.getData()+" "+response.isSuccess());
+                        mainPanel.remove(0);
+//                        mainPanel.add(teamsPanel);
+                        mainPanel.invalidate();
+                        mainPanel.validate();
+                        mainPanel.repaint();
+
                         if(response.isSuccess()){
                             try {
                                 Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());

@@ -260,9 +260,9 @@ public class AddGroupMembers extends JFrame {
         }
     }
 
-    public static void main(String[] args) throws IOException {
-        new AddGroupMembers();
-    }
+//    public static void main(String[] args) throws IOException {
+//        new AddGroupMembers();
+//    }
 }
 
 class MyScrollbarUI extends BasicScrollBarUI {
