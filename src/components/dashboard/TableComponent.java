@@ -1,6 +1,7 @@
 package components.dashboard;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 //import javax.swing.table.TableCellRenderer;
 import java.awt.*;
@@ -20,7 +21,7 @@ public class TableComponent extends JTable{
         this.setFocusable(false);
         this.setIntercellSpacing(new Dimension(0,0));
         this.setRowMargin(0);
-        this.setShowVerticalLines(false);
+        this.setShowVerticalLines(true);
         this.setAutoResizeMode(AUTO_RESIZE_LAST_COLUMN);
 
 
@@ -35,14 +36,28 @@ public class TableComponent extends JTable{
         });
         this.getTableHeader().setBackground(Color.white);
         this.getTableHeader().setReorderingAllowed(false);
-        this.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 12));
+        this.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 14));
 
 
 //        this.setBackground(new Color(245,249,255));
         this.setShowGrid(false);
         this.setShowHorizontalLines(true);
 
+        DefaultTableCellRenderer centerRender = new DefaultTableCellRenderer();
+        centerRender.setHorizontalAlignment(JLabel.CENTER);
 
+        for(int i = 0; i < columnNames.length; i++){
+            this.getColumnModel().getColumn(i).setCellRenderer(centerRender);
+        }
+        
+
+
+    }
+
+    @Override
+    public boolean isCellEditable(int row, int column)
+    {
+        return false;
     }
 
 }

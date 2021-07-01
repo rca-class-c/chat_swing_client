@@ -5,14 +5,10 @@ import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.NumberAxis;
 import org.jfree.chart.plot.CategoryPlot;
-import org.jfree.chart.plot.IntervalMarker;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.renderer.category.BarRenderer;
 import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.category.DefaultCategoryDataset;
-import org.jfree.ui.Layer;
-import org.jfree.ui.RectangleAnchor;
-import org.jfree.ui.TextAnchor;
 
 import javax.swing.*;
 import java.awt.*;
@@ -54,10 +50,9 @@ public class BarchartComponent extends JPanel {
         renderer.setDrawBarOutline(false);
         renderer.setItemMargin(0.10);
         ChartPanel chartPanel = new ChartPanel(chart);
-        chartPanel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+        chartPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         chartPanel.setBackground(Color.white);
         add(chartPanel);
-
     }
 
 //    private CategoryDataset createDataset() {
@@ -102,5 +97,29 @@ public class BarchartComponent extends JPanel {
         f.add(sp);
         f.setSize(300, 700);
         f.setVisible(true);
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getyValueName() {
+        return yValueName;
+    }
+
+    public void setyValueName(String yValueName) {
+        this.yValueName = yValueName;
+    }
+
+    public CategoryDataset getDataset() {
+        return dataset;
+    }
+
+    public void setDataset(CategoryDataset dataset) {
+        this.dataset = dataset;
     }
 }
