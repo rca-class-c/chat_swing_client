@@ -95,13 +95,15 @@ public class Layout {
         //Cards
         cardsMainPanel = new JPanel(new FlowLayout(SwingConstants.LEADING, 10, 10));
         cardsHeaderSubPanel = new JPanel(new FlowLayout(SwingConstants.LEADING, 50, 10));
-        cardsHeaderPanel = new JPanel(new GridLayout(2, 2, 70, 30));
+        cardsHeaderPanel = new JPanel(new GridLayout(2, 2, 100, 30));
         groupButtonPanel = new JPanel(new BorderLayout());
-        teamsDescPanel = new JPanel(new GridLayout(2, 0));
+        teamsDescPanel = new JPanel(new GridLayout(4, 0));
+        teamsDescPanel.setPreferredSize(new Dimension(100,700));
         teamsCreatedTitle = new JLabel("Teams Created");
         teamsCreatedTitle.setForeground(Color.decode("#011638"));
         teamsCreatedTitle.setFont(new Font("Inter", Font.BOLD, 16));
-        teamsParagraph = new JLabel("You have created 5 groups");
+        teamsParagraph = new JLabel("");
+        teamsParagraph.setBorder(new EmptyBorder(5,0,0,0));
         teamsParagraph.setFont(new Font("Inter", Font.PLAIN, 12));
         teamsParagraph.setForeground(Color.decode("#B5B5C3"));
         newGroupBtn = new JButton();
@@ -113,6 +115,79 @@ public class Layout {
         teamsDescPanel.add(teamsCreatedTitle);
         teamsDescPanel.add(teamsParagraph);
         teamsDescPanel.setBackground(new Color(0, 0, 0, 0));
+
+        String key= "groups/";
+        Request request = new Request(new ProfileRequestData(4), key);
+        //get all group in the system
+        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+        if(response.isSuccess()){
+            Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
+            CommonUtil.addTabs(10, true);
+            int limit = 0;
+            if (groups.length != 0 ){
+
+                teamsParagraph.setText("You have created " +groups.length+ " groups");
+                for(Group group: groups){
+                    if(limit <= 2){
+                        cardInfo(group.getName());
+                    }else{
+                        System.out.println("Limit reached");
+                    }
+                    limit++;
+                }
+            }
+            else{
+                System.out.println("Request failed in this group");
+            }
+        }else {
+            System.out.println("failed to fetch users in the given group");
+        }
+
+        JLabel searchResult = new JLabel("");
+        JLabel searchResultDescription = new JLabel("");
+
+        searchResult.setForeground(Color.ORANGE);
+        teamsDescPanel.add(searchResult);
+//        teamsDescPanel.add(searchResultDescription);
+        teamsDescPanel.setBackground(new Color(0,0,0,0));
+
+
+        searchBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String keyValue = "groups/search";
+                Request request = new Request(new SearchRequestData(searchTeam.getText()),keyValue);
+                ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
+                System.out.println(response.getData()+" "+response.isSuccess());
+                if(response.isSuccess()){
+                    try {
+                        Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
+
+                        int limit = 0;
+                        if (groups.length != 0 ){
+                            for(Group group: groups){
+                                if(limit < 1){
+                                    searchResult.setText(group.getName()+"  Description  :  "+group.getDescription());
+
+
+                                }else{
+                                    System.out.println("Limit reached");
+                                }
+                                limit++;
+                            }
+                        }
+                    } catch (IOException jsonProcessingException) {
+                        jsonProcessingException.printStackTrace();
+                    }
+                    CommonUtil.addTabs(10, true);
+
+
+                }else {
+                    System.out.println("failed to fetch users in the given group");
+                }
+
+            }
+        });
         cardsHeaderPanel.setPreferredSize(new Dimension(550, 130));
         JLabel label2 = new JLabel("");
         JLabel label4 = new JLabel("");
@@ -144,77 +219,18 @@ public class Layout {
         teamsPanel.setBackground(Color.decode("#F5F9FF"));
 
 
-        String key= "groups/";
-        Request request = new Request(new ProfileRequestData(4), key);
-        //get all group in the system
-        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
-        if(response.isSuccess()){
-            Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
-            CommonUtil.addTabs(10, true);
-            int limit = 0;
-            if (groups.length != 0 ){
-                for(Group group: groups){
-                    if(limit <= 2){
-                        cardInfo(group.getName());
-                    }else{
-                        System.out.println("Limit reached");
-                    }
-                    limit++;
-                }
-            }
-            else{
-                System.out.println("Request failed in this group");
-            }
-        }else {
-            System.out.println("failed to fetch users in the given group");
-        }
-
-
-
-                searchBtn.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        String keyValue = "groups/search";
-                        Request request = new Request(new SearchRequestData(searchTeam.getText()),keyValue);
-                        ResponseDataSuccessDecoder response = new IndexSocket().execute(request);
-                        System.out.println(response.getData()+" "+response.isSuccess());
-                        if(response.isSuccess()){
-                            try {
-                                Group[] groups = new GroupResponseDataDecoder().returnGroupsListDecoded(response.getData());
-                                if (groups.length != 0 ) {
-                                        for (Group group : groups) {
-                                            cardInfo(group.getName());
-                                    }
-                                }
-                                else{
-                                    System.out.println("Request failed in this group");
-                                }
-                            } catch (JsonProcessingException jsonProcessingException) {
-                                jsonProcessingException.printStackTrace();
-                            } catch (IOException ioException) {
-                                ioException.printStackTrace();
-                            }
-                            CommonUtil.addTabs(10, true);
-
-
-                        }else {
-                            System.out.println("failed to fetch users in the given group");
-                        }
-
-                    }
-                });
 
 
 
     }
     public void cardInfo(String label) throws IOException {
-         JPanel groupInfoSubPanel;
-         JPanel groupInfoFirstSubPanel;
-         JPanel groupInforFirstPanelTop;
-         JPanel groupInfoFirstSubPanelBottom;
-         JButton groupInfoFirstPanelEditButton;
-         JButton groupInfoFirstPanelDeleteButton;
-         JLabel groupNameLabel;
+        JPanel groupInfoSubPanel;
+        JPanel groupInfoFirstSubPanel;
+        JPanel groupInforFirstPanelTop;
+        JPanel groupInfoFirstSubPanelBottom;
+        JButton groupInfoFirstPanelEditButton;
+        JButton groupInfoFirstPanelDeleteButton;
+        JLabel groupNameLabel;
 
         groupInfoSubPanel = new JPanel(new FlowLayout(SwingConstants.LEADING,10,10));
         groupInfoFirstSubPanel = new JPanel();
