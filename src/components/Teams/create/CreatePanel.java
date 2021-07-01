@@ -25,24 +25,25 @@ public class CreatePanel {
         JLabel header = new JLabel("Create Group");
         JPanel namePanel = new JPanel();
         JPanel textPanel = new JPanel();
+        JPanel headerPanel = new JPanel();
         JLabel nameLabel = new JLabel("Name:");
         JLabel descLabel = new JLabel("Description:");
         panel.setPreferredSize(new Dimension(900, 750));
         header.setFont(new Font("Roboto",Font.BOLD,30));
         panel.setBackground(Color.white);
 
-        JTextField textField = new JTextField("", 20);
+        JTextField textField = new JTextField("", 16);
         textField.setBorder(BorderFactory.createCompoundBorder(
                 new LineBorder(Color.black, 1, true),
                 BorderFactory.createEmptyBorder(2, 2, 2, 2))
         );
         textField.setFont(new Font("Montserrat", Font.PLAIN, 20));
-        textField.setBounds(0,0,30,10);
-        textField.setColumns(38);
+        textField.setBounds(0,0,25,10);
+        textField.setColumns(25);
 
 
         JTextArea textArea = new JTextArea();
-        textArea.setColumns(37);
+        textArea.setColumns(25);
         textArea.setFont(new Font("Roboto",Font.PLAIN,20));
         textArea.setRows(3);
         textArea.setBorder(BorderFactory.createCompoundBorder(border,
@@ -52,13 +53,16 @@ public class CreatePanel {
 
         namePanel.setBackground(Color.white);
         textPanel.setBackground(Color.white);
+        headerPanel.setBackground(Color.white);
+        headerPanel.add(header);
         namePanel.add(nameLabel);
         textPanel.add(descLabel);
         namePanel.add(textField);
         textPanel.add(textArea);
 
-        namePanel.setSize(750, 100);
-        textPanel.setSize(750, 100);
+        namePanel.setSize(700, 100);
+        headerPanel.setSize(700, 120);
+        textPanel.setSize(700, 100);
         panel.setSize(750, 750);
         panel.setLocation(400,20);
 
@@ -72,7 +76,7 @@ public class CreatePanel {
             ResponseDataSuccessDecoder responseDataSuccessDecoder = new IndexSocket().execute(request);
             System.out.println(responseDataSuccessDecoder);
         });
-        panel.add(header);
+        panel.add(headerPanel);
         panel.add(namePanel);
         panel.add(textPanel);
         panel.add(btn);
